@@ -1,0 +1,136 @@
+{
+  "agent": "claude-code-backend",
+  "updated_at": "2026-07-07T18:15:00Z",
+  "contract_note_for_orchestrator": "PROMPTS tasks 10-11 (auth/RLS) add 401 responses to /api/rank, /api/heatmap, /api/submissions/:id. API.md itself is untouched, but this is a behavioral addendum to frozen endpoints — the frontend prompt's matching auth tasks (login page, middleware, 401→login redirect) cover it. Consider tagging contract-v1.2. Also: /api/ingest, /api/deadletters, /api/wards remain open per the task spec (deadletters admin page should be gated in UI/middleware or a follow-up).",
+  "environment_note": "No GCP infra or GEMINI_API_KEY available in this environment (SPRINT E4/I-1..6 open). All code built and verified end-to-end against local Dockerized Postgres 16 + pgvector; Gemini-dependent criteria verified structurally (loud-failure paths exercised against the real Gemini endpoint, which returned API_KEY_INVALID — network path confirmed working). Anything marked blocked needs only env/infra + assets, not code.",
+  "tasks": [
+    {
+      "task": "1. Next.js 15 scaffold, all 7 routes per API.md",
+      "status": "pass",
+      "criteria_met": ["B9", "B10", "B12", "B15(handler)"],
+      "criteria_failed": [],
+      "evidence": "logs/verify-local-1783397674930.log (41/41 PASS: contract shapes for /api/ingest, /api/submissions/:id, /api/rank, /api/heatmap, /api/deadletters, /api/wards, /healthz)",
+      "timestamp": "2026-07-07T04:14:00Z"
+    },
+    {
+      "task": "2. /api/ingest: persist received, GCS upload, Pub/Sub publish, DEMO_MODE sync",
+      "status": "pass",
+      "criteria_met": ["raw persist + received audit + publish-failure deadletter (verify log); DEMO_MODE sync path incl. loud 422 on pipeline failure"],
+      "criteria_failed": [],
+      "evidence": "logs/verify-local-1783397674930.log + logs/demo-fail-path-1783397675.log (1.6s fail-fast, single deadletter, status=failed). GCS upload path unexercised locally (no bucket) — fails loudly if GCS_BUCKET unset.",
+      "timestamp": "2026-07-07T04:14:35Z"
+    },
+    {
+      "task": "3. worker/ingest.ts wired: zod schemas, deps, REPLAY=true, tx-safe idempotency",
+      "status": "pass",
+      "criteria_met": ["B5", "B6(mechanism: retry loop → deadletter → pipeline continues → visible in /api/deadletters)"],
+      "criteria_failed": [],
+      "evidence": "logs/verify-local-1783397674930.log (B5 lock semantics + mid-batch-kill rollback recovery) + logs/replay-planmatch-1783397696.log (replay loop dead-letters failures and completes). NOTE: fixed a real deadlock — FOR UPDATE conflicted with FK KEY SHARE from audit/deadletter inserts; now FOR NO KEY UPDATE SKIP LOCKED (same idempotency semantics).",
+      "timestamp": "2026-07-07T04:15:00Z"
+    },
+    {
+      "task": "4. /api/rank handler: rank.sql, weights, score_breakdown, sample_submission_ids, plan_match",
+      "status": "pass",
+      "criteria_met": ["B9 (score recomputes from weights×breakdown, 3/3 clusters)", "B10 (live weight change, no restart)", "B15 passthrough rules (real match passes, {none:true} and NULL → null)"],
+      "criteria_failed": [],
+      "evidence": "logs/verify-local-1783397674930.log",
+      "timestamp": "2026-07-07T04:14:00Z"
+    },
+    {
+      "task": "5. scripts/golden.sh + runner (15 inputs, diff, exit 0/1)",
+      "status": "blocked",
+      "criteria_met": ["runner mechanics: attempts all 15, names missing assets, exit 1 on failure"],
+      "criteria_failed": ["B11 (needs GEMINI_API_KEY + human voice recordings assets/golden/*.webm + photos g05.jpg/g09.jpg — SPRINT H-1)"],
+      "evidence": "logs/golden-1783397721550.log (0/15 with fake key + missing assets, exit 1 — loud as designed)",
+      "timestamp": "2026-07-07T04:15:21Z"
+    },
+    {
+      "task": "6. scripts/demo-reset.sh per DEMO.md",
+      "status": "blocked",
+      "criteria_met": ["FK-safe per-table restore order rehearsed on real schema (counts identical, /api/rank serves after restore); all 6 spec steps implemented incl. loud asserts"],
+      "criteria_failed": ["B13 (needs the real 800-row demo_seed.dump from the replay gate → run scripts/snapshot.sh after R-4)"],
+      "evidence": "logs/demo-reset-rehearsal-1783398500.log",
+      "timestamp": "2026-07-07T04:28:00Z"
+    },
+    {
+      "task": "7. infra/deploy.sh (Cloud Run asia-south1, Secret Manager) + Dockerfile (standalone, non-root)",
+      "status": "blocked",
+      "criteria_met": [
+        "script written: web + worker services, secrets via --set-secrets (incl. AUTH_SECRET/GOOGLE_CLIENT_ID/SECRET), min-instances 1, /healthz smoke gate; bash -n clean",
+        "Next output:'standalone' + poweredByHeader:false; 3-stage Dockerfile (deps/builder/runner), non-root nextjs user, PORT=8080/HOSTNAME=0.0.0.0; full verify suite (46/46) rerun against the standalone server in image layout incl. DEMO_MODE pipeline + api/rank.sql runtime read + X-Powered-By absent"
+      ],
+      "criteria_failed": ["deploy itself (needs GCP project, secrets, Cloud SQL — SPRINT I-1..6/E4, human)"],
+      "evidence": "logs/standalone-verify-1783455326.log + logs/standalone-demo-path-1783457714.log",
+      "timestamp": "2026-07-08T09:25:00Z"
+    },
+    {
+      "task": "8. T1/B14 Maps grounding ward resolution",
+      "status": "blocked",
+      "criteria_met": ["resolver + ladder + audit ward_resolved_via wired and surfaced via /api/submissions/:id (shape verified); golden G11 asserts ward_resolved_via=maps_grounding"],
+      "criteria_failed": ["B14 live proof (needs GEMINI_API_KEY; run golden G11 or any landmark-only input)"],
+      "evidence": "logs/verify-local-1783397674930.log (audit ward_resolved_via surface check)",
+      "timestamp": "2026-07-07T04:14:00Z"
+    },
+    {
+      "task": "10. Auth.js v5 (Google provider) + API route protection + zod sanitization",
+      "status": "pass",
+      "criteria_met": [
+        "auth.ts (Google provider only, GOOGLE_CLIENT_ID/SECRET env, exports auth/signIn/signOut) + app/api/auth/[...nextauth]/route.ts",
+        "/api/rank, /api/heatmap, /api/submissions/:id → 401 without session; forged token → 401; valid session → 200",
+        "zod on all query params (rank/heatmap enums, submission uuid) and ingest multipart body; rank.sql fully parameterized ($1/$2)",
+        "test gates authenticate by minting a real Auth.js session JWT with the shared AUTH_SECRET (scripts/lib/session.ts) — no bypass in app code"
+      ],
+      "criteria_failed": [],
+      "evidence": "logs/verify-local-1783445254884.log (46/46 incl. 5 auth checks) + logs/citizen-stamp-1783446480.log (citizen session stamps user_id; citizen can poll own submission). Live Google OAuth flow untested — needs GOOGLE_CLIENT_ID/SECRET + AUTH_SECRET provisioned (human).",
+      "timestamp": "2026-07-07T18:10:00Z"
+    },
+    {
+      "task": "11. PostgreSQL RLS migration + DAL",
+      "status": "pass",
+      "criteria_met": [
+        "db/rls_policies.sql: RLS enabled on submissions+clusters, citizen_access + admin_access policies exactly per spec, plus user_id column and cluster read policies (deny-all otherwise)",
+        "DAL rlsQuery() in apps/web/lib/db.ts: BEGIN → set_config(app.current_user_id) → set_config(app.current_user_role) → query → COMMIT, transaction-local so identity never leaks across pooled connections; protected routes use it exclusively",
+        "DB-level enforcement proven with non-owner role: citizen sees only own row, cross-tenant read = 0 rows, admin sees all, anonymous sees nothing"
+      ],
+      "criteria_failed": [],
+      "evidence": "logs/rls-enforcement-1783444843.log + logs/verify-local-1783445254884.log. CAVEAT: RLS binds only non-owner DB roles — production web app must use the jannaadi_web role (commented template at the end of db/rls_policies.sql); worker keeps the owner connection by design. Apply db/rls_policies.sql right after db/seed.sql.",
+      "timestamp": "2026-07-07T18:10:00Z"
+    },
+    {
+      "task": "9. T3/B15 planmatch wiring",
+      "status": "blocked",
+      "criteria_met": ["token acquisition wired (runPlanMatchBatch), runs post-replay, Search outage logged loudly with replay/ingest unaffected (exit 0); /api/rank passthrough rules verified; seed.sql plan_match column applied"],
+      "criteria_failed": ["B15 matched_count>0 (needs Discovery Engine datastore 'vizag-dev-plans' + PLAN_DATASTORE_ID + ADC — SPRINT T3, human)"],
+      "evidence": "logs/replay-planmatch-1783397696.log + logs/verify-local-1783397674930.log",
+      "timestamp": "2026-07-07T04:15:00Z"
+    }
+  ],
+  "criteria": {
+    "B1": { "status": "blocked", "blocker": "GEMINI_API_KEY + GCS bucket + STT creds + golden voice file (H-1). Sync DEMO_MODE path verified with loud-failure evidence; fail-fast 1.6s.", "evidence": "logs/demo-fail-path-1783397675.log" },
+    "B2": { "status": "blocked", "blocker": "Replay gate R-1..3 needs GEMINI_API_KEY + Cloud SQL. Rank ordering verified on fixture: highest-frequency+recency drainage cluster ranks #1.", "evidence": "logs/verify-local-1783397674930.log" },
+    "B3": { "status": "blocked", "blocker": "GEMINI_API_KEY. G13–G15 authored in scripts/golden-set.json.", "evidence": "logs/golden-1783397721550.log" },
+    "B4": { "status": "blocked", "blocker": "GEMINI_API_KEY + GCS + golden photos. Multimodal path + caption/citizen-ward ladder implemented.", "evidence": "logs/golden-1783397721550.log" },
+    "B5": { "status": "pass", "evidence": "logs/verify-local-1783397674930.log (SKIP LOCKED concurrency + rollback recovery on real table)" },
+    "B6": { "status": "pass", "evidence": "logs/demo-fail-path-1783397675.log + logs/replay-planmatch-1783397696.log (retry → deadletter on 2nd failure → pipeline continues → visible in /api/deadletters). Malformed-JSON variant of the same zod gate needs a live key to trigger organically." },
+    "B7": { "status": "blocked", "blocker": "STT creds + audio assets. Confidence-floor → multimodal fallback implemented per skeleton.", "evidence": "" },
+    "B8": { "status": "blocked", "blocker": "Needs a real processed run. Audit shape (stage/at/model/latency_ms) verified via /api/submissions/:id; every stage writes audit_events on pool connections that survive rollback.", "evidence": "logs/verify-local-1783397674930.log" },
+    "B9": { "status": "pass", "evidence": "logs/verify-local-1783397674930.log" },
+    "B10": { "status": "pass", "evidence": "logs/verify-local-1783397674930.log" },
+    "B11": { "status": "blocked", "blocker": "H-1 voice/photo assets + GEMINI_API_KEY", "evidence": "logs/golden-1783397721550.log" },
+    "B12": { "status": "pass", "evidence": "logs/b12-b6-demo-1783394860.log (docker stop → db:fail → restart → db:ok; pubsub/gemini genuinely probed)" },
+    "B13": { "status": "blocked", "blocker": "real snapshot after replay gate (scripts/snapshot.sh)", "evidence": "logs/demo-reset-rehearsal-1783398500.log" },
+    "B14": { "status": "blocked", "blocker": "GEMINI_API_KEY (Maps grounding tool call)", "evidence": "logs/verify-local-1783397674930.log" },
+    "B15": { "status": "blocked", "blocker": "T3 datastore + ADC for matched_count>0; outage-isolation half verified", "evidence": "logs/replay-planmatch-1783397696.log" }
+  },
+  "unblock_checklist_for_human": [
+    "Auth secrets: openssl rand -base64 32 → AUTH_SECRET; create Google OAuth client (redirect URI <cloud-run-url>/api/auth/callback/google) → GOOGLE_CLIENT_ID/SECRET; set ADMIN_EMAILS (comma-separated MP-staff Gmail addresses) — deploy.sh already wires all of these from Secret Manager",
+    "Apply db/rls_policies.sql after db/seed.sql; for real RLS enforcement create the jannaadi_web role (template commented in that file) and point the web service's DATABASE_URL at it (worker keeps owner URL)",
+    "Test gates (golden.sh, demo-reset.sh, verify-local.ts) need AUTH_SECRET in their environment — same value as the server",
+    "Set GEMINI_API_KEY (I-6) → immediately unblocks B1 dry-run, B3, B6-organic, B14; rerun BASE_URL=<demo server> ./scripts/golden.sh for text items G01/G02/G06/G07/G10/G11/G13/G14",
+    "Record assets/golden/*.webm + g05.jpg/g09.jpg (H-1, see assets/golden/README.md) → unblocks B1/B4/B7/B11 fully",
+    "Provision Cloud SQL + apply db/seed.sql, Pub/Sub topic+sub, GCS bucket (I-1..5)",
+    "Run data/generate.ts → psql inserts → REPLAY=true npx tsx worker/ingest.ts → verify B2 → ./scripts/snapshot.sh → unblocks B13",
+    "Create Discovery Engine datastore, set PLAN_DATASTORE_ID (T3) → replay auto-runs planmatch → B15",
+    "GCP_PROJECT=... GCS_BUCKET=... ./infra/deploy.sh → Cloud Run + /healthz smoke (B12 on live URL)"
+  ]
+}

@@ -1,0 +1,11 @@
+node_modules/
+.env*
+*.dump
+dist/
+.next/
+credentials/
+data/synthetic.jsonl
+data/synthetic_inserts.sql
+data/gvmc_wards.json
+*.log
+.DS_Store
