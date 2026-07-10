@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>JanNaadi — Pitch Deck</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',sans-serif;background:#0a0f1e;color:#fff;overflow:hidden}
+.deck{width:100vw;height:100vh;position:relative}
+.slide{position:absolute;inset:0;display:none;padding:60px 80px;flex-direction:column;justify-content:center}
+.slide.active{display:flex}
+/* colour tokens */
+:root{--teal:#00c9b1;--orange:#ff6b35;--blue:#4a9eff;--dark:#0a0f1e;--card:#131929;--muted:#7a8499}
+
+/* SLIDE 1 — Title */
+#s1{background:linear-gradient(135deg,#0a0f1e 60%,#0d2240);align-items:center;text-align:center}
+#s1 .logo{font-size:72px;font-weight:900;letter-spacing:-2px;background:linear-gradient(90deg,var(--teal),var(--blue));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+#s1 .tagline{font-size:26px;color:#aab;margin-top:16px;font-weight:300}
+#s1 .sub{font-size:15px;color:var(--muted);margin-top:32px;letter-spacing:2px;text-transform:uppercase}
+#s1 .badge{display:inline-block;margin-top:24px;padding:8px 20px;border:1px solid var(--teal);border-radius:24px;color:var(--teal);font-size:13px;letter-spacing:1px}
+#s1 .city{font-size:18px;color:#ccd;margin-top:40px;font-style:italic}
+
+/* SLIDE 2 — Problem */
+#s2{background:#0a0f1e}
+.h1{font-size:48px;font-weight:800;margin-bottom:36px;line-height:1.15}
+.accent{color:var(--teal)}
+.accent-o{color:var(--orange)}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:24px}
+.card{background:var(--card);border-radius:12px;padding:28px 24px;border-left:4px solid var(--orange)}
+.card h3{font-size:38px;font-weight:900;color:var(--orange);margin-bottom:8px}
+.card p{color:#aab;font-size:15px;line-height:1.5}
+.problem-list{margin-top:28px}
+.problem-list li{color:#ccd;font-size:18px;padding:10px 0;border-bottom:1px solid #1e2a40;list-style:none;padding-left:24px;position:relative}
+.problem-list li::before{content:"×";color:var(--orange);position:absolute;left:0;font-weight:bold}
+
+/* SLIDE 3 — Solution */
+#s3{background:linear-gradient(135deg,#0a0f1e,#0d1f35)}
+.channels{display:flex;gap:20px;margin-top:32px}
+.ch{flex:1;background:var(--card);border-radius:16px;padding:32px 24px;text-align:center;border-top:3px solid var(--teal)}
+.ch .icon{font-size:42px;margin-bottom:12px}
+.ch h3{font-size:18px;font-weight:700;color:var(--teal);margin-bottom:8px}
+.ch p{color:#8a9ab0;font-size:14px;line-height:1.5}
+.langs{display:flex;gap:12px;margin-top:32px;flex-wrap:wrap}
+.lang-badge{padding:8px 18px;border-radius:24px;background:#1a2540;color:var(--teal);font-size:14px;border:1px solid #2a3a5a}
+
+/* SLIDE 4 — Architecture */
+#s4{background:#0a0f1e}
+.flow{display:flex;align-items:center;gap:0;margin-top:40px;overflow-x:auto}
+.flow-step{background:var(--card);border-radius:12px;padding:24px 20px;min-width:140px;text-align:center;position:relative}
+.flow-step .icon{font-size:28px;margin-bottom:8px}
+.flow-step h4{font-size:13px;font-weight:700;color:var(--teal);margin-bottom:6px;text-transform:uppercase;letter-spacing:.5px}
+.flow-step p{font-size:11px;color:var(--muted);line-height:1.4}
+.arrow{font-size:24px;color:var(--teal);margin:0 8px;flex-shrink:0}
+.tech-pills{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.tech-pill{padding:6px 14px;border-radius:20px;font-size:12px;background:#1a2540;color:#7acfff;border:1px solid #2a4060}
+
+/* SLIDE 5 — AI Innovation */
+#s5{background:linear-gradient(135deg,#0a0f1e,#0f1a0f)}
+.ai-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:32px}
+.ai-card{background:var(--card);border-radius:14px;padding:28px 22px;border-top:3px solid}
+.ai-card.c1{border-color:var(--teal)}
+.ai-card.c2{border-color:var(--blue)}
+.ai-card.c3{border-color:var(--orange)}
+.ai-card .num{font-size:13px;text-transform:uppercase;letter-spacing:1px;margin-bottom:10px}
+.ai-card h3{font-size:20px;font-weight:800;margin-bottom:10px}
+.ai-card p{font-size:14px;color:#8a9ab0;line-height:1.55}
+.ai-card code{display:inline-block;background:#0a0f1e;color:var(--teal);padding:2px 8px;border-radius:4px;font-size:12px;margin-top:8px}
+
+/* SLIDE 6 — Validation */
+#s6{background:#0a0f1e}
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:36px}
+.metric{background:var(--card);border-radius:12px;padding:24px 16px;text-align:center}
+.metric .val{font-size:52px;font-weight:900;line-height:1;color:var(--teal)}
+.metric .label{font-size:13px;color:var(--muted);margin-top:8px;line-height:1.4}
+.passes{margin-top:28px;background:var(--card);border-radius:12px;padding:24px 28px}
+.pass-row{display:flex;align-items:center;gap:12px;padding:8px 0;border-bottom:1px solid #1a2540}
+.pass-row:last-child{border:none}
+.check{color:#00d97e;font-size:18px;font-weight:bold}
+.pass-row span{font-size:14px;color:#ccd}
+
+/* SLIDE 7 — Impact */
+#s7{background:linear-gradient(135deg,#0a0f1e,#150a0f)}
+.impact-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:32px}
+.impact-card{background:var(--card);border-radius:14px;padding:28px;border-left:4px solid var(--blue)}
+.impact-card h3{font-size:16px;font-weight:700;color:var(--blue);margin-bottom:12px;text-transform:uppercase;letter-spacing:.5px}
+.impact-card p{font-size:15px;color:#ccd;line-height:1.6}
+.cluster-example{background:#0a0f1e;border-radius:8px;padding:16px;margin-top:12px;font-size:13px;color:var(--teal);font-family:monospace}
+
+/* SLIDE 8 — Call to Action */
+#s8{background:linear-gradient(135deg,#0a0f1e 40%,#0d2040);align-items:center;text-align:center}
+#s8 .big{font-size:56px;font-weight:900;line-height:1.2;margin-bottom:24px}
+#s8 .desc{font-size:18px;color:#aab;max-width:640px;line-height:1.6;margin:0 auto}
+.cta-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px;max-width:780px;width:100%}
+.cta-card{background:var(--card);border-radius:12px;padding:24px 16px;border-top:2px solid var(--teal)}
+.cta-card .icon{font-size:28px;margin-bottom:10px}
+.cta-card h4{font-size:14px;font-weight:700;color:var(--teal);margin-bottom:6px}
+.cta-card p{font-size:13px;color:var(--muted)}
+
+/* Nav */
+.nav{position:fixed;bottom:32px;right:48px;display:flex;gap:12px;z-index:100}
+.nav button{background:#1a2540;border:1px solid #2a3a5a;color:#fff;padding:10px 20px;border-radius:8px;cursor:pointer;font-size:14px;transition:background .2s}
+.nav button:hover{background:var(--teal);color:#000}
+.counter{position:fixed;bottom:38px;left:48px;color:var(--muted);font-size:13px;z-index:100}
+.progress{position:fixed;top:0;left:0;height:3px;background:var(--teal);transition:width .3s;z-index:200}
+</style>
+</head>
+<body>
+<div class="progress" id="prog"></div>
+
+<!-- SLIDE 1: TITLE -->
+<div class="slide active" id="s1">
+  <div class="logo">JanNaadi</div>
+  <div class="tagline">Every Voice, One Dashboard</div>
+  <div class="sub">Citizen Intelligence Platform for Visakhapatnam</div>
+  <div class="badge">Build with AI: Code for Communities — Track 1</div>
+  <div class="city">Greater Visakhapatnam Municipal Corporation · 98 Wards · 2.1M Citizens</div>
+</div>
+
+<!-- SLIDE 2: PROBLEM -->
+<div class="slide" id="s2">
+  <div class="h1">The civic feedback <span class="accent-o">gap</span> costs cities years</div>
+  <div class="grid-3">
+    <div class="card"><h3>98</h3><p>wards across Visakhapatnam — each with unique, overlapping complaints</p></div>
+    <div class="card"><h3>3+</h3><p>languages citizens speak — Telugu, Hindi, English, and Hinglish code-mix</p></div>
+    <div class="card"><h3>0</h3><p>unified systems to aggregate, cluster, and prioritise civic complaints at scale</p></div>
+  </div>
+  <ul class="problem-list">
+    <li>Complaints scatter across WhatsApp, phone calls, walk-ins — never aggregated</li>
+    <li>Ward officers manually triage hundreds of reports with no priority signal</li>
+    <li>City-plan investments misaligned — no real-time evidence of where problems cluster</li>
+    <li>Voice of non-English speakers lost entirely from data</li>
+  </ul>
+</div>
+
+<!-- SLIDE 3: SOLUTION -->
+<div class="slide" id="s3">
+  <div class="h1">JanNaadi: <span class="accent">5 channels, one pipeline</span></div>
+  <div class="channels" style="gap:14px">
+    <div class="ch"><div class="icon">💬</div><h3>Web Text</h3><p>Type in any language. AI extracts category, ward, severity in &lt;3s</p></div>
+    <div class="ch"><div class="icon">🎙️</div><h3>Web Voice</h3><p>Cloud STT → Telugu/Hindi/English transcript → same AI pipeline</p></div>
+    <div class="ch"><div class="icon">📸</div><h3>Web Photo</h3><p>Gemini multimodal reads image + caption. No app install needed</p></div>
+    <div class="ch" style="border-top-color:var(--orange)"><div class="icon">📱</div><h3 style="color:var(--orange)">Twilio SMS/MMS<br/>+ WhatsApp</h3><p>Text, photo (MMS), or voice note via WhatsApp — HMAC-SHA1 validated webhook</p></div>
+    <div class="ch" style="border-top-color:var(--orange)"><div class="icon">📞</div><h3 style="color:var(--orange)">Twilio Phone Call</h3><p>Citizen calls a number, speaks complaint — recorded &amp; transcribed via Cloud STT</p></div>
+  </div>
+  <div class="langs" style="margin-top:16px">
+    <span class="lang-badge">Telugu (te)</span>
+    <span class="lang-badge">Hindi (hi)</span>
+    <span class="lang-badge">English (en)</span>
+    <span class="lang-badge">Hinglish (code-mix)</span>
+    <span class="lang-badge" style="border-color:var(--orange);color:var(--orange)">Feature phone — no data plan needed</span>
+  </div>
+</div>
+
+<!-- SLIDE 4: ARCHITECTURE -->
+<div class="slide" id="s4">
+  <div class="h1">How it <span class="accent">works</span></div>
+  <div style="margin-top:16px;background:#131929;border-radius:12px;padding:16px 20px;font-size:13px;font-family:monospace;color:#8a9ab0;line-height:1.8">
+    <span style="color:var(--orange)">Web</span> (text/voice/photo) → POST /api/ingest<br/>
+    <span style="color:var(--orange)">Twilio SMS/MMS/WhatsApp</span> → POST /api/twilio/sms &nbsp;<span style="color:#3a4a6a">← HMAC-SHA1 validated</span><br/>
+    <span style="color:var(--orange)">Twilio Phone Call</span> → POST /api/twilio/voice → /voice/recording<br/>
+    <span style="color:#3a4a6a">──────────────────────────────────────────────</span><br/>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:var(--teal)">persistAndProcess()</span> &nbsp;← same function, all channels
+  </div>
+  <div class="flow" style="margin-top:16px">
+    <div class="flow-step" style="min-width:120px"><div class="icon">🧠</div><h4>Extract</h4><p>Gemini 2.5 Flash: category, ward, severity, summary</p></div>
+    <div class="arrow">→</div>
+    <div class="flow-step" style="min-width:120px"><div class="icon">🗺️</div><h4>Ground</h4><p>Maps API: landmarks → official ward name</p></div>
+    <div class="arrow">→</div>
+    <div class="flow-step" style="min-width:120px"><div class="icon">🔗</div><h4>Cluster</h4><p>pgvector cosine similarity, running-mean centroid</p></div>
+    <div class="arrow">→</div>
+    <div class="flow-step" style="min-width:120px"><div class="icon">📋</div><h4>Plan Match</h4><p>Discovery Engine → Master Plan 2041 clauses</p></div>
+    <div class="arrow">→</div>
+    <div class="flow-step" style="min-width:120px"><div class="icon">📊</div><h4>Dashboard</h4><p>Ranked ward heat map for officers</p></div>
+  </div>
+  <div class="tech-pills">
+    <span class="tech-pill">Gemini 2.5 Flash</span>
+    <span class="tech-pill">Cloud SQL + pgvector</span>
+    <span class="tech-pill">Cloud Run</span>
+    <span class="tech-pill">Discovery Engine</span>
+    <span class="tech-pill">Google Maps Grounding</span>
+    <span class="tech-pill">Cloud STT (te-IN / hi-IN / en-IN)</span>
+    <span class="tech-pill">Next.js 14</span>
+    <span class="tech-pill">Google OAuth</span>
+    <span class="tech-pill" style="color:var(--orange);border-color:#4a2a10">Twilio SMS + WhatsApp</span>
+    <span class="tech-pill" style="color:var(--orange);border-color:#4a2a10">Twilio Voice + &lt;Record&gt;</span>
+  </div>
+</div>
+
+<!-- SLIDE 5: AI INNOVATION -->
+<div class="slide" id="s5">
+  <div class="h1">Three AI layers <span class="accent">no civic platform has combined</span></div>
+  <div class="ai-grid">
+    <div class="ai-card c1">
+      <div class="num" style="color:var(--teal)">Layer 1 · Extraction</div>
+      <h3>Gemini Structured Output</h3>
+      <p>JSON-schema constrained extraction with enum-locked category and ward lists. Prevents hallucinated wards. Retries on schema violation.</p>
+      <code>gemini-2.5-flash + responseSchema</code>
+    </div>
+    <div class="ai-card c2">
+      <div class="num" style="color:var(--blue)">Layer 2 · Grounding</div>
+      <h3>Maps + Semantic Clustering</h3>
+      <p>Landmark-only mentions ("near RK Beach") resolved to official ward via Maps grounding pre-pass. Running-mean pgvector clusters built live.</p>
+      <code>ward_resolved_via=maps_grounding</code>
+    </div>
+    <div class="ai-card c3">
+      <div class="num" style="color:var(--orange)">Layer 3 · Plan Match</div>
+      <h3>Discovery Engine RAG</h3>
+      <p>Each cluster matched to GVMC Master Plan 2041 clauses. Officers see not just complaints — but the relevant planning documents.</p>
+      <code>PLAN_DATASTORE_ID → chunk search</code>
+    </div>
+  </div>
+</div>
+
+<!-- SLIDE 6: VALIDATION -->
+<div class="slide" id="s6">
+  <div class="h1">Verified against <span class="accent">real Gemini on Cloud SQL</span></div>
+  <div class="metrics">
+    <div class="metric"><div class="val">8/8</div><div class="label">Golden text items pass<br/>live API · no mocks</div></div>
+    <div class="metric"><div class="val">800</div><div class="label">Synthetic submissions<br/>processed end-to-end</div></div>
+    <div class="metric"><div class="val">192+</div><div class="label">Semantic clusters<br/>auto-formed</div></div>
+    <div class="metric"><div class="val">&lt;15s</div><div class="label">Per submission<br/>text path</div></div>
+  </div>
+  <div class="passes">
+    <div class="pass-row"><span class="check">✓</span><span>B1 · Text/voice/photo intake → processed status, extraction JSON</span></div>
+    <div class="pass-row"><span class="check">✓</span><span>B3 · Code-mixed Telugu-English correctly classified (G13, G14)</span></div>
+    <div class="pass-row"><span class="check">✓</span><span>B14 · "Near RK Beach" → Ward 27 VIP Road via Maps grounding</span></div>
+    <div class="pass-row"><span class="check">✓</span><span>B2 · Pedagantyada drainage cluster surfaces as top ward priority</span></div>
+    <div class="pass-row"><span class="check">✓</span><span>Twilio SMS/WhatsApp webhook · HMAC-SHA1 signature validation end-to-end</span></div>
+    <div class="pass-row"><span class="check">✓</span><span>Twilio voice call · &lt;Record&gt; TwiML → WAV → Cloud STT → Gemini extraction verified</span></div>
+    <div class="pass-row"><span class="check">✓</span><span>OAuth roundtrip · Google sign-in → session → ADMIN role gate</span></div>
+  </div>
+</div>
+
+<!-- SLIDE 7: IMPACT -->
+<div class="slide" id="s7">
+  <div class="h1">From noise to <span class="accent">actionable intelligence</span></div>
+  <div class="impact-grid">
+    <div class="impact-card">
+      <h3>For Ward Officers</h3>
+      <p>A ranked, evidence-backed dashboard replaces manual triaging. Frequency × severity × recency × demographic weighting surfaces what matters most, not what was filed last.</p>
+      <div class="cluster-example">[25 reports] Ward 75 - Pedagantyada<br/>drainage · severity 4.2 avg · last 7 days</div>
+    </div>
+    <div class="impact-card">
+      <h3>For City Planners</h3>
+      <p>Clusters are matched to Master Plan 2041 clauses in real time. Investment decisions backed by citizen evidence, not field surveys that take months.</p>
+    </div>
+    <div class="impact-card">
+      <h3>For Citizens</h3>
+      <p>Submit via web, SMS, WhatsApp (text/photo/voice note), or plain phone call. Telugu, Hindi, Hinglish — any device. Feature-phone users call a number and speak. No app install. Ticket number in seconds.</p>
+    </div>
+    <div class="impact-card">
+      <h3>Scale Path</h3>
+      <p>98 wards → statewide (all ULBs in AP). Same pipeline, different ward tables. Discovery Engine datastore updated with each city's plans. Cloud Run auto-scales to zero.</p>
+    </div>
+  </div>
+</div>
+
+<!-- SLIDE 8: CALL TO ACTION -->
+<div class="slide" id="s8">
+  <div class="big">Pilot with <span style="background:linear-gradient(90deg,var(--teal),var(--blue));-webkit-background-clip:text;-webkit-text-fill-color:transparent">GVMC</span> today</div>
+  <div class="desc">JanNaadi is live on Google Cloud at <strong>app.prasyn.com</strong> — all 5 channels active, auto-scaling to zero cost when idle.</div>
+  <div class="cta-grid">
+    <div class="cta-card"><div class="icon">🚀</div><h4>Cloud Run Live</h4><p>app.prasyn.com · Secret Manager · Cloud SQL · auto-scale to zero</p></div>
+    <div class="cta-card"><div class="icon">📞</div><h4>Twilio Live</h4><p>SMS · WhatsApp · Phone Call — all channels active. WABA approval → production sender</p></div>
+    <div class="cta-card"><div class="icon">🔒</div><h4>Secure by Default</h4><p>HMAC-SHA1 webhooks · senderRef privacy hash · role-gated APIs · no secrets in code</p></div>
+  </div>
+</div>
+
+<div class="counter" id="ctr">1 / 8</div>
+<div class="nav">
+  <button onclick="go(-1)">← Prev</button>
+  <button onclick="go(1)">Next →</button>
+</div>
+
+<script>
+let cur = 0;
+const slides = document.querySelectorAll('.slide');
+const prog = document.getElementById('prog');
+const ctr = document.getElementById('ctr');
+function show(n) {
+  slides[cur].classList.remove('active');
+  cur = (n + slides.length) % slides.length;
+  slides[cur].classList.add('active');
+  prog.style.width = ((cur + 1) / slides.length * 100) + '%';
+  ctr.textContent = (cur + 1) + ' / ' + slides.length;
+}
+function go(d) { show(cur + d); }
+document.addEventListener('keydown', e => {
+  if (e.key === 'ArrowRight' || e.key === ' ') go(1);
+  if (e.key === 'ArrowLeft') go(-1);
+});
+prog.style.width = (1 / slides.length * 100) + '%';
+</script>
+</body>
+</html>
