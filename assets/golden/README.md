@@ -15,7 +15,18 @@ Listen-check each clip once before the demo. If Telugu output is poor
 
 | File | Item | Content |
 |---|---|---|
-| g03.mp3 | G03 | Telugu — water supply 1hr/day, Madhurawada |
+| g03.mp3 | G03 | Telugu — water supply 1hr/day, Madhura Nagar (Ward 25) |
 | g04.mp3 | G04 | Telugu — PHC no doctor, Pendurthi (demo golden-path file) |
-| g08.mp3 | G08 | Hindi — drainage smell, Kancharapalem |
-| g12.mp3 | G12 | English — clinic medicine
+| g08.mp3 | G08 | Hindi — drainage smell, Nehru Nagar (Ward 74) |
+| g12.mp3 | G12 | English — clinic medicine stock-out, NRI Hospital area (Ward 14) |
+| g15.mp3 | G15 | Hinglish — nala overflow, bacche school nahi ja pa rahe, Ambedkar Nagar (Ward 47) |
+
+## Photos — still human-provided (2 minutes)
+
+| File | Item | What |
+|---|---|---|
+| g05.jpg | G05 | Photo of a garbage pile (any representative jpg, <5MB) |
+| g09.jpg | G09 | Photo of a broken road / potholes (any representative jpg, <5MB) |
+
+Any phone photo or openly-licensed image works — the caption carries the
+ward/category signal; the image just needs to plausibly match it.

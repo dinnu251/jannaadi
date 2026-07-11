@@ -1,3 +1,9 @@
+-- ⚠ SUPERSEDED (8 Jul, ward/population integration): DO NOT APPLY to the 98-ward
+-- schema. This census uses the OLD 72-ward numbering — ward N here is NOT ward N
+-- in the 98-ward scheme; the join would misattribute demographics. Populations now
+-- come from the official GVMC AreaWards table (verified against wards.pdf) via
+-- scripts/clean-wards.ts; SC/ST-based demo_weight comes from
+-- data/source_data/gpdp_demographics.json (same formula). Kept for deck stats only.
 -- db/ward_population.sql — GVMC 72-Ward Population & Demographic Weights
 -- Source: "72 WARDS POPULATION" official GVMC document (Population Details Jul_704.pdf)
 -- Total: 1,435,099 people across 72 wards. SC avg: 8.25%, ST avg: 0.79%.

@@ -7,5 +7,14 @@ credentials/
 data/synthetic.jsonl
 data/synthetic_inserts.sql
 data/gvmc_wards.json
+data/parse_output.txt
+data/raw-plans/*.tif
+data/raw-plans/*.pdf
 *.log
 .DS_Store
+.claude/
+logs/
+gcp-credentials.json
+*credentials*.json
+*-credentials.json
+*service-account*.json

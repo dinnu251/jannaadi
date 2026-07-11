@@ -15,8 +15,13 @@ cfg AS (
 ),
 stats AS (
   -- per-cluster aggregates from processed submissions
+  -- trusted_count (task 15): submission_count filtered to phones with no confirmed
+  -- low trust (score IS NULL/unset [anonymous or never-scored] OR >= 15). Feeds ONLY
+  -- the ranking frequency component below — the displayed submission_count stays the
+  -- true raw count so the MP dashboard never shows a silently-shrunk number.
   SELECT
     c.id, c.title_en, c.category, c.ward, c.submission_count,
+    COUNT(s.id) FILTER (WHERE ct.score IS NULL OR ct.score >= 15) AS trusted_count,
     c.first_seen, c.last_seen, c.centroid_lat, c.centroid_lng, c.plan_match,
     AVG(s.severity)::float AS avg_severity,
     -- recency: exponential decay on hours since last submission
@@ -24,16 +29,17 @@ stats AS (
     wd.demo_weight
   FROM clusters c
   JOIN submissions s ON s.cluster_id = c.id AND s.status = 'processed'
+  LEFT JOIN citizen_trust ct ON ct.phone = s.phone
   JOIN wards wd ON wd.name = c.ward
   WHERE ($1::text IS NULL OR c.ward = $1)        -- filter params from /api/rank query string
     AND ($2::text IS NULL OR c.category::text = $2)
   GROUP BY c.id, c.plan_match, wd.demo_weight
 ),
 norm AS (
-  -- min-max normalize frequency across the filtered set; severity /5; demo_weight already ~1.0 scale
+  -- min-max normalize TRUSTED frequency across the filtered set; severity /5; demo_weight already ~1.0 scale
   SELECT *,
-    (submission_count - MIN(submission_count) OVER ())::float
-      / NULLIF(MAX(submission_count) OVER () - MIN(submission_count) OVER (), 0) AS freq_n,
+    (trusted_count - MIN(trusted_count) OVER ())::float
+      / NULLIF(MAX(trusted_count) OVER () - MIN(trusted_count) OVER (), 0) AS freq_n,
     avg_severity / 5.0 AS sev_n,
     recency_raw        AS rec_n,             -- decay already 0–1
     LEAST(demo_weight / 1.2, 1.0) AS demo_n  -- cap at seed max 1.2
@@ -60,4 +66,5 @@ ORDER BY score DESC
 LIMIT 50;
 
 -- Node handler assembles: weights (SELECT * FROM rank_weights) + rows above → API.md /api/rank shape.
--- sample_submission_ids: separate cheap query per top-N clus
+-- sample_submission_ids: separate cheap query per top-N cluster:
+--   SELECT id FROM submissions WHERE cluster_id=$1 AND status='processed' ORDER BY submitted_at DESC LIMIT 3;

@@ -10,8 +10,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@deck.gl/core": "^8.9.36",
+    "@deck.gl/google-maps": "^8.9.36",
+    "@deck.gl/layers": "^8.9.36",
     "@googlemaps/js-api-loader": "^2.1.1",
+    "@types/qrcode": "^1.5.6",
     "lucide-react": "^1.23.0",
+    "next-auth": "^5.0.0-beta.31",
+    "qrcode": "^1.5.4",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
     "react-router-dom": "^7.18.1"

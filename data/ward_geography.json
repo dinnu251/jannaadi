@@ -1,0 +1,3441 @@
+[
+  {
+    "ward": "Ward 1 - Bunglow Metta",
+    "ward_number": 1,
+    "pincodes": [],
+    "areas": [],
+    "infra_anchors": [],
+    "existing_centroid": {
+      "lat": 17.7384,
+      "lng": 83.3862
+    },
+    "refined_centroid": {
+      "lat": 17.7384,
+      "lng": 83.3862
+    },
+    "centroid_shift_km": 0,
+    "boundary_points": 1,
+    "boundary_kind": "radius_circle"
+  },
+  {
+    "ward": "Ward 2 - Sabbivanipeta",
+    "ward_number": 2,
+    "pincodes": [
+      "530026"
+    ],
+    "areas": [
+      {
+        "name": "Gajuwaka",
+        "lat": 17.6852956,
+        "lng": 83.20374009999999,
+        "pincodes": [
+          "530026"
+        ]
+      }
+    ],
+    "infra_anchors": [],
+    "existing_centroid": {
+      "lat": 17.6864,
+      "lng": 83.2096
+    },
+    "refined_centroid": {
+      "lat": 17.68559,
+      "lng": 83.207928
+    },
+    "centroid_shift_km": 0.2,
+    "boundary_points": 3,
+    "boundary_kind": "convex_hull"
+  },
+  {
+    "ward": "Ward 3 - Telephone Exchange Area",
+    "ward_number": 3,
+    "pincodes": [
+      "530009"
+    ],
+    "areas": [],
+    "infra_anchors": [],
+    "existing_centroid": {
+      "lat": 17.709,
+      "lng": 83.2351
+    },
+    "refined_centroid": {
+      "lat": 17.716593,
+      "lng": 83.23482
+    },
+    "centroid_shift_km": 0.84,
+    "boundary_points": 2,
+    "boundary_kind": "radius_circle"
+  },
+  {
+    "ward": "Ward 4 - Nidigattu panchayat",
+    "ward_number": 4,
+    "pincodes": [],
+    "areas": [],
+    "infra_anchors": [],
+    "existing_centroid": {
+      "lat": 17.7383,
+      "lng": 83.3626
+    },
+    "refined_centroid": {
+      "lat": 17.7383,
+      "lng": 83.3626
+    },
+    "centroid_shift_km": 0,
+    "boundary_points": 1,
+    "boundary_kind": "radius_circle"
+  },
+  {
+    "ward": "Ward 5 - Boyyipalem Junction",
+    "ward_number": 5,
+    "pincodes": [
+      "530013"
+    ],
+    "areas": [
+      {
+        "name": "P & T Colony (VM)",
+        "lat": 17.7362142,
+        "lng": 83.3124448,
+        "pincodes": [
+          "530013"
+        ]
+      }
+    ],
+    "infra_anchors": [
+      {
+        "name": "AP TRANSCO Substation",
+        "category": "substation",
+        "lat": 17.7384567,
+        "lng": 83.3083314
+      },
+      {
+        "name": "APEPDCL",
+        "category": "substation",
+        "lat": 17.7386352,
+        "lng": 83.3087029
+      },
+      {
+        "name": "EPDCL cmd office",
+        "category": "discom_office",
+        "lat": 17.7390625,
+        "lng": 83.30817189999999
+      },
+      {
+        "name": "CMD camp office, APEPDCL",
+        "category": "discom_office",
+        "lat": 17.7378694,
+        "lng": 83.30823219999999
+      },
+      {
+        "name": "APTIDCO parlovapeta",
+        "category": "discom_office",
+        "lat": 17.7378994,
+        "lng": 83.3084932
+      }
+    ],
+    "existing_centroid": {
+      "lat": 17.7332549,
+      "lng": 83.3071796
+    },
+    "refined_centroid": {
+      "lat": 17.737342,
+      "lng": 83.308794
+    },
+    "centroid_shift_km": 0.49,
+    "boundary_points": 7,
+    "boundary_kind": "convex_hull"
+  },
+  {
+    "ward": "Ward 6 - Car shed Junction",
+    "ward_number": 6,
+    "pincodes": [
+      "530041"
+    ],
+    "areas": [
+      {
+        "name": "Pothinamallayapalem",
+        "lat": 17.8040515,
+        "lng": 83.346666,
+        "pincodes": [
+          "530041"
+        ]
+      }
+    ],
+    "infra_anchors": [
+      {
+        "name": "Pothinamallayya Palem Current Office",
+        "category": "substation",
+        "lat": 17.7990924,
+        "lng": 83.3451838
+      }
+    ],
+    "existing_centroid": {
+      "lat": 17.8045,
+      "lng": 83.3458
+    },
+    "refined_centroid": {
+      "lat": 17.802395,
+      "lng": 83.348136
+    },
+    "centroid_shift_km": 0.34,
+    "boundary_points": 4,
+    "boundary_kind": "convex_hull"
+  },
+  {
+    "ward": "Ward 7 - Vambay Colony (Blocks) 1A",
+    "ward_number": 7,
+    "pincodes": [
+      "530029",
+      "530048"
+    ],
+    "areas": [
+      {
+        "name": "Durganagar",
+        "lat": 17.806298,
+        "lng": 83.35684549999999,
+        "pincodes": [
+          "530029"
+        ]
+      },
+      {
+        "name": "Madhurawada",
+        "lat": 17.8243075,
+        "lng": 83.35642829999999,
+        "pincodes": [
+          "530048"
+        ]
+      },
+      {
+        "name": "Marikavalasa",
+        "lat": 17.8286437,
+        "lng": 83.3702528,
+        "pincodes": [
+          "530048"
+        ]
+      }
+    ],
+    "infra_anchors": [
+      {
+        "name": "Madhurawada Substation & DE Office Zone 3",
+        "category": "substation",
+        "lat": 17.8212045,
+        "lng": 83.35730029999999
+      },
+      {
+        "name": "APEPDCL Harita 33/11 KV substation",
+        "category": "substation",
+        "lat": 17.8177584,
+        "lng": 83.3814883
+      },
+      {
+        "name": "BSNL Office",
+        "category": "bsnl",
+        "lat": 17.8271558,
+        "lng": 83.357923
+      }
+    ],
+    "existing_centroid": {
+      "lat": 17.8133266,
+      "lng": 83.36491439999999
+    },
+    "refined_centroid": {
+      "lat": 17.819813,
+      "lng": 83.363593
+    },
+    "centroid_shift_km": 0.73,
+    "boundary_points": 7,
+    "boundary_kind": "convex_hull"
+  },
+  {
+    "ward": "Ward 8 - Law College",
+    "ward_number": 8,
+    "pincodes": [
+      "530003"
+    ],
+    "areas": [
+      {
+        "name": "Andhra University",
+        "lat": 17.7259095,
+        "lng": 83.3244216,
+        "pincodes": [
+          "530003"
+        ]
+      },
+      {
+        "name": "Vidya Bhavan",
+        "lat": 17.7220212,
+        "lng": 83.32877409999999,
+        "pincodes": [
+          "530003"
+        ]
+      }
+    ],
+    "infra_anchors": [
+      {
+        "name": "Power House",
+        "category": "substation",
+        "lat": 17.723915,
+        "lng": 83.32831519999999
+      },
+      {
+        "name": "APEPDCL Electrical Substation",
+        "category": "substation",
+        "lat": 17.7267785,
+        "lng": 83.32524339999999
+      }
+    ],
+    "existing_centroid": {
+      "lat": 17.724617,
+      "lng": 83.32662359999999
+    },
+    "refined_centroid": {
+      "lat": 17.724583,
+      "lng": 83.326033
+    },
+    "centroid_shift_km": 0.06,
+    "boundary_points": 6,
+    "boundary_kind": "convex_hull"
+  },
+  {
+    "ward": "Ward 9 - Ramalayam Street",
+    "ward_number": 9,
+    "pincodes": [
+      "530007"
+    ],
+    "areas": [
+      {
+        "name": "Industrial Estate (Visakhapatnam)",
+        "lat": 17.7391633,
+        "lng": 83.2633123,
+        "pincodes": [
+          "530007"
+        ]
+      }
+    ],
+    "infra_anchors": [
+      {
+        "name": "BSNL Office",
+        "category": "bsnl",
+        "lat": 17.740153,
+        "lng": 83.2648364
+      },
+      {
+        "name": "ApEpdcl Bill payment",
+        "category": "discom_office",
+        "lat": 17.7408015,
+        "lng": 83.2638611
+      }
+    ],
+    "existing_centroid": {
+      "lat": 17.7477098,
+      "lng": 83.2574405
+    },
+    "refined_centroid": {
+      "lat": 17.741957,
+      "lng": 83.262363
+    },
+    "centroid_shift_km": 0.83,
+    "boundary_points": 4,
+    "boundary_kind": "convex_hull"
+  },
+  {
+    "ward": "Ward 10 - Rajeev Nagar",
+    "ward_number": 10,
+    "pincodes": [
+      "530003"
+    ],
+    "areas": [
+      {
+        "name": "Pithapuram Colony",
+        "lat": 17.734703,
+        "lng": 83.3268324,
+        "pincodes": [
+          "530003"
+        ]
+      }
+    ],
+    "infra_anchors": [],
+    "existing_centroid": {
+      "lat": 17.7343372,
+      "lng": 83.3269492
+    },
+    "refined_centroid": {
+      "lat": 17.73452,
+      "lng": 83.326891
+    },
+    "centroid_shift_km": 0.02,
+    "boundary_points": 2,
+    "boundary_kind": "radius_circle"
+  },
+  {
+    "ward": "Ward 11 - Raveendra Nagar -II",
+    "ward_number": 11,
+    "pincodes": [
+      "530040"
+    ],
+    "areas": [
+      {
+        "name": "Pedagadili",
+        "lat": 17.7592328,
+        "lng": 83.32082109999999,
+        "pincodes": [
+          "530040"
+        ]
+      }
+    ],
+    "infra_anchors": [
+      {
+        "name": "CURRENT OFFICE APEPDCL(vims)",
+        "category": "discom_office",
+        "lat": 17.7581747,
+        "lng": 83.32845189999999
+      }
+    ],
+    "existing_centroid": {
+      "lat": 17.7662096,
+      "lng": 83.3221541
+    },
+    "refined_centroid": {
+      "lat": 17.761206,
+      "lng": 83.323809
+    },
+    "centroid_shift_km": 0.58,
+    "boundary_points": 3,
+    "boundary_kind": "convex_hull"
+  },
+  {
+    "ward": "Ward 12 - Rajiv nagar & Central prison",
+    "ward_number": 12,
+    "pincodes": [],
+    "areas": [],
+    "infra_anchors": [],
+    "existing_centroid": {
+      "lat": 17.7343372,
+      "lng": 83.3269492
+    },
+    "refined_centroid": {
+      "lat": 17.734337,
+      "lng": 83.326949
+    },
+    "centroid_shift_km": 0,
+    "boundary_points": 1,
+    "boundary_kind": "radius_circle"
+  },
+  {
+    "ward": "Ward 13 - Sundarayya nagar",
+    "ward_number": 13,
+    "pincodes": [
+      "530040"
+    ],
+    "areas": [
+      {
+        "name": "Arilova",
+        "lat": 17.7666503,
+        "lng": 83.313465,
+        "pincodes": [
+          "530040"
+        ]
+      }
+    ],
+    "infra_anchors": [
+      {
+        "name": "33/11kv Arilova Substation",
+        "category": "substation",
+        "lat": 17.7629334,
+        "lng": 83.31175859999999
+      },
+      {
+        "name": "Dairy Farm Substation",
+        "category": "substation",
+        "lat": 17.7634698,
+        "lng": 83.313559
+      },
+      {
+        "name": "ARILOVA APEPDCL OFFICE",
+        "category": "discom_office",
+        "lat": 17.7629026,
+        "lng": 83.31231819999999
+      }
+    ],
+    "existing_centroid": {
+      "lat": 17.7673639,
+      "lng": 83.3127965
+    },
+    "refined_centroid": {
+      "lat": 17.764664,
+      "lng": 83.312779
+    },
+    "centroid_shift_km": 0.3,
+    "boundary_points": 5,
+    "boundary_kind": "convex_hull"
+  },
+  {
+    "ward": "Ward 14 - Near N R I Hospital",
+    "ward_number": 14,
+    "pincodes": [
+      "531173"
+    ],
+    "areas": [
+      {
+        "name": "Chintalapalem",
+        "lat": 17.8548652,
+        "lng": 83.2017384,
+        "pincodes": [
+          "531173"
+        ]
+      },
+      {
+        "name": "Gurrampalem",
+        "lat": 17.820374,
+        "lng": 83.1986155,
+        "pincodes": [
+          "531173"
+        ]
+      }
+    ],
+    "infra_anchors": [],
+    "existing_centroid": {
+      "lat": 17.8222,
+      "lng": 83.1972
+    },
+    "refined_centroid": {
+      "lat": 17.830304,
+      "lng": 83.204008
+    },
+    "centroid_shift_km": 1.15,
+    "boundary_points": 4,
+    "boundary_kind": "convex_hull"
+  },
+  {
+    "ward": "Ward 15 - Seethammadhara Junction",
+    "ward_number": 15,
+    "pincodes": [
+      "530013"
+    ],
+    "areas": [],
+    "infra_anchors": [
+      {
+        "name": "Bharat Sanchar Nigam Limited",
+        "category": "bsnl",
+        "lat": 17.7436959,
+        "lng": 83.31760779999999
+      }
+    ],
+    "existing_centroid": {
+      "lat": 17.7432977,
+      "lng": 83.3143005
+    },
+    "refined_centroid": {
+      "lat": 17.742853,
+      "lng": 83.314679
+    },
+    "centroid_shift_km": 0.06,
+    "boundary_points": 3,
+    "boundary_kind": "convex_hull"
+  },
+  {
+    "ward": "Ward 16 - HB Colony",
+    "ward_number": 16,
+    "pincodes": [
+      "530022"
+    ],
+    "areas": [
+      {
+        "name": "H B Colony",
+        "lat": 17.745901,
+        "lng": 83.3231217,
+        "pincodes": [
+          "530022"
+        ]
+      }
+    ],
+    "infra_anchors": [
+      {
+        "name": "Electrical Sub-Station",
+        "category": "substation",
+        "lat": 17.748259,
+        "lng": 83.32450779999999
+      }
+    ],
+    "existing_centroid": {
+      "lat": 17.745901,
+      "lng": 83.3231217
+    },
+    "refined_centroid": {
+      "lat": 17.746971,
+      "lng": 83.323393
+    },
+    "centroid_shift_km": 0.12,
+    "boundary_points": 4,
+    "boundary_kind": "convex_hull"
+  },
+  {
+    "ward": "Ward 17 - Kotha Venkojipalem",
+    "ward_number": 17,
+    "pincodes": [],
+    "areas": [],
+    "infra_anchors": [],
+    "existing_centroid": {
+      "lat": 17.7447411,
+      "lng": 83.32846769999999
+    },
+    "refined_centroid": {
+      "lat": 17.744741,
+      "lng": 83.328468
+    },
+    "centroid_shift_km": 0,
+    "boundary_points": 1,
+    "boundary_kind": "radius_circle"
+  },
+  {
+    "ward": "Ward 18 - Samatha college area",
+    "ward_number": 18,
+    "pincodes": [
+      "530017"
+    ],
+    "areas": [],
+    "infra_anchors": [
+      {
+        "name": "Muvvala Vani Palem MVP Colony Substation",
+        "category": "substation",
+        "lat": 17.7410059,
+        "lng": 83.33630989999999
+      },
+      {
+        "name": "Office Of The Deputy Chief Electrical Inspector (APEPDCL)",
+        "category": "discom_office",
+        "lat": 17.7414281,
+        "lng": 83.3385693
+      },
+      {
+        "name": "Eastern Power Distribution Company Of Andhra Pradesh Limited - Power Bill Center",
+        "category": "discom_office",
+        "lat": 17.7410209,
+        "lng": 83.33618539999999
+      }
+    ],
+    "existing_centroid": {
+      "lat": 17.7427463,
+      "lng": 83.3389988
+    },
+    "refined_centroid": {
+      "lat": 17.740557,
+      "lng": 83.337785
+    },
+    "centroid_shift_km": 0.28,
+    "boundary_points": 5,
+    "boundary_kind": "convex_hull"
+  },
+  {
+    "ward": "Ward 19 - MVP Sector-12",
+    "ward_number": 19,
+    "pincodes": [
+      "530017",
+      "530043"
+    ],
+    "areas": [
+      {
+        "name": "M.V.P.Colony",
+        "lat": 17.7413117,
+        "lng": 83.3345037,
+        "pincodes": [
+          "530017"
+        ]
+      },
+      {
+        "name": "Visalakshinagar",
+        "lat": 17.7536964,
+        "lng": 83.3420893,
+        "pincodes": [
+          "530043"
+        ]
+      }
+    ],
+    "infra_anchors": [
+      {
+        "name": "Bharat Sanchar Nigam Limited",
+        "category": "bsnl",
+        "lat": 17.7410391,
+        "lng": 83.3350901
+      },
+      {
+        "name": "APEPDCL office",
+        "category": "discom_office",
+        "lat": 17.7557865,
+        "lng": 83.3431545
+      }
+    ],
+    "existing_centroid": {
+      "lat": 17.7431283,
+      "lng": 83.3387462
+    },
+    "refined_centroid": {
+      "lat": 17.748233,
+      "lng": 83.339632
+    },
+    "centroid_shift_km": 0.58,
+    "boundary_points": 6,
+    "boundary_kind": "convex_hull"
+  },
+  {
+    "ward": "Ward 20 - Peawaltari Junction",
+    "ward_number": 20,
+    "pincodes": [
+      "530017"
+    ],
+    "areas": [
+      {
+        "name": "L B Colony",
+        "lat": 17.7328338,
+        "lng": 83.3368562,
+        "pincodes": [
+          "530017"
+        ]
+      }
+    ],
+    "infra_anchors": [
+      {
+        "name": "132 kV Peda Waltair Substation",
+        "category": "substation",
+        "lat": 17.7299238,
+        "lng": 83.32975619999999
+      },
+      {
+        "name": "Pedda Waltair Electrical Substation",
+        "category": "substation",
+        "lat": 17.7306743,
+        "lng": 83.3356033
+      },
+      {
+        "name": "SCADA CONTROL ROOM",
+        "category": "substation",
+        "lat": 17.7299126,
+        "lng": 83.329595
+      },
+      {
+        "name": "Apepdcl Electrical Substatio",
+        "category": "substation",
+        "lat": 17.7307216,
+        "lng": 83.3355273
+      },
+      {
+        "name": "Eastern Power Disribution Company Of Andhra Pradesh Limited",
+        "category": "discom_office",
+        "lat": 17.729904,
+        "lng": 83.3295517
+      }
+    ],
+    "existing_centroid": {
+      "lat": 17.7321626,
+      "lng": 83.3333481
+    },
+    "refined_centroid": {
+      "lat": 17.730876,
+      "lng": 83.332891
+    },
+    "centroid_shift_km": 0.15,
+    "boundary_points": 7,
+    "boundary_kind": "convex_hull"
+  },
+  {
+    "ward": "Ward 21 - Harbour Park road",
+    "ward_number": 21,
+    "pincodes": [],
+    "areas": [],
+    "infra_anchors": [
+      {
+        "name": "AP EASTERN POWER DISTRIBUTION COMPANY",
+        "category": "substation",
+        "lat": 17.714915,
+        "lng": 83.3241403
+      }
+    ],
+    "existing_centroid": {
+      "lat": 17.7146419,
+      "lng": 83.3180021
+    },
+    "refined_centroid": {
+      "lat": 17.714778,
+      "lng": 83.321071
+    },
+    "centroid_shift_km": 0.33,
+    "boundary_points": 2,
+    "boundary_kind": "radius_circle"
+  },
+  {
+    "ward": "Ward 22 - Sivajipalem",
+    "ward_number": 22,
+    "pincodes": [],
+    "areas": [],
+    "infra_anchors": [],
+    "existing_centroid": {
+      "lat": 17.735462,
+      "lng": 83.3275007
+    },
+    "refined_centroid": {
+      "lat": 17.735462,
+      "lng": 83.327501
+    },
+    "centroid_shift_km": 0,
+    "boundary_points": 1,
+    "boundary_kind": "radius_circle"
+  },
+  {
+    "ward": "Ward 23 - EENADU Main Road",
+    "ward_number": 23,
+    "pincodes": [],
+    "areas": [],
+    "infra_anchors": [],
+    "existing_centroid": {
+      "lat": 17.7255443,
+      "lng": 83.3334491
+    },
+    "refined_centroid": {
+      "lat": 17.725544,
+      "lng": 83.333449
+    },
+    "centroid_shift_km": 0,
+    "boundary_points": 1,
+    "boundary_kind": "radius_circle"
+  },
+  {
+    "ward": "Ward 24 - Kranthi Nagar",
+    "ward_number": 24,
+    "pincodes": [
+      "530022"
+    ],
+    "areas": [
+      {
+        "name": "Isakathota",
+        "lat": 17.7412623,
+        "lng": 83.3248275,
+        "pincodes": [
+          "530022"
+        ]
+      }
+    ],
+    "infra_anchors": [],
+    "existing_centroid": {
+      "lat": 17.7411896,
+      "lng": 83.3260387
+    },
+    "refined_centroid": {
+      "lat": 17.741226,
+      "lng": 83.325433
+    },
+    "centroid_shift_km": 0.06,
+    "boundary_points": 2,
+    "boundary_kind": "radius_circle"
+  },
+  {
+    "ward": "Ward 25 - Madhura Nagar",
+    "ward_number": 25,
+    "pincodes": [],
+    "areas": [],
+    "infra_anchors": [],
+    "existing_centroid": {
+      "lat": 17.7332622,
+      "lng": 83.3061117
+    },
+    "refined_centroid": {
+      "lat": 17.733262,
+      "lng": 83.306112
+    },
+    "centroid_shift_km": 0,
+    "boundary_points": 1,
+    "boundary_kind": "radius_circle"
+  },
+  {
+    "ward": "Ward 26 - Lalitha Nagar",
+    "ward_number": 26,
+    "pincodes": [
+      "530016"
+    ],
+    "areas": [
+      {
+        "name": "Akkayyapalem",
+        "lat": 17.7352775,
+        "lng": 83.29995249999999,
+        "pincodes": [
+          "530016"
+        ]
+      }
+    ],
+    "infra_anchors": [],
+    "existing_centroid": {
+      "lat": 17.735181,
+      "lng": 83.301374
+    },
+    "refined_centroid": {
+      "lat": 17.735229,
+      "lng": 83.300663
+    },
+    "centroid_shift_km": 0.08,
+    "boundary_points": 2,
+    "boundary_kind": "radius_circle"
+  },
+  {
+    "ward": "Ward 27 - VIP Road",
+    "ward_number": 27,
+    "pincodes": [
+      "530003",
+      "530040"
+    ],
+    "areas": [
+      {
+        "name": "A U Engg College",
+        "lat": 17.728816,
+        "lng": 83.32008499999999,
+        "pincodes": [
+          "530003"
+        ]
+      },
+      {
+        "name": "Govt Dairy Farm",
+        "lat": 17.7222158,
+        "lng": 83.31443829999999,
+        "pincodes": [
+          "530040"
+        ]
+      }
+    ],
+    "infra_anchors": [
+      {
+        "name": "APEPDCL Sub-Station VIP Road.",
+        "category": "substation",
+        "lat": 17.7307615,
+        "lng": 83.31489479999999
+      },
+      {
+        "name": "BSNL Office",
+        "category": "bsnl",
+        "lat": 17.7304375,
+        "lng": 83.31339059999999
+      }
+    ],
+    "existing_centroid": {
+      "lat": 17.727303,
+      "lng": 83.3155883
+    },
+    "refined_centroid": {
+      "lat": 17.727907,
+      "lng": 83.315679
+    },
+    "centroid_shift_km": 0.07,
+    "boundary_points": 5,
+    "boundary_kind": "convex_hull"
+  },
+  {
+    "ward": "Ward 28 - Circuit House",
+    "ward_number": 28,
+    "pincodes": [],
+    "areas": [],
+    "infra_anchors": [
+      {
+        "name": "33KV D3-Visakhapatnam Sub Station Apepdcl",
+        "category": "substation",
+        "lat": 17.7149159,
+        "lng": 83.3065713
+      },
+      {
+        "name": "APEPDCL Circle Office",
+        "category": "substation",
+        "lat": 17.7151986,
+        "lng": 83.3071482
+      }
+    ],
+    "existing_centroid": {
+      "lat": 17.7157736,
+      "lng": 83.3070558
+    },
+    "refined_centroid": {
+      "lat": 17.715296,
+      "lng": 83.306925
+    },
+    "centroid_shift_km": 0.05,
+    "boundary_points": 3,
+    "boundary_kind": "convex_hull"
+  },
+  {
+    "ward": "Ward 29 - Kannayyapeta",
+    "ward_number": 29,
+    "pincodes": [
+      "530002"
+    ],
+    "areas": [
+      {
+        "name": "KGH",
+        "lat": 17.7087374,
+        "lng": 83.3060385,
+        "pincodes": [
+          "530002"
+        ]
+      },
+      {
+        "name": "Maharanipeta",
+        "lat": 17.7106864,
+        "lng": 83.313465,
+        "pincodes": [
+          "530002"
+        ]
+      }
+    ],
+    "infra_anchors": [],
+    "existing_centroid": {
+      "lat": 17.713914,
+      "lng": 83.3096372
+    },
+    "refined_centroid": {
+      "lat": 17.711363,
+      "lng": 83.310317
+    },
+    "centroid_shift_km": 0.29,
+    "boundary_points": 4,
+    "boundary_kind": "convex_hull"
+  },
+  {
+    "ward": "Ward 30 - Old Employment Office",
+    "ward_number": 30,
+    "pincodes": [],
+    "areas": [],
+    "infra_anchors": [],
+    "existing_centroid": {
+      "lat": 17.7463,
+      "lng": 83.3644
+    },
+    "refined_centroid": {
+      "lat": 17.7463,
+      "lng": 83.3644
+    },
+    "centroid_shift_km": 0,
+    "boundary_points": 1,
+    "boundary_kind": "radius_circle"
+  },
+  {
+    "ward": "Ward 31 - Bheem Nagar",
+    "ward_number": 31,
+    "pincodes": [],
+    "areas": [],
+    "infra_anchors": [],
+    "existing_centroid": {
+      "lat": 17.6988,
+      "lng": 83.3222
+    },
+    "refined_centroid": {
+      "lat": 17.6988,
+      "lng": 83.3222
+    },
+    "centroid_shift_km": 0,
+    "boundary_points": 1,
+    "boundary_kind": "radius_circle"
+  },
+  {
+    "ward": "Ward 32 - South Jail Road",
+    "ward_number": 32,
+    "pincodes": [
+      "530004",
+      "530020"
+    ],
+    "areas": [
+      {
+        "name": "LIC Building",
+        "lat": 17.7223862,
+        "lng": 83.3022885,
+        "pincodes": [
+          "530004"
+        ]
+      },
+      {
+        "name": "Dabagardens",
+        "lat": 17.7160309,
+        "lng": 83.2974204,
+        "pincodes": [
+          "530020"
+        ]
+      }
+    ],
+    "infra_anchors": [
+      {
+        "name": "Vizag Railway Station",
+        "category": "railway_station",
+        "lat": 17.7216616,
+        "lng": 83.29037009999999
+      },
+      {
+        "name": "Visakhapatnam Railway Station",
+        "category": "railway_station",
+        "lat": 17.7213754,
+        "lng": 83.2904709
+      },
+      {
+        "name": "Visakhapatnam Railway Station lipt road",
+        "category": "railway_station",
+        "lat": 17.7213754,
+        "lng": 83.2904709
+      },
+      {
+        "name": "Visakhapatnam Junction Railway Station",
+        "category": "railway_station",
+        "lat": 17.7214423,
+        "lng": 83.29066809999999
+      },
+      {
+        "name": "VSKP RAILWAY STATION",
+        "category": "railway_station",
+        "lat": 17.7208345,
+        "lng": 83.2892897
+      },
+      {
+        "name": "Vishakhapatnam Railway Junction Platform#8",
+        "category": "railway_station",
+        "lat": 17.7207748,
+        "lng": 83.28987409999999
+      },
+      {
+        "name": "Visakhapatnam Railway Station Platform#2 & 3",
+        "category": "railway_station",
+        "lat": 17.722494,
+        "lng": 83.28966319999999
+      },
+      {
+        "name": "railway station",
+        "category": "railway_station",
+        "lat": 17.7212004,
+        "lng": 83.28927639999999
+      },
+      {
+        "name": "Visakhapatnam Railway Station Out Gate",
+        "category": "railway_station",
+        "lat": 17.7227134,
+        "lng": 83.2909423
+      },
+      {
+        "name": "East Coast Railway Reservation Visakhapatnam",
+        "category": "railway_station",
+        "lat": 17.7189336,
+        "lng": 83.3027962
+      },
+      {
+        "name": "Railway station platform no5",
+        "category": "railway_station",
+        "lat": 17.7226326,
+        "lng": 83.28938959999999
+      },
+      {
+        "name": "Visakhapatnam Railway station Bus Bay (City Bus Stop)",
+        "category": "railway_station",
+        "lat": 17.7228427,
+        "lng": 83.29076289999999
+      },
+      {
+        "name": "Substation 4, East Coast Railway",
+        "category": "substation",
+        "lat": 17.72497,
+        "lng": 83.3001678
+      },
+      {
+        "name": "GE (ND) COMPLIANT CELL",
+        "category": "substation",
+        "lat": 17.724977,
+        "lng": 83.2950608
+      },
+      {
+        "name": "Eastern Power Distribution Company Of AP",
+        "category": "substation",
+        "lat": 17.7133503,
+        "lng": 83.2993154
+      },
+      {
+        "name": "Bsnl (Customer Care)",
+        "category": "bsnl",
+        "lat": 17.7176999,
+        "lng": 83.3016732
+      },
+      {
+        "name": "BSNL Office",
+        "category": "bsnl",
+        "lat": 17.7189364,
+        "lng": 83.30275209999999
+      },
+      {
+        "name": "BSNL GM Office",
+        "category": "bsnl",
+        "lat": 17.7193479,
+        "lng": 83.302854
+      },
+      {
+        "name": "BSNL Mobile Services & Bill collection Centre",
+        "category": "bsnl",
+        "lat": 17.7185603,
+        "lng": 83.3020906
+      },
+      {
+        "name": "BSNL Store",
+        "category": "bsnl",
+        "lat": 17.720447,
+        "lng": 83.29629
+      },
+      {
+        "name": "BSNL Office, 30-6-41/1, Krishna Gardens Rd",
+        "category": "bsnl",
+        "lat": 17.7186539,
+        "lng": 83.3019012
+      },
+      {
+        "name": "APEPDCL office, Thatichetlapalem section, Visakhapatnam, Andhrapradesh",
+        "category": "discom_office",
+        "lat": 17.7230353,
+        "lng": 83.29804659999999
+      }
+    ],
+    "existing_centroid": {
+      "lat": 17.7203848,
+      "lng": 83.2993944
+    },
+    "refined_centroid": {
+      "lat": 17.720507,
+      "lng": 83.295897
+    },
+    "centroid_shift_km": 0.37,
+    "boundary_points": 26,
+    "boundary_kind": "convex_hull"
+  },
+  {
+    "ward": "Ward 33 - South Jail Road",
+    "ward_number": 33,
+    "pincodes": [],
+    "areas": [],
+    "infra_anchors": [],
+    "existing_centroid": {
+      "lat": 17.7203848,
+      "lng": 83.2993944
+    },
+    "refined_centroid": {
+      "lat": 17.720385,
+      "lng": 83.299394
+    },
+    "centroid_shift_km": 0,
+    "boundary_points": 1,
+    "boundary_kind": "radius_circle"
+  },
+  {
+    "ward": "Ward 34 - SRMT Road",
+    "ward_number": 34,
+    "pincodes": [],
+    "areas": [],
+    "infra_anchors": [
+      {
+        "name": "Ahaskara Transformers And Services Private Limited",
+        "category": "substation",
+        "lat": 17.698785,
+        "lng": 83.1965565
+      }
+    ],
+    "existing_centroid": {
+      "lat": 17.6922185,
+      "lng": 83.2024528
+    },
+    "refined_centroid": {
+      "lat": 17.695502,
+      "lng": 83.199505
+    },
+    "centroid_shift_km": 0.48,
+    "boundary_points": 2,
+    "boundary_kind": "radius_circle"
+  },
+  {
+    "ward": "Ward 35 - Stadium Road",
+    "ward_number": 35,
+    "pincodes": [],
+    "areas": [],
+    "infra_anchors": [],
+    "existing_centroid": {
+      "lat": 17.7409404,
+      "lng": 83.3020657
+    },
+    "refined_centroid": {
+      "lat": 17.74094,
+      "lng": 83.302066
+    },
+    "centroid_shift_km": 0,
+    "boundary_points": 1,
+    "boundary_kind": "radius_circle"
+  },
+  {
+    "ward": "Ward 36 - Agraharam Veedhi",
+    "ward_number": 36,
+    "pincodes": [
+      "530024",
+      "530040"
+    ],
+    "areas": [],
+    "infra_anchors": [],
+    "existing_centroid": {
+      "lat": 17.7506,
+      "lng": 83.2973
+    },
+    "refined_centroid": {
+      "lat": 17.752959,
+      "lng": 83.293814
+    },
+    "centroid_shift_km": 0.45,
+    "boundary_points": 3,
+    "boundary_kind": "convex_hull"
+  },
+  {
+    "ward": "Ward 37 - Relli Veedhi",
+    "ward_number": 37,
+    "pincodes": [
+      "530002"
+    ],
+    "areas": [
+      {
+        "name": "Turners Choultry",
+        "lat": 17.7090528,
+        "lng": 83.3009752,
+        "pincodes": [
+          "530002"
+        ]
+      }
+    ],
+    "infra_anchors": [
+      {
+        "name": "APEPDCL",
+        "category": "substation",
+        "lat": 17.7026874,
+        "lng": 83.2941373
+      },
+      {
+        "name": "BSNL Velampeta Telephone Exchange",
+        "category": "bsnl",
+        "lat": 17.7039432,
+        "lng": 83.29650099999999
+      },
+      {
+        "name": "BSNL Office",
+        "category": "bsnl",
+        "lat": 17.7042675,
+        "lng": 83.29724259999999
+      },
+      {
+        "name": "Laxminarayana APEPDCL",
+        "category": "discom_office",
+        "lat": 17.7028405,
+        "lng": 83.2942133
+      }
+    ],
+    "existing_centroid": {
+      "lat": 17.7025354,
+      "lng": 83.3034462
+    },
+    "refined_centroid": {
+      "lat": 17.704221,
+      "lng": 83.297753
+    },
+    "centroid_shift_km": 0.63,
+    "boundary_points": 6,
+    "boundary_kind": "convex_hull"
+  },
+  {
+    "ward": "Ward 38 - Agraharam Veedhi",
+    "ward_number": 38,
+    "pincodes": [
+      "530048"
+    ],
+    "areas": [
+      {
+        "name": "Gayatri Engg College",
+        "lat": 17.8204597,
+        "lng": 83.342295,
+        "pincodes": [
+          "530048"
+        ]
+      }
+    ],
+    "infra_anchors": [],
+    "existing_centroid": {
+      "lat": 17.8206,
+      "lng": 83.3258
+    },
+    "refined_centroid": {
+      "lat": 17.822838,
+      "lng": 83.331197
+    },
+    "centroid_shift_km": 0.62,
+    "boundary_points": 3,
+    "boundary_kind": "convex_hull"
+  },
+  {
+    "ward": "Ward 39 - Thomson Street",
+    "ward_number": 39,
+    "pincodes": [
+      "530001",
+      "530035"
+    ],
+    "areas": [
+      {
+        "name": "Kurupam Market",
+        "lat": 17.6985145,
+        "lng": 83.294862,
+        "pincodes": [
+          "530001"
+        ]
+      },
+      {
+        "name": "Visakhapatnam Port",
+        "lat": 17.6944247,
+        "lng": 83.30081009999999,
+        "pincodes": [
+          "530035"
+        ]
+      }
+    ],
+    "infra_anchors": [
+      {
+        "name": "AP Transco Visakhapatnam Port 132 Kv Sub Station",
+        "category": "substation",
+        "lat": 17.70444,
+        "lng": 83.2904605
+      }
+    ],
+    "existing_centroid": {
+      "lat": 17.693291,
+      "lng": 83.2938056
+    },
+    "refined_centroid": {
+      "lat": 17.698092,
+      "lng": 83.295204
+    },
+    "centroid_shift_km": 0.55,
+    "boundary_points": 5,
+    "boundary_kind": "convex_hull"
+  },
+  {
+    "ward": "Ward 40 - Akc Colony",
+    "ward_number": 40,
+    "pincodes": [],
+    "areas": [],
+    "infra_anchors": [],
+    "existing_centroid": {
+      "lat": 17.6901387,
+      "lng": 83.2395271
+    },
+    "refined_centroid": {
+      "lat": 17.690139,
+      "lng": 83.239527
+    },
+    "centroid_shift_km": 0,
+    "boundary_points": 1,
+    "boundary_kind": "radius_circle"
+  },
+  {
+    "ward": "Ward 41 - Jaganadhapuram",
+    "ward_number": 41,
+    "pincodes": [],
+    "areas": [],
+    "infra_anchors": [
+      {
+        "name": "BSNL Telephone Exchange Lalithanagar",
+        "category": "bsnl",
+        "lat": 17.7327009,
+        "lng": 83.2996745
+      }
+    ],
+    "existing_centroid": {
+      "lat": 17.730362,
+      "lng": 83.2986712
+    },
+    "refined_centroid": {
+      "lat": 17.731531,
+      "lng": 83.299173
+    },
+    "centroid_shift_km": 0.14,
+    "boundary_points": 2,
+    "boundary_kind": "radius_circle"
+  },
+  {
+    "ward": "Ward 42 - Jaganadhapuram",
+    "ward_number": 42,
+    "pincodes": [],
+    "areas": [],
+    "infra_anchors": [],
+    "existing_centroid": {
+      "lat": 17.730362,
+      "lng": 83.2986712
+    },
+    "refined_centroid": {
+      "lat": 17.730362,
+      "lng": 83.298671
+    },
+    "centroid_shift_km": 0,
+    "boundary_points": 1,
+    "boundary_kind": "radius_circle"
+  },
+  {
+    "ward": "Ward 43 - Akkayyapalem 80 Feet road",
+    "ward_number": 43,
+    "pincodes": [],
+    "areas": [],
+    "infra_anchors": [],
+    "existing_centroid": {
+      "lat": 17.7353412,
+      "lng": 83.2970861
+    },
+    "refined_centroid": {
+      "lat": 17.735341,
+      "lng": 83.297086
+    },
+    "centroid_shift_km": 0,
+    "boundary_points": 1,
+    "boundary_kind": "radius_circle"
+  },
+  {
+    "ward": "Ward 44 - Santoshi Matha Temple",
+    "ward_number": 44,
+    "pincodes": [],
+    "areas": [],
+    "infra_anchors": [],
+    "existing_centroid": {
+      "lat": 17.7916,
+      "lng": 83.3093
+    },
+    "refined_centroid": {
+      "lat": 17.7916,
+      "lng": 83.3093
+    },
+    "centroid_shift_km": 0,
+    "boundary_points": 1,
+    "boundary_kind": "radius_circle"
+  },
+  {
+    "ward": "Ward 45 - Port Quarters",
+    "ward_number": 45,
+    "pincodes": [
+      "530024"
+    ],
+    "areas": [
+      {
+        "name": "Salagramapuram",
+        "lat": 17.7405973,
+        "lng": 83.2896351,
+        "pincodes": [
+          "530024"
+        ]
+      }
+    ],
+    "infra_anchors": [
+      {
+        "name": "VPT Electrical Sub station",
+        "category": "substation",
+        "lat": 17.739711,
+        "lng": 83.2919138
+      },
+      {
+        "name": "Narsimhanagar BSNL Telephone Exchange",
+        "category": "bsnl",
+        "lat": 17.7419933,
+        "lng": 83.2906154
+      }
+    ],
+    "existing_centroid": {
+      "lat": 17.7416425,
+      "lng": 83.2927399
+    },
+    "refined_centroid": {
+      "lat": 17.740986,
+      "lng": 83.291226
+    },
+    "centroid_shift_km": 0.18,
+    "boundary_points": 4,
+    "boundary_kind": "convex_hull"
+  },
+  {
+    "ward": "Ward 46 - Madhusudhan Nagar",
+    "ward_number": 46,
+    "pincodes": [
+      "530008"
+    ],
+    "areas": [
+      {
+        "name": "Kancharapalem",
+        "lat": 17.7354064,
+        "lng": 83.27378569999999,
+        "pincodes": [
+          "530008"
+        ]
+      }
+    ],
+    "infra_anchors": [
+      {
+        "name": "APEPDCL Substation",
+        "category": "substation",
+        "lat": 17.7470199,
+        "lng": 83.2735716
+      }
+    ],
+    "existing_centroid": {
+      "lat": 17.7432952,
+      "lng": 83.2789861
+    },
+    "refined_centroid": {
+      "lat": 17.74003,
+      "lng": 83.275257
+    },
+    "centroid_shift_km": 0.54,
+    "boundary_points": 4,
+    "boundary_kind": "convex_hull"
+  },
+  {
+    "ward": "Ward 47 - Ambedkar Nagar",
+    "ward_number": 47,
+    "pincodes": [],
+    "areas": [],
+    "infra_anchors": [],
+    "existing_centroid": {
+      "lat": 17.7675654,
+      "lng": 83.31421089999999
+    },
+    "refined_centroid": {
+      "lat": 17.767565,
+      "lng": 83.314211
+    },
+    "centroid_shift_km": 0,
+    "boundary_points": 1,
+    "boundary_kind": "radius_circle"
+  },
+  {
+    "ward": "Ward 48 - ASR Nagar",
+    "ward_number": 48,
+    "pincodes": [],
+    "areas": [],
+    "infra_anchors": [
+      {
+        "name": "APEPDCL ASRNagar 33/11KV Substation",
+        "category": "substation",
+        "lat": 17.7467206,
+        "lng": 83.3077728
+      }
+    ],
+    "existing_centroid": {
+      "lat": 17.7456511,
+      "lng": 83.3131307
+    },
+    "refined_centroid": {
+      "lat": 17.746186,
+      "lng": 83.310452
+    },
+    "centroid_shift_km": 0.29,
+    "boundary_points": 2,
+    "boundary_kind": "radius_circle"
+  },
+  {
+    "ward": "Ward 49 - Kamakshi Nagar",
+    "ward_number": 49,
+    "pincodes": [],
+    "areas": [],
+    "infra_anchors": [
+      {
+        "name": "11kv Substation.",
+        "category": "substation",
+        "lat": 17.6732227,
+        "lng": 83.2806567
+      }
+    ],
+    "existing_centroid": {
+      "lat": 17.6819,
+      "lng": 83.2791
+    },
+    "refined_centroid": {
+      "lat": 17.677561,
+      "lng": 83.279878
+    },
+    "centroid_shift_km": 0.49,
+    "boundary_points": 2,
+    "boundary_kind": "radius_circle"
+  },
+  {
+    "ward": "Ward 50 - Manchu Konda Thota",
+    "ward_number": 50,
+    "pincodes": [],
+    "areas": [],
+    "infra_anchors": [],
+    "existing_centroid": {
+      "lat": 17.783,
+      "lng": 83.3433
+    },
+    "refined_centroid": {
+      "lat": 17.783,
+      "lng": 83.3433
+    },
+    "centroid_shift_km": 0,
+    "boundary_points": 1,
+    "boundary_kind": "radius_circle"
+  },
+  {
+    "ward": "Ward 51 - Madhavadhara",
+    "ward_number": 51,
+    "pincodes": [
+      "530007",
+      "530028"
+    ],
+    "areas": [
+      {
+        "name": "Muralinagar",
+        "lat": 17.7472398,
+        "lng": 83.2626433,
+        "pincodes": [
+          "530007"
+        ]
+      },
+      {
+        "name": "Simhachalam Hills",
+        "lat": 17.7606318,
+        "lng": 83.266657,
+        "pincodes": [
+          "530028"
+        ]
+      }
+    ],
+    "infra_anchors": [
+      {
+        "name": "33/kv / 11/kv substation tennetinagar",
+        "category": "substation",
+        "lat": 17.7503624,
+        "lng": 83.2624925
+      }
+    ],
+    "existing_centroid": {
+      "lat": 17.7486038,
+      "lng": 83.2581908
+    },
+    "refined_centroid": {
+      "lat": 17.751138,
+      "lng": 83.263328
+    },
+    "centroid_shift_km": 0.61,
+    "boundary_points": 5,
+    "boundary_kind": "convex_hull"
+  },
+  {
+    "ward": "Ward 52 - Air Port & New Police Quarters",
+    "ward_number": 52,
+    "pincodes": [],
+    "areas": [],
+    "infra_anchors": [],
+    "existing_centroid": {
+      "lat": 17.7106,
+      "lng": 83.3589
+    },
+    "refined_centroid": {
+      "lat": 17.7106,
+      "lng": 83.3589
+    },
+    "centroid_shift_km": 0,
+    "boundary_points": 1,
+    "boundary_kind": "radius_circle"
+  },
+  {
+    "ward": "Ward 53 - Bhaskar Gardens",
+    "ward_number": 53,
+    "pincodes": [
+      "530009",
+      "530018"
+    ],
+    "areas": [
+      {
+        "name": "Marripalem Vuda Colony",
+        "lat": 17.740063,
+        "lng": 83.251907,
+        "pincodes": [
+          "530009"
+        ]
+      },
+      {
+        "name": "Marripalem",
+        "lat": 17.740063,
+        "lng": 83.251907,
+        "pincodes": [
+          "530018"
+        ]
+      }
+    ],
+    "infra_anchors": [
+      {
+        "name": "Madhawadhara Substation",
+        "category": "substation",
+        "lat": 17.7507867,
+        "lng": 83.24469669999999
+      },
+      {
+        "name": "Electrical Sub-Station",
+        "category": "substation",
+        "lat": 17.7450426,
+        "lng": 83.24234469999999
+      }
+    ],
+    "existing_centroid": {
+      "lat": 17.7419061,
+      "lng": 83.24735969999999
+    },
+    "refined_centroid": {
+      "lat": 17.743631,
+      "lng": 83.248359
+    },
+    "centroid_shift_km": 0.22,
+    "boundary_points": 6,
+    "boundary_kind": "convex_hull"
+  },
+  {
+    "ward": "Ward 54 - 104 Area Main Road",
+    "ward_number": 54,
+    "pincodes": [],
+    "areas": [],
+    "infra_anchors": [],
+    "existing_centroid": {
+      "lat": 17.7255443,
+      "lng": 83.3334491
+    },
+    "refined_centroid": {
+      "lat": 17.725544,
+      "lng": 83.333449
+    },
+    "centroid_shift_km": 0,
+    "boundary_points": 1,
+    "boundary_kind": "radius_circle"
+  },
+  {
+    "ward": "Ward 55 - Jashuvanagar",
+    "ward_number": 55,
+    "pincodes": [
+      "530045"
+    ],
+    "areas": [
+      {
+        "name": "Gitam Engg. College",
+        "lat": 17.7805278,
+        "lng": 83.374883,
+        "pincodes": [
+          "530045"
+        ]
+      },
+      {
+        "name": "Sagar Nagar",
+        "lat": 17.7651566,
+        "lng": 83.356231,
+        "pincodes": [
+          "530045"
+        ]
+      },
+      {
+        "name": "Yendada",
+        "lat": 17.7751229,
+        "lng": 83.3632739,
+        "pincodes": [
+          "530045"
+        ]
+      }
+    ],
+    "infra_anchors": [
+      {
+        "name": "Sagar nagar electricity office",
+        "category": "substation",
+        "lat": 17.7679922,
+        "lng": 83.3649337
+      },
+      {
+        "name": "Electrical Sub Station",
+        "category": "substation",
+        "lat": 17.78245,
+        "lng": 83.3585028
+      },
+      {
+        "name": "Substation",
+        "category": "substation",
+        "lat": 17.7724632,
+        "lng": 83.3709071
+      },
+      {
+        "name": "APEPDCL Office, Eastern Power",
+        "category": "discom_office",
+        "lat": 17.767611,
+        "lng": 83.36595899999999
+      },
+      {
+        "name": "APEPDCL TRAINING CENTRE EPTI and CoEET",
+        "category": "discom_office",
+        "lat": 17.7674354,
+        "lng": 83.3664123
+      }
+    ],
+    "existing_centroid": {
+      "lat": 17.7801,
+      "lng": 83.3622
+    },
+    "refined_centroid": {
+      "lat": 17.77467,
+      "lng": 83.36569
+    },
+    "centroid_shift_km": 0.71,
+    "boundary_points": 10,
+    "boundary_kind": "convex_hull"
+  },
+  {
+    "ward": "Ward 56 - Dayanand nagar",
+    "ward_number": 56,
+    "pincodes": [],
+    "areas": [],
+    "infra_anchors": [],
+    "existing_centroid": {
+      "lat": 17.8205,
+      "lng": 83.1553
+    },
+    "refined_centroid": {
+      "lat": 17.8205,
+      "lng": 83.1553
+    },
+    "centroid_shift_km": 0,
+    "boundary_points": 1,
+    "boundary_kind": "radius_circle"
+  },
+  {
+    "ward": "Ward 57 - Asivanipalem",
+    "ward_number": 57,
+    "pincodes": [
+      "530047"
+    ],
+    "areas": [],
+    "infra_anchors": [],
+    "existing_centroid": {
+      "lat": 17.7787,
+      "lng": 83.1692
+    },
+    "refined_centroid": {
+      "lat": 17.779968,
+      "lng": 83.175089
+    },
+    "centroid_shift_km": 0.64,
+    "boundary_points": 2,
+    "boundary_kind": "radius_circle"
+  },
+  {
+    "ward": "Ward 58 - Ajantha Colony",
+    "ward_number": 58,
+    "pincodes": [
+      "530015"
+    ],
+    "areas": [
+      {
+        "name": "Zinc Smelter P",
+        "lat": 17.6883446,
+        "lng": 83.2242184,
+        "pincodes": [
+          "530015"
+        ]
+      }
+    ],
+    "infra_anchors": [],
+    "existing_centroid": {
+      "lat": 17.6913219,
+      "lng": 83.2315287
+    },
+    "refined_centroid": {
+      "lat": 17.689833,
+      "lng": 83.227874
+    },
+    "centroid_shift_km": 0.42,
+    "boundary_points": 2,
+    "boundary_kind": "radius_circle"
+  },
+  {
+    "ward": "Ward 59 - Ashok Nagar Colony",
+    "ward_number": 59,
+    "pincodes": [
+      "530016"
+    ],
+    "areas": [
+      {
+        "name": "Dwarakanagar",
+        "lat": 17.7294167,
+        "lng": 83.3092679,
+        "pincodes": [
+          "530016"
+        ]
+      }
+    ],
+    "infra_anchors": [
+      {
+        "name": "Electricity Office and Substation",
+        "category": "substation",
+        "lat": 17.7239134,
+        "lng": 83.3049556
+      }
+    ],
+    "existing_centroid": {
+      "lat": 17.7261165,
+      "lng": 83.3090675
+    },
+    "refined_centroid": {
+      "lat": 17.726482,
+      "lng": 83.307764
+    },
+    "centroid_shift_km": 0.14,
+    "boundary_points": 3,
+    "boundary_kind": "convex_hull"
+  },
+  {
+    "ward": "Ward 60 - Ashok Nagar",
+    "ward_number": 60,
+    "pincodes": [],
+    "areas": [],
+    "infra_anchors": [],
+    "existing_centroid": {
+      "lat": 17.7261165,
+      "lng": 83.3090675
+    },
+    "refined_centroid": {
+      "lat": 17.726116,
+      "lng": 83.309067
+    },
+    "centroid_shift_km": 0,
+    "boundary_points": 1,
+    "boundary_kind": "radius_circle"
+  },
+  {
+    "ward": "Ward 61 - Gandhiji Street",
+    "ward_number": 61,
+    "pincodes": [
+      "530003",
+      "530016"
+    ],
+    "areas": [
+      {
+        "name": "Ghandhi Place",
+        "lat": 17.7300005,
+        "lng": 83.3016545,
+        "pincodes": [
+          "530003"
+        ]
+      }
+    ],
+    "infra_anchors": [
+      {
+        "name": "apepdcl S.E office kakinada",
+        "category": "discom_office",
+        "lat": 17.7272791,
+        "lng": 83.3006637
+      }
+    ],
+    "existing_centroid": {
+      "lat": 17.7300005,
+      "lng": 83.3016545
+    },
+    "refined_centroid": {
+      "lat": 17.729175,
+      "lng": 83.301351
+    },
+    "centroid_shift_km": 0.1,
+    "boundary_points": 4,
+    "boundary_kind": "convex_hull"
+  },
+  {
+    "ward": "Ward 62 - Achi Naidu Thota",
+    "ward_number": 62,
+    "pincodes": [
+      "530027",
+      "530029"
+    ],
+    "areas": [
+      {
+        "name": "R R V Puram",
+        "lat": 17.757362,
+        "lng": 83.2144596,
+        "pincodes": [
+          "530029"
+        ]
+      }
+    ],
+    "infra_anchors": [],
+    "existing_centroid": {
+      "lat": 17.7575234,
+      "lng": 83.2080778
+    },
+    "refined_centroid": {
+      "lat": 17.753841,
+      "lng": 83.208315
+    },
+    "centroid_shift_km": 0.41,
+    "boundary_points": 3,
+    "boundary_kind": "convex_hull"
+  },
+  {
+    "ward": "Ward 63 - Chinthala Lova",
+    "ward_number": 63,
+    "pincodes": [],
+    "areas": [],
+    "infra_anchors": [
+      {
+        "name": "BSNL Telephone Exchange, Akkayapalem",
+        "category": "bsnl",
+        "lat": 17.7305358,
+        "lng": 83.2966816
+      },
+      {
+        "name": "Electrical Sub-Station APEPDCL",
+        "category": "discom_office",
+        "lat": 17.7322635,
+        "lng": 83.29741829999999
+      }
+    ],
+    "existing_centroid": {
+      "lat": 17.7313142,
+      "lng": 83.29736890000001
+    },
+    "refined_centroid": {
+      "lat": 17.731371,
+      "lng": 83.297156
+    },
+    "centroid_shift_km": 0.02,
+    "boundary_points": 3,
+    "boundary_kind": "convex_hull"
+  },
+  {
+    "ward": "Ward 64 - Yarada",
+    "ward_number": 64,
+    "pincodes": [
+      "530005"
+    ],
+    "areas": [
+      {
+        "name": "Yarada",
+        "lat": 17.6630996,
+        "lng": 83.27802779999999,
+        "pincodes": [
+          "530005"
+        ]
+      }
+    ],
+    "infra_anchors": [],
+    "existing_centroid": {
+      "lat": 17.6630996,
+      "lng": 83.27802779999999
+    },
+    "refined_centroid": {
+      "lat": 17.6631,
+      "lng": 83.278028
+    },
+    "centroid_shift_km": 0,
+    "boundary_points": 2,
+    "boundary_kind": "radius_circle"
+  },
+  {
+    "ward": "Ward 65 - Sanjeevagiricolony",
+    "ward_number": 65,
+    "pincodes": [],
+    "areas": [],
+    "infra_anchors": [
+      {
+        "name": "Bhanojithota sub station",
+        "category": "substation",
+        "lat": 17.6770104,
+        "lng": 83.22120249999999
+      }
+    ],
+    "existing_centroid": {
+      "lat": 17.6804113,
+      "lng": 83.21728379999999
+    },
+    "refined_centroid": {
+      "lat": 17.678711,
+      "lng": 83.219243
+    },
+    "centroid_shift_km": 0.28,
+    "boundary_points": 2,
+    "boundary_kind": "radius_circle"
+  },
+  {
+    "ward": "Ward 66 - Azeemabad",
+    "ward_number": 66,
+    "pincodes": [
+      "530043"
+    ],
+    "areas": [
+      {
+        "name": "Dayalnagar",
+        "lat": 17.6754715,
+        "lng": 83.2150266,
+        "pincodes": [
+          "530043"
+        ]
+      }
+    ],
+    "infra_anchors": [],
+    "existing_centroid": {
+      "lat": 17.6774041,
+      "lng": 83.2121164
+    },
+    "refined_centroid": {
+      "lat": 17.676438,
+      "lng": 83.213572
+    },
+    "centroid_shift_km": 0.19,
+    "boundary_points": 2,
+    "boundary_kind": "radius_circle"
+  },
+  {
+    "ward": "Ward 67 - Ganesh Nagar",
+    "ward_number": 67,
+    "pincodes": [
+      "530009",
+      "530027"
+    ],
+    "areas": [
+      {
+        "name": "N A D",
+        "lat": 17.7447092,
+        "lng": 83.2318634,
+        "pincodes": [
+          "530009"
+        ]
+      },
+      {
+        "name": "NSTL",
+        "lat": 17.7464123,
+        "lng": 83.2385559,
+        "pincodes": [
+          "530027"
+        ]
+      }
+    ],
+    "infra_anchors": [
+      {
+        "name": "BSNL Telephone Exchange",
+        "category": "bsnl",
+        "lat": 17.7431163,
+        "lng": 83.2362749
+      }
+    ],
+    "existing_centroid": {
+      "lat": 17.7411891,
+      "lng": 83.2365482
+    },
+    "refined_centroid": {
+      "lat": 17.743857,
+      "lng": 83.235811
+    },
+    "centroid_shift_km": 0.31,
+    "boundary_points": 4,
+    "boundary_kind": "convex_hull"
+  },
+  {
+    "ward": "Ward 68 - Akkireddy palem Main road Akkireddy Palem",
+    "ward_number": 68,
+    "pincodes": [
+      "530012",
+      "530049"
+    ],
+    "areas": [
+      {
+        "name": "Jaggayyapalem",
+        "lat": 17.7212715,
+        "lng": 83.1960967,
+        "pincodes": [
+          "530012"
+        ]
+      },
+      {
+        "name": "Sheelanagar",
+        "lat": 17.7161359,
+        "lng": 83.19668490000001,
+        "pincodes": [
+          "530012"
+        ]
+      }
+    ],
+    "infra_anchors": [
+      {
+        "name": "Electrical sub station,Sathivanipalem",
+        "category": "substation",
+        "lat": 17.723698,
+        "lng": 83.1859868
+      },
+      {
+        "name": "BSNL Office",
+        "category": "bsnl",
+        "lat": 17.7201978,
+        "lng": 83.19881939999999
+      },
+      {
+        "name": "APEPDCL",
+        "category": "discom_office",
+        "lat": 17.7236756,
+        "lng": 83.1860073
+      }
+    ],
+    "existing_centroid": {
+      "lat": 17.7237581,
+      "lng": 83.1900371
+    },
+    "refined_centroid": {
+      "lat": 17.72123,
+      "lng": 83.189477
+    },
+    "centroid_shift_km": 0.29,
+    "boundary_points": 7,
+    "boundary_kind": "convex_hull"
+  },
+  {
+    "ward": "Ward 69 - Chukkavaani palem",
+    "ward_number": 69,
+    "pincodes": [
+      "530040"
+    ],
+    "areas": [
+      {
+        "name": "Sri krishnapuram",
+        "lat": 17.7717683,
+        "lng": 83.2801588,
+        "pincodes": [
+          "530040"
+        ]
+      }
+    ],
+    "infra_anchors": [],
+    "existing_centroid": {
+      "lat": 17.7849,
+      "lng": 83.2696
+    },
+    "refined_centroid": {
+      "lat": 17.778334,
+      "lng": 83.274879
+    },
+    "centroid_shift_km": 0.92,
+    "boundary_points": 2,
+    "boundary_kind": "radius_circle"
+  },
+  {
+    "ward": "Ward 70 - Chattivanipalem",
+    "ward_number": 70,
+    "pincodes": [
+      "530012"
+    ],
+    "areas": [
+      {
+        "name": "B H P V",
+        "lat": 17.702254,
+        "lng": 83.2009613,
+        "pincodes": [
+          "530012"
+        ]
+      },
+      {
+        "name": "Mindi",
+        "lat": 17.7032853,
+        "lng": 83.21572479999999,
+        "pincodes": [
+          "530012"
+        ]
+      }
+    ],
+    "infra_anchors": [
+      {
+        "name": "Electrical Substation",
+        "category": "substation",
+        "lat": 17.6931701,
+        "lng": 83.20727180000002
+      },
+      {
+        "name": "Asst.Divisional Engineer/Asst.Engineer Eastern Power Distribution Company Of Andhra Pradesh Limited",
+        "category": "substation",
+        "lat": 17.7037523,
+        "lng": 83.2053734
+      },
+      {
+        "name": "BSNL - Mindi Telephone Exchange",
+        "category": "bsnl",
+        "lat": 17.7017692,
+        "lng": 83.2066526
+      }
+    ],
+    "existing_centroid": {
+      "lat": 17.693852,
+      "lng": 83.2047934
+    },
+    "refined_centroid": {
+      "lat": 17.69968,
+      "lng": 83.206796
+    },
+    "centroid_shift_km": 0.68,
+    "boundary_points": 6,
+    "boundary_kind": "convex_hull"
+  },
+  {
+    "ward": "Ward 71 - Auto Nagar",
+    "ward_number": 71,
+    "pincodes": [
+      "530012"
+    ],
+    "areas": [
+      {
+        "name": "Autonagar",
+        "lat": 17.6962258,
+        "lng": 83.1874184,
+        "pincodes": [
+          "530012"
+        ]
+      }
+    ],
+    "infra_anchors": [
+      {
+        "name": "Electrical substation",
+        "category": "substation",
+        "lat": 17.6910488,
+        "lng": 83.1905908
+      },
+      {
+        "name": "IndPower",
+        "category": "substation",
+        "lat": 17.7009774,
+        "lng": 83.1800658
+      },
+      {
+        "name": "Andhra Pradesh Eastern Power Distribution Corporation Limited",
+        "category": "discom_office",
+        "lat": 17.6904382,
+        "lng": 83.1902166
+      }
+    ],
+    "existing_centroid": {
+      "lat": 17.6962258,
+      "lng": 83.1874184
+    },
+    "refined_centroid": {
+      "lat": 17.695678,
+      "lng": 83.187901
+    },
+    "centroid_shift_km": 0.08,
+    "boundary_points": 6,
+    "boundary_kind": "convex_hull"
+  },
+  {
+    "ward": "Ward 72 - Chinagantyada SC Colony",
+    "ward_number": 72,
+    "pincodes": [],
+    "areas": [],
+    "infra_anchors": [
+      {
+        "name": "Electrical Sub-station",
+        "category": "substation",
+        "lat": 17.6832455,
+        "lng": 83.1934849
+      },
+      {
+        "name": "Electric sub-station vadlapudi",
+        "category": "substation",
+        "lat": 17.6828066,
+        "lng": 83.1787385
+      },
+      {
+        "name": "APEPDCL electric control",
+        "category": "discom_office",
+        "lat": 17.6831487,
+        "lng": 83.1933967
+      }
+    ],
+    "existing_centroid": {
+      "lat": 17.6807712,
+      "lng": 83.19236339999999
+    },
+    "refined_centroid": {
+      "lat": 17.682493,
+      "lng": 83.189496
+    },
+    "centroid_shift_km": 0.36,
+    "boundary_points": 4,
+    "boundary_kind": "convex_hull"
+  },
+  {
+    "ward": "Ward 73 - China Nadupuru part",
+    "ward_number": 73,
+    "pincodes": [],
+    "areas": [],
+    "infra_anchors": [
+      {
+        "name": "BSNL OFFICE",
+        "category": "bsnl",
+        "lat": 17.6385583,
+        "lng": 83.1727676
+      }
+    ],
+    "existing_centroid": {
+      "lat": 17.6685742,
+      "lng": 83.1949839
+    },
+    "refined_centroid": {
+      "lat": 17.653566,
+      "lng": 83.183876
+    },
+    "centroid_shift_km": 2.04,
+    "boundary_points": 2,
+    "boundary_kind": "radius_circle"
+  },
+  {
+    "ward": "Ward 74 - Nehru Nagar",
+    "ward_number": 74,
+    "pincodes": [],
+    "areas": [],
+    "infra_anchors": [],
+    "existing_centroid": {
+      "lat": 17.7696223,
+      "lng": 83.31284889999999
+    },
+    "refined_centroid": {
+      "lat": 17.769622,
+      "lng": 83.312849
+    },
+    "centroid_shift_km": 0,
+    "boundary_points": 1,
+    "boundary_kind": "radius_circle"
+  },
+  {
+    "ward": "Ward 75 - Pedagantyada",
+    "ward_number": 75,
+    "pincodes": [
+      "530044"
+    ],
+    "areas": [
+      {
+        "name": "Pedagantyada",
+        "lat": 17.6665858,
+        "lng": 83.20630829999999,
+        "pincodes": [
+          "530044"
+        ]
+      }
+    ],
+    "infra_anchors": [
+      {
+        "name": "APEPDCL Pedagantyada Sub-Station",
+        "category": "substation",
+        "lat": 17.6683825,
+        "lng": 83.2081479
+      },
+      {
+        "name": "Aptransco Gangavaram Port Substation",
+        "category": "substation",
+        "lat": 17.6589563,
+        "lng": 83.20717119999999
+      }
+    ],
+    "existing_centroid": {
+      "lat": 17.6665858,
+      "lng": 83.20630829999999
+    },
+    "refined_centroid": {
+      "lat": 17.665128,
+      "lng": 83.206984
+    },
+    "centroid_shift_km": 0.18,
+    "boundary_points": 4,
+    "boundary_kind": "convex_hull"
+  },
+  {
+    "ward": "Ward 76 - Bala Cheruvu Sivalayam Veedhi",
+    "ward_number": 76,
+    "pincodes": [
+      "530031",
+      "530044"
+    ],
+    "areas": [
+      {
+        "name": "Visakhapatnam Steel Project",
+        "lat": 17.6345641,
+        "lng": 83.1970511,
+        "pincodes": [
+          "530031"
+        ]
+      },
+      {
+        "name": "Balacheruvu",
+        "lat": 17.6542733,
+        "lng": 83.1960966,
+        "pincodes": [
+          "530044"
+        ]
+      },
+      {
+        "name": "Nadupuru",
+        "lat": 17.6714105,
+        "lng": 83.1983904,
+        "pincodes": [
+          "530044"
+        ]
+      }
+    ],
+    "infra_anchors": [
+      {
+        "name": "Bsnl Exchange",
+        "category": "bsnl",
+        "lat": 17.6709718,
+        "lng": 83.20088109999999
+      }
+    ],
+    "existing_centroid": {
+      "lat": 17.6673412,
+      "lng": 83.19880409999999
+    },
+    "refined_centroid": {
+      "lat": 17.659446,
+      "lng": 83.198046
+    },
+    "centroid_shift_km": 0.88,
+    "boundary_points": 6,
+    "boundary_kind": "convex_hull"
+  },
+  {
+    "ward": "Ward 77 - Goruduvanipalem",
+    "ward_number": 77,
+    "pincodes": [
+      "530004",
+      "530014",
+      "531163"
+    ],
+    "areas": [
+      {
+        "name": "Gnanapuram",
+        "lat": 17.7207517,
+        "lng": 83.28471549999999,
+        "pincodes": [
+          "530004"
+        ]
+      },
+      {
+        "name": "Boyapalem",
+        "lat": 17.7324917,
+        "lng": 83.2842438,
+        "pincodes": [
+          "531163"
+        ]
+      }
+    ],
+    "infra_anchors": [
+      {
+        "name": "AP TRANSCO",
+        "category": "substation",
+        "lat": 17.7282536,
+        "lng": 83.2813903
+      },
+      {
+        "name": "Electricity Govt Office",
+        "category": "substation",
+        "lat": 17.7278364,
+        "lng": 83.28132269999999
+      }
+    ],
+    "existing_centroid": {
+      "lat": 17.7247,
+      "lng": 83.2762
+    },
+    "refined_centroid": {
+      "lat": 17.723086,
+      "lng": 83.279605
+    },
+    "centroid_shift_km": 0.4,
+    "boundary_points": 7,
+    "boundary_kind": "convex_hull"
+  },
+  {
+    "ward": "Ward 78 - Steel Plant Sector's-3 to 11",
+    "ward_number": 78,
+    "pincodes": [],
+    "areas": [],
+    "infra_anchors": [],
+    "existing_centroid": {
+      "lat": 17.8219,
+      "lng": 83.1849
+    },
+    "refined_centroid": {
+      "lat": 17.8219,
+      "lng": 83.1849
+    },
+    "centroid_shift_km": 0,
+    "boundary_points": 1,
+    "boundary_kind": "radius_circle"
+  },
+  {
+    "ward": "Ward 79 - Sivaji Nagar",
+    "ward_number": 79,
+    "pincodes": [],
+    "areas": [],
+    "infra_anchors": [
+      {
+        "name": "Electrical Sub Station",
+        "category": "substation",
+        "lat": 17.7701253,
+        "lng": 83.29174549999999
+      }
+    ],
+    "existing_centroid": {
+      "lat": 17.7690128,
+      "lng": 83.30882609999999
+    },
+    "refined_centroid": {
+      "lat": 17.769569,
+      "lng": 83.300286
+    },
+    "centroid_shift_km": 0.91,
+    "boundary_points": 2,
+    "boundary_kind": "radius_circle"
+  },
+  {
+    "ward": "Ward 80 - Tadi",
+    "ward_number": 80,
+    "pincodes": [
+      "530020"
+    ],
+    "areas": [
+      {
+        "name": "VM Bus Station",
+        "lat": 17.7668055,
+        "lng": 83.2480916,
+        "pincodes": [
+          "530020"
+        ]
+      }
+    ],
+    "infra_anchors": [],
+    "existing_centroid": {
+      "lat": 17.7568,
+      "lng": 83.23
+    },
+    "refined_centroid": {
+      "lat": 17.761803,
+      "lng": 83.239046
+    },
+    "centroid_shift_km": 1.11,
+    "boundary_points": 2,
+    "boundary_kind": "radius_circle"
+  },
+  {
+    "ward": "Ward 81 - Parts of GNT Road",
+    "ward_number": 81,
+    "pincodes": [
+      "530011",
+      "530014",
+      "530015"
+    ],
+    "areas": [
+      {
+        "name": "Malkapuram",
+        "lat": 17.6854667,
+        "lng": 83.2432403,
+        "pincodes": [
+          "530011"
+        ]
+      },
+      {
+        "name": "Naval Dock Yard",
+        "lat": 17.6953754,
+        "lng": 83.26242520000001,
+        "pincodes": [
+          "530014"
+        ]
+      }
+    ],
+    "infra_anchors": [
+      {
+        "name": "Malkapuram Substation & ADE office",
+        "category": "substation",
+        "lat": 17.6881909,
+        "lng": 83.25278519999999
+      }
+    ],
+    "existing_centroid": {
+      "lat": 17.6890937,
+      "lng": 83.2427571
+    },
+    "refined_centroid": {
+      "lat": 17.689852,
+      "lng": 83.247717
+    },
+    "centroid_shift_km": 0.53,
+    "boundary_points": 6,
+    "boundary_kind": "convex_hull"
+  },
+  {
+    "ward": "Ward 82 - Gandhi Nagar & Anjayya Colony & Income Tax St.",
+    "ward_number": 82,
+    "pincodes": [
+      "530005",
+      "530044"
+    ],
+    "areas": [
+      {
+        "name": "Nausenabagh",
+        "lat": 17.6821757,
+        "lng": 83.25461519999999,
+        "pincodes": [
+          "530005"
+        ]
+      },
+      {
+        "name": "Dibbapalem",
+        "lat": 17.6322406,
+        "lng": 83.2365482,
+        "pincodes": [
+          "530044"
+        ]
+      },
+      {
+        "name": "Gangavaram",
+        "lat": 17.6322406,
+        "lng": 83.2365482,
+        "pincodes": [
+          "530044"
+        ]
+      }
+    ],
+    "infra_anchors": [
+      {
+        "name": "Power substation",
+        "category": "substation",
+        "lat": 17.6764045,
+        "lng": 83.2421782
+      }
+    ],
+    "existing_centroid": {
+      "lat": 17.6746,
+      "lng": 83.2511
+    },
+    "refined_centroid": {
+      "lat": 17.659532,
+      "lng": 83.244198
+    },
+    "centroid_shift_km": 1.83,
+    "boundary_points": 5,
+    "boundary_kind": "convex_hull"
+  },
+  {
+    "ward": "Ward 83 - Mirayala Colony",
+    "ward_number": 83,
+    "pincodes": [],
+    "areas": [],
+    "infra_anchors": [],
+    "existing_centroid": {
+      "lat": 17.7554,
+      "lng": 83.1621
+    },
+    "refined_centroid": {
+      "lat": 17.7554,
+      "lng": 83.1621
+    },
+    "centroid_shift_km": 0,
+    "boundary_points": 1,
+    "boundary_kind": "radius_circle"
+  },
+  {
+    "ward": "Ward 84 - Takasi veedhi part",
+    "ward_number": 84,
+    "pincodes": [
+      "530012"
+    ],
+    "areas": [
+      {
+        "name": "Tunglam",
+        "lat": 17.7064655,
+        "lng": 83.1903543,
+        "pincodes": [
+          "530012"
+        ]
+      }
+    ],
+    "infra_anchors": [],
+    "existing_centroid": {
+      "lat": 17.7095,
+      "lng": 83.187
+    },
+    "refined_centroid": {
+      "lat": 17.707983,
+      "lng": 83.188677
+    },
+    "centroid_shift_km": 0.24,
+    "boundary_points": 2,
+    "boundary_kind": "radius_circle"
+  },
+  {
+    "ward": "Ward 85 - Talariavanipalem",
+    "ward_number": 85,
+    "pincodes": [
+      "530005"
+    ],
+    "areas": [
+      {
+        "name": "Gandhigram (Visakhapatnam)",
+        "lat": 17.6815466,
+        "lng": 83.2617452,
+        "pincodes": [
+          "530005"
+        ]
+      }
+    ],
+    "infra_anchors": [
+      {
+        "name": "Yarada Substation",
+        "category": "substation",
+        "lat": 17.6796361,
+        "lng": 83.26696729999999
+      }
+    ],
+    "existing_centroid": {
+      "lat": 17.671,
+      "lng": 83.2631
+    },
+    "refined_centroid": {
+      "lat": 17.674644,
+      "lng": 83.264617
+    },
+    "centroid_shift_km": 0.44,
+    "boundary_points": 4,
+    "boundary_kind": "convex_hull"
+  },
+  {
+    "ward": "Ward 86 - Uppara colony",
+    "ward_number": 86,
+    "pincodes": [],
+    "areas": [],
+    "infra_anchors": [],
+    "existing_centroid": {
+      "lat": 17.6901387,
+      "lng": 83.2395271
+    },
+    "refined_centroid": {
+      "lat": 17.690139,
+      "lng": 83.239527
+    },
+    "centroid_shift_km": 0,
+    "boundary_points": 1,
+    "boundary_kind": "radius_circle"
+  },
+  {
+    "ward": "Ward 87 - Kurmannapalem Part",
+    "ward_number": 87,
+    "pincodes": [
+      "530032",
+      "530046",
+      "530049",
+      "530053"
+    ],
+    "areas": [
+      {
+        "name": "Duvvada",
+        "lat": 17.6970004,
+        "lng": 83.1466159,
+        "pincodes": [
+          "530046"
+        ]
+      },
+      {
+        "name": "Vadlapudi",
+        "lat": 17.6887498,
+        "lng": 83.1774301,
+        "pincodes": [
+          "530046"
+        ]
+      },
+      {
+        "name": "Sez",
+        "lat": 17.7081356,
+        "lng": 83.152447,
+        "pincodes": [
+          "530049"
+        ]
+      },
+      {
+        "name": "Aganampudi",
+        "lat": 17.6864348,
+        "lng": 83.1377658,
+        "pincodes": [
+          "530053"
+        ]
+      }
+    ],
+    "infra_anchors": [
+      {
+        "name": "Duvvada",
+        "category": "railway_station",
+        "lat": 17.7030425,
+        "lng": 83.1511067
+      },
+      {
+        "name": "APEPDCL 33/11 kV Sub-station",
+        "category": "substation",
+        "lat": 17.6968497,
+        "lng": 83.1747007
+      },
+      {
+        "name": "Electrical Sub-station",
+        "category": "substation",
+        "lat": 17.6719033,
+        "lng": 83.1707787
+      },
+      {
+        "name": "Rajeev Nagar Substation",
+        "category": "substation",
+        "lat": 17.706272,
+        "lng": 83.15427199999999
+      },
+      {
+        "name": "Aganampudi APEPDCL 33/11 Substation",
+        "category": "substation",
+        "lat": 17.6861744,
+        "lng": 83.144368
+      },
+      {
+        "name": "33/11 KV Duvvada TIDCO SS",
+        "category": "substation",
+        "lat": 17.7026998,
+        "lng": 83.13776399999999
+      }
+    ],
+    "existing_centroid": {
+      "lat": 17.6905906,
+      "lng": 83.1664418
+    },
+    "refined_centroid": {
+      "lat": 17.691561,
+      "lng": 83.154299
+    },
+    "centroid_shift_km": 1.29,
+    "boundary_points": 14,
+    "boundary_kind": "convex_hull"
+  },
+  {
+    "ward": "Ward 88 - Narava",
+    "ward_number": 88,
+    "pincodes": [
+      "530027"
+    ],
+    "areas": [
+      {
+        "name": "Narava",
+        "lat": 17.7436092,
+        "lng": 83.18391369999999,
+        "pincodes": [
+          "530027"
+        ]
+      }
+    ],
+    "infra_anchors": [],
+    "existing_centroid": {
+      "lat": 17.7436092,
+      "lng": 83.18391369999999
+    },
+    "refined_centroid": {
+      "lat": 17.743609,
+      "lng": 83.183914
+    },
+    "centroid_shift_km": 0,
+    "boundary_points": 2,
+    "boundary_kind": "radius_circle"
+  },
+  {
+    "ward": "Ward 89 - Chandra Nagar",
+    "ward_number": 89,
+    "pincodes": [
+      "530009",
+      "530027"
+    ],
+    "areas": [
+      {
+        "name": "Visakhapatnam Airport",
+        "lat": 17.7283829,
+        "lng": 83.22338719999999,
+        "pincodes": [
+          "530009"
+        ]
+      },
+      {
+        "name": "Gopalapatnam",
+        "lat": 17.7479751,
+        "lng": 83.2179139,
+        "pincodes": [
+          "530027"
+        ]
+      },
+      {
+        "name": "Yellapuvanipalem",
+        "lat": 17.7375519,
+        "lng": 83.2164679,
+        "pincodes": [
+          "530027"
+        ]
+      }
+    ],
+    "infra_anchors": [
+      {
+        "name": "Simhachalam",
+        "category": "railway_station",
+        "lat": 17.7452529,
+        "lng": 83.2208428
+      },
+      {
+        "name": "BSNL Office",
+        "category": "bsnl",
+        "lat": 17.752345,
+        "lng": 83.21709899999999
+      }
+    ],
+    "existing_centroid": {
+      "lat": 17.7441354,
+      "lng": 83.21707169999999
+    },
+    "refined_centroid": {
+      "lat": 17.742607,
+      "lng": 83.218797
+    },
+    "centroid_shift_km": 0.25,
+    "boundary_points": 6,
+    "boundary_kind": "convex_hull"
+  },
+  {
+    "ward": "Ward 90 - Vidyuth Nagar",
+    "ward_number": 90,
+    "pincodes": [
+      "531163"
+    ],
+    "areas": [
+      {
+        "name": "INS Kalinga",
+        "lat": 17.86286,
+        "lng": 83.41365309999999,
+        "pincodes": [
+          "531163"
+        ]
+      }
+    ],
+    "infra_anchors": [
+      {
+        "name": "Electrical Sub Satation",
+        "category": "substation",
+        "lat": 17.8793174,
+        "lng": 83.3755386
+      },
+      {
+        "name": "Electrical Sub Station",
+        "category": "substation",
+        "lat": 17.8264616,
+        "lng": 83.39705049999999
+      }
+    ],
+    "existing_centroid": {
+      "lat": 17.8397,
+      "lng": 83.3952
+    },
+    "refined_centroid": {
+      "lat": 17.852085,
+      "lng": 83.395361
+    },
+    "centroid_shift_km": 1.38,
+    "boundary_points": 4,
+    "boundary_kind": "convex_hull"
+  },
+  {
+    "ward": "Ward 91 - Nethaji Veedhi",
+    "ward_number": 91,
+    "pincodes": [
+      "530003"
+    ],
+    "areas": [
+      {
+        "name": "Chinawaltair",
+        "lat": 17.7257642,
+        "lng": 83.3361327,
+        "pincodes": [
+          "530003"
+        ]
+      }
+    ],
+    "infra_anchors": [
+      {
+        "name": "PG POWER SYSTEMS",
+        "category": "power_grid",
+        "lat": 17.7205031,
+        "lng": 83.3314027
+      },
+      {
+        "name": "BSNL office",
+        "category": "bsnl",
+        "lat": 17.7217569,
+        "lng": 83.33341779999999
+      }
+    ],
+    "existing_centroid": {
+      "lat": 17.7248925,
+      "lng": 83.3339524
+    },
+    "refined_centroid": {
+      "lat": 17.723229,
+      "lng": 83.333726
+    },
+    "centroid_shift_km": 0.19,
+    "boundary_points": 4,
+    "boundary_kind": "convex_hull"
+  },
+  {
+    "ward": "Ward 92 - Venkatapuram",
+    "ward_number": 92,
+    "pincodes": [
+      "530029",
+      "530052",
+      "531163"
+    ],
+    "areas": [
+      {
+        "name": "Venkatapuram",
+        "lat": 17.9213945,
+        "lng": 83.36170419999999,
+        "pincodes": [
+          "530029"
+        ]
+      },
+      {
+        "name": "Boddapalem",
+        "lat": 17.8842857,
+        "lng": 83.3854977,
+        "pincodes": [
+          "531163"
+        ]
+      }
+    ],
+    "infra_anchors": [],
+    "existing_centroid": {
+      "lat": 17.9213945,
+      "lng": 83.36170419999999
+    },
+    "refined_centroid": {
+      "lat": 17.905414,
+      "lng": 83.373354
+    },
+    "centroid_shift_km": 2.16,
+    "boundary_points": 5,
+    "boundary_kind": "convex_hull"
+  },
+  {
+    "ward": "Ward 93 - Sai Durga Nagar",
+    "ward_number": 93,
+    "pincodes": [
+      "530027",
+      "530029"
+    ],
+    "areas": [
+      {
+        "name": "Prahladapuram",
+        "lat": 17.7620112,
+        "lng": 83.22115389999999,
+        "pincodes": [
+          "530027"
+        ]
+      }
+    ],
+    "infra_anchors": [
+      {
+        "name": "33/11KV GOPALAPATNAM RURAL SS",
+        "category": "substation",
+        "lat": 17.7609289,
+        "lng": 83.22213289999999
+      },
+      {
+        "name": "Current Office Gopalapatnam (APEPDCL)",
+        "category": "discom_office",
+        "lat": 17.7578141,
+        "lng": 83.21790039999999
+      },
+      {
+        "name": "APEPDCL District Stores",
+        "category": "discom_office",
+        "lat": 17.7599143,
+        "lng": 83.2174237
+      },
+      {
+        "name": "Power Office( Gopalapatnam power office) or Eastern power office",
+        "category": "discom_office",
+        "lat": 17.7579507,
+        "lng": 83.2174725
+      }
+    ],
+    "existing_centroid": {
+      "lat": 17.7662613,
+      "lng": 83.2196268
+    },
+    "refined_centroid": {
+      "lat": 17.760958,
+      "lng": 83.218787
+    },
+    "centroid_shift_km": 0.6,
+    "boundary_points": 7,
+    "boundary_kind": "convex_hull"
+  },
+  {
+    "ward": "Ward 94 - Gangiredla Colony",
+    "ward_number": 94,
+    "pincodes": [],
+    "areas": [],
+    "infra_anchors": [],
+    "existing_centroid": {
+      "lat": 17.8041,
+      "lng": 83.3196
+    },
+    "refined_centroid": {
+      "lat": 17.8041,
+      "lng": 83.3196
+    },
+    "centroid_shift_km": 0,
+    "boundary_points": 1,
+    "boundary_kind": "radius_circle"
+  },
+  {
+    "ward": "Ward 95 - MES Layout",
+    "ward_number": 95,
+    "pincodes": [
+      "530047",
+      "530051"
+    ],
+    "areas": [
+      {
+        "name": "Chintalaagaraharam",
+        "lat": 17.7848326,
+        "lng": 83.1997296,
+        "pincodes": [
+          "530047"
+        ]
+      }
+    ],
+    "infra_anchors": [],
+    "existing_centroid": {
+      "lat": 17.7863518,
+      "lng": 83.2010688
+    },
+    "refined_centroid": {
+      "lat": 17.787426,
+      "lng": 83.203747
+    },
+    "centroid_shift_km": 0.31,
+    "boundary_points": 3,
+    "boundary_kind": "convex_hull"
+  },
+  {
+    "ward": "Ward 96 - Pendurthi old Village",
+    "ward_number": 96,
+    "pincodes": [
+      "530051",
+      "531173"
+    ],
+    "areas": [
+      {
+        "name": "Sujatha Nagar",
+        "lat": 17.798598,
+        "lng": 83.2144596,
+        "pincodes": [
+          "530051"
+        ]
+      },
+      {
+        "name": "Chinamushidiwada",
+        "lat": 17.8023759,
+        "lng": 83.204814,
+        "pincodes": [
+          "531173"
+        ]
+      },
+      {
+        "name": "Pendurthy",
+        "lat": 17.80552,
+        "lng": 83.20891259999999,
+        "pincodes": [
+          "531173"
+        ]
+      },
+      {
+        "name": "V. Juttada",
+        "lat": 17.8260649,
+        "lng": 83.2328608,
+        "pincodes": [
+          "531173"
+        ]
+      }
+    ],
+    "infra_anchors": [
+      {
+        "name": "BSNL Telephone Office",
+        "category": "bsnl",
+        "lat": 17.8137422,
+        "lng": 83.2070414
+      }
+    ],
+    "existing_centroid": {
+      "lat": 17.80552,
+      "lng": 83.20891259999999
+    },
+    "refined_centroid": {
+      "lat": 17.808637,
+      "lng": 83.212833
+    },
+    "centroid_shift_km": 0.54,
+    "boundary_points": 6,
+    "boundary_kind": "convex_hull"
+  },
+  {
+    "ward": "Ward 97 - Kranthi Nagar",
+    "ward_number": 97,
+    "pincodes": [],
+    "areas": [],
+    "infra_anchors": [],
+    "existing_centroid": {
+      "lat": 17.7411896,
+      "lng": 83.3260387
+    },
+    "refined_centroid": {
+      "lat": 17.74119,
+      "lng": 83.326039
+    },
+    "centroid_shift_km": 0,
+    "boundary_points": 1,
+    "boundary_kind": "radius_circle"
+  },
+  {
+    "ward": "Ward 98 - Appannapalem",
+    "ward_number": 98,
+    "pincodes": [
+      "530028",
+      "530047"
+    ],
+    "areas": [
+      {
+        "name": "Simhachalam",
+        "lat": 17.7711568,
+        "lng": 83.2358316,
+        "pincodes": [
+          "530028"
+        ]
+      },
+      {
+        "name": "Vepagunta (Visakhapatnam)",
+        "lat": 17.7759818,
+        "lng": 83.21646439999999,
+        "pincodes": [
+          "530047"
+        ]
+      }
+    ],
+    "infra_anchors": [],
+    "existing_centroid": {
+      "lat": 17.7743915,
+      "lng": 83.2241707
+    },
+    "refined_centroid": {
+      "lat": 17.773302,
+      "lng": 83.230429
+    },
+    "centroid_shift_km": 0.67,
+    "boundary_points": 4,
+    "boundary_kind": "convex_hull"
+  }
+]

@@ -13,6 +13,7 @@ export interface RankItem {
   cluster_id: string;
   rank: number;
   title_en: string;
+  title_localized?: string | null; // summary_original of a same-language member (te/hi); null → fall back to title_en
   category: string;
   ward: string;
   submission_count: number;
@@ -29,6 +30,14 @@ export interface RankResponse {
   generated_at: string;
   weights: { frequency: number; severity: number; recency: number; demographic: number; };
   items: RankItem[];
+}
+
+export interface SummaryResponse {
+  generated_at: string;
+  totals: { total: number; open: number; acknowledged: number; in_progress: number; resolved: number };
+  by_category: { category: string; total: number; resolved: number }[];
+  by_ward: { ward: string; total: number; resolved: number }[];
+  trend: { week: string; total: number; resolved: number }[];
 }
 
 export interface DeadLetter {
@@ -61,6 +70,33 @@ export interface SubmissionDetail {
 const sleep = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 
 const DEMO_LATENCY_MS = parseInt(localStorage.getItem('API_LATENCY') || '1000', 10);
+
+// Bug fix: the mock fallback below must ONLY fire when the backend is genuinely
+// unreachable or too slow (F4's actual intent — smooth over a slow Gemini call
+// during a live demo), never on a real HTTP error response. The previous version
+// fell back to fake "success" data on ANY non-2xx status (400 validation, 429 rate
+// limit, 500 crash, ...) — a citizen's rejected complaint would show a fake
+// "processed" success and the rejection would never be seen. fetchGuarded() makes
+// that distinction explicit: TIMEOUT_MS aborts → treated as "slow, use cached/mock
+// demo data"; any real response (ok or not) is returned as-is, error included.
+const TIMEOUT_MS = 8000;
+
+type GuardedResult<T> = { kind: 'ok'; json: T } | { kind: 'http_error'; status: number; json: any } | { kind: 'timeout' } | { kind: 'network_error'; err: unknown };
+
+async function fetchGuarded<T>(input: RequestInfo, init?: RequestInit): Promise<GuardedResult<T>> {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), TIMEOUT_MS);
+  try {
+    const res = await fetch(input, { ...init, signal: controller.signal });
+    const json = await res.json().catch(() => null);
+    return res.ok ? { kind: 'ok', json: json as T } : { kind: 'http_error', status: res.status, json };
+  } catch (err) {
+    if (controller.signal.aborted) return { kind: 'timeout' };
+    return { kind: 'network_error', err };
+  } finally {
+    clearTimeout(timer);
+  }
+}
 
 export const mockApi = {
   async getWards(): Promise<ApiResponse<{ wards: Ward[] }>> {
@@ -217,6 +253,33 @@ export const mockApi = {
     return { data: { points } };
   },
 
+  async getSummary(_ward?: string, _category?: string): Promise<ApiResponse<SummaryResponse>> {
+    await sleep(400);
+    const total = 800, resolved = 239, in_progress = 167, acknowledged = 126, open = total - resolved - in_progress - acknowledged;
+    return {
+      data: {
+        generated_at: new Date().toISOString(),
+        totals: { total, open, acknowledged, in_progress, resolved },
+        by_category: [
+          { category: "garbage", total: 184, resolved: 55 },
+          { category: "roads", total: 176, resolved: 53 },
+          { category: "streetlights", total: 136, resolved: 41 },
+          { category: "water", total: 96, resolved: 29 },
+        ],
+        by_ward: [
+          { ward: "Ward 75 - Pedagantyada", total: 60, resolved: 18 },
+          { ward: "Ward 96 - Pendurthi old Village", total: 40, resolved: 12 },
+          { ward: "Ward 25 - Madhura Nagar", total: 35, resolved: 10 },
+        ],
+        trend: Array.from({ length: 8 }, (_, i) => ({
+          week: new Date(Date.now() - (7 - i) * 7 * 86400_000).toISOString(),
+          total: 80 + Math.floor(Math.random() * 30),
+          resolved: 20 + Math.floor(Math.random() * 20),
+        })),
+      },
+    };
+  },
+
   async getDeadLetters(): Promise<ApiResponse<{ items: DeadLetter[] }>> {
     await sleep(400);
     return {
@@ -242,70 +305,91 @@ export const mockApi = {
   }
 };
 
+// Shared handling for the two protected GET routes (/api/rank, /api/heatmap,
+// /api/deadletters): real errors surface as res.error; only a timeout falls back
+// to demo/cached data; 401/403 redirect to login (the route genuinely requires
+// a session — there is no cached substitute for "you're not signed in").
+async function guardedGet<T>(url: string, mockFallback: () => Promise<ApiResponse<T>>, label: string): Promise<ApiResponse<T>> {
+  const result = await fetchGuarded<T>(url);
+  switch (result.kind) {
+    // /api/rank, /api/heatmap, /api/deadletters return the payload directly
+    // (e.g. {items:[...]}), not pre-wrapped in {data:...} — wrap it here.
+    case 'ok': return { data: result.json };
+    case 'http_error':
+      if (result.status === 401 || result.status === 403) {
+        window.location.href = '/login';
+        return { error: { code: 'UNAUTHORIZED', message: 'Not authorized' } };
+      }
+      return { error: result.json?.error ?? { code: 'HTTP_' + result.status, message: `${label} failed (${result.status})` } };
+    case 'timeout':
+      console.warn(`${label} timed out after ${TIMEOUT_MS}ms — using cached demo data`);
+      return mockFallback();
+    case 'network_error':
+      console.error(`${label} network error`, result.err);
+      return { error: { code: 'NETWORK_ERROR', message: 'Could not reach the server. Check your connection and try again.' } };
+  }
+}
+
 export const api = {
   async getWards(): Promise<ApiResponse<{ wards: Ward[] }>> {
-    try {
-      const res = await fetch('/api/wards');
-      if (res.ok) return await res.json();
-    } catch (e) { console.warn('Using mock /api/wards', e); }
+    // Open, non-critical, and used purely to populate a dropdown — safe to fall
+    // back on ANY failure (never blocks a citizen from choosing a ward).
+    const result = await fetchGuarded<{ wards: Ward[] }>('/api/wards');
+    if (result.kind === 'ok') return { data: result.json };
+    console.warn('Using mock /api/wards — backend unreachable or slow');
     return mockApi.getWards();
   },
 
+  // Citizen submission — the one call that must NEVER silently report fake success.
+  // A real backend response (ok or error) is always returned as-is; only a genuine
+  // timeout falls back to the DEMO_MODE cached response, badged 'cached' in the UI.
   async ingestGrievance(formData: FormData): Promise<ApiResponse<{ submission_id: string, status: string, cluster_id?: string, category?: string }>> {
-    try {
-      const res = await fetch('/api/ingest', { method: 'POST', body: formData });
-      if (res.ok) return await res.json();
-    } catch (e) { console.warn('Using mock /api/ingest', e); }
-    return mockApi.ingestGrievance(formData);
+    const result = await fetchGuarded<{ submission_id: string, status: string, cluster_id?: string, category?: string }>('/api/ingest', { method: 'POST', body: formData });
+    switch (result.kind) {
+      // /api/ingest returns {submission_id, status, ...} directly (202/200), not pre-wrapped.
+      case 'ok': return { data: result.json };
+      case 'http_error': return { error: result.json?.error ?? { code: 'HTTP_' + result.status, message: `Submission failed (${result.status})` } };
+      case 'timeout':
+        console.warn('Ingest timed out — using cached demo response');
+        return mockApi.ingestGrievance(formData);
+      case 'network_error':
+        return { error: { code: 'NETWORK_ERROR', message: 'Could not reach the server. Check your connection and try again.' } };
+    }
   },
 
   async getSubmission(id: string): Promise<ApiResponse<SubmissionDetail>> {
-    try {
-      const res = await fetch(`/api/submissions/${id}`);
-      if (res.ok) return await res.json();
-    } catch (e) { console.warn('Using mock /api/submissions/:id', e); }
-    return mockApi.getSubmission(id);
+    const result = await fetchGuarded<SubmissionDetail>(`/api/submissions/${id}`);
+    switch (result.kind) {
+      case 'ok': return { data: result.json };
+      case 'http_error': return { error: result.json?.error ?? { code: 'HTTP_' + result.status, message: `Status check failed (${result.status})` } };
+      case 'timeout': return mockApi.getSubmission(id);
+      case 'network_error': return { error: { code: 'NETWORK_ERROR', message: 'Could not reach the server.' } };
+    }
   },
 
   async getRankings(ward?: string, category?: string, lang?: string): Promise<ApiResponse<RankResponse>> {
-    try {
-      const params = new URLSearchParams();
-      if (ward) params.append('ward', ward);
-      if (category) params.append('category', category);
-      if (lang) params.append('lang', lang);
-      const res = await fetch(`/api/rank?${params.toString()}`);
-      if (res.ok) return await res.json();
-      if (res.status === 401 || res.status === 403) {
-        window.location.href = '/login';
-        return { error: { code: 'UNAUTHORIZED', message: 'Not authorized' } };
-      }
-    } catch (e) { console.warn('Using mock /api/rank', e); }
-    return mockApi.getRankings(ward, category, lang);
+    const params = new URLSearchParams();
+    if (ward) params.append('ward', ward);
+    if (category) params.append('category', category);
+    if (lang) params.append('lang', lang);
+    return guardedGet<RankResponse>(`/api/rank?${params.toString()}`, () => mockApi.getRankings(ward, category, lang), 'Rankings');
   },
 
-  async getHeatmap(category?: string): Promise<ApiResponse<{ points: {lat: number, lng: number, weight: number}[] }>> {
-    try {
-      const params = new URLSearchParams();
-      if (category) params.append('category', category);
-      const res = await fetch(`/api/heatmap?${params.toString()}`);
-      if (res.ok) return await res.json();
-      if (res.status === 401 || res.status === 403) {
-        window.location.href = '/login';
-        return { error: { code: 'UNAUTHORIZED', message: 'Not authorized' } };
-      }
-    } catch (e) { console.warn('Using mock /api/heatmap', e); }
-    return mockApi.getHeatmap(category);
+  async getHeatmap(category?: string, ward?: string): Promise<ApiResponse<{ points: {lat: number, lng: number, weight: number}[] }>> {
+    const params = new URLSearchParams();
+    if (category) params.append('category', category);
+    if (ward) params.append('ward', ward);
+    return guardedGet(`/api/heatmap?${params.toString()}`, () => mockApi.getHeatmap(category), 'Heatmap');
   },
 
   async getDeadLetters(): Promise<ApiResponse<{ items: DeadLetter[] }>> {
-    try {
-      const res = await fetch('/api/deadletters');
-      if (res.ok) return await res.json();
-      if (res.status === 401 || res.status === 403) {
-        window.location.href = '/login';
-        return { error: { code: 'UNAUTHORIZED', message: 'Not authorized' } };
-      }
-    } catch (e) { console.warn('Using mock /api/deadletters', e); }
-    return mockApi.getDeadLetters();
+    return guardedGet('/api/deadletters', () => mockApi.getDeadLetters(), 'Dead letters');
+  },
+
+  async getSummary(ward?: string, category?: string): Promise<ApiResponse<SummaryResponse>> {
+    const params = new URLSearchParams();
+    if (ward) params.append('ward', ward);
+    if (category) params.append('category', category);
+    return guardedGet<SummaryResponse>(`/api/summary?${params.toString()}`, () => mockApi.getSummary(ward, category), 'Summary');
   }
 };

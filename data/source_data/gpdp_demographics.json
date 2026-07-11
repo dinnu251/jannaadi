@@ -1,0 +1,89 @@
+{
+  "source_url": "gpdp.nic.in",
+  "district": "Visakhapatnam",
+  "state": "Andhra Pradesh",
+  "census_year": 2011,
+  "last_updated": "2026-07-08T15:13:55Z",
+  "records": [
+    {
+      "gp_lgd_code": 204561,
+      "gp_name": "Nidigattu Gram Panchayat",
+      "mandal_name": "Bheemunipatnam",
+      "mapped_gvmc_ward": "Ward 4 - Nidigattu panchayat",
+      "demographics": {
+        "total_population": 18267,
+        "gender": { "male": 9070, "female": 9197 },
+        "social_vulnerabilities": {
+          "sc_count": 1555,
+          "sc_percentage": 8.51,
+          "st_count": 203,
+          "st_percentage": 1.11
+        }
+      }
+    },
+    {
+      "gp_lgd_code": 204562,
+      "gp_name": "Boyyipalem Gram Panchayat",
+      "mandal_name": "Bheemunipatnam",
+      "mapped_gvmc_ward": "Ward 5 - Boyyipalem Junction",
+      "demographics": {
+        "total_population": 18390,
+        "gender": { "male": 9104, "female": 9286 },
+        "social_vulnerabilities": {
+          "sc_count": 1639,
+          "sc_percentage": 8.91,
+          "st_count": 334,
+          "st_percentage": 1.82
+        }
+      }
+    },
+    {
+      "gp_lgd_code": 204563,
+      "gp_name": "Bunglow Metta Gram Panchayat",
+      "mandal_name": "Bheemunipatnam",
+      "mapped_gvmc_ward": "Ward 1 - Bunglow Metta",
+      "demographics": {
+        "total_population": 18598,
+        "gender": { "male": 9210, "female": 9388 },
+        "social_vulnerabilities": {
+          "sc_count": 2284,
+          "sc_percentage": 12.28,
+          "st_count": 286,
+          "st_percentage": 1.54
+        }
+      }
+    },
+    {
+      "gp_lgd_code": 204564,
+      "gp_name": "Sabbivanipeta Gram Panchayat",
+      "mandal_name": "Pendurthi",
+      "mapped_gvmc_ward": "Ward 2 - Sabbivanipeta",
+      "demographics": {
+        "total_population": 17966,
+        "gender": { "male": 8940, "female": 9026 },
+        "social_vulnerabilities": {
+          "sc_count": 1733,
+          "sc_percentage": 9.65,
+          "st_count": 62,
+          "st_percentage": 0.35
+        }
+      }
+    },
+    {
+      "gp_lgd_code": 204565,
+      "gp_name": "Pendurthi old Village",
+      "mandal_name": "Pendurthi",
+      "mapped_gvmc_ward": "Ward 96 - Pendurthi old Village",
+      "demographics": {
+        "total_population": 21594,
+        "gender": { "male": 10790, "female": 10804 },
+        "social_vulnerabilities": {
+          "sc_count": 1506,
+          "sc_percentage": 8.27,
+          "st_count": 83,
+          "st_percentage": 0.46
+        }
+      }
+    }
+  ]
+}

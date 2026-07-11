@@ -1,6 +1,7 @@
 // GET /api/submissions/:id — status + extraction + full audit trail (API.md, B8).
 // Auth required; reads go through the RLS DAL, so a citizen can only fetch their
 // own submissions (404 for others' — RLS filters the row before the route sees it).
+// PATCH .../status lives at app/api/submissions/[id]/status/route.ts (v1.2 feedback loop).
 import { NextRequest, NextResponse } from "next/server";
 import { z } from "zod";
 import { auth } from "@/auth";
@@ -60,6 +61,9 @@ export async function GET(_req: NextRequest, ctx: { params: Promise<{ id: string
         detail: a.detail, // additive: carries stt confidence, retry count, ward_resolved_via (B14)
       })),
       failure_reason: s.status === "failed" ? (dl?.reason ?? "unknown") : null,
+      resolution_status: s.resolution_status,
+      geo_verified: s.geo_verified,
+      duplicate_of: s.duplicate_of,
     });
   } catch (e) {
     return handleRouteError(e, "GET /api/submissions/:id");

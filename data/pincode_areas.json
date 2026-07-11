@@ -1,0 +1,1080 @@
+{
+  "pincode_areas": {
+    "530001": [
+      "Fortward",
+      "Kurupam Market",
+      "Visakhapatnam"
+    ],
+    "530002": [
+      "D.C. Buildings",
+      "KGH",
+      "Maharanipeta",
+      "Turners Choultry"
+    ],
+    "530003": [
+      "A U Engg College",
+      "Andhra University",
+      "Chinawaltair",
+      "Ghandhi Place",
+      "Pithapuram Colony",
+      "Vidya Bhavan"
+    ],
+    "530004": [
+      "Gnanapuram",
+      "LIC Building",
+      "Waltair R S"
+    ],
+    "530005": [
+      "Gandhigram (Visakhapatnam)",
+      "Nausenabagh",
+      "Yarada"
+    ],
+    "530007": [
+      "Industrial Estate (Visakhapatnam)",
+      "Muralinagar"
+    ],
+    "530008": [
+      "IRSD Area",
+      "Kancharapalem"
+    ],
+    "530009": [
+      "Marripalem Vuda Colony",
+      "N A D",
+      "Visakhapatnam Airport"
+    ],
+    "530011": [
+      "Malkapuram"
+    ],
+    "530012": [
+      "Autonagar",
+      "B H P V",
+      "Jaggayyapalem",
+      "Mindi",
+      "Sheelanagar",
+      "Tunglam",
+      "Visweswarayanagar"
+    ],
+    "530013": [
+      "P & T Colony (VM)"
+    ],
+    "530014": [
+      "Naval Base",
+      "Naval Dock Yard"
+    ],
+    "530015": [
+      "Zinc Smelter P"
+    ],
+    "530016": [
+      "Akkayyapalem",
+      "Dwarakanagar",
+      "New Colony"
+    ],
+    "530017": [
+      "L B Colony",
+      "M.V.P.Colony"
+    ],
+    "530018": [
+      "Marripalem"
+    ],
+    "530020": [
+      "Dabagardens",
+      "VM Bus Station"
+    ],
+    "530022": [
+      "H B Colony",
+      "Isakathota"
+    ],
+    "530024": [
+      "Salagramapuram"
+    ],
+    "530026": [
+      "Gajuwaka"
+    ],
+    "530027": [
+      "Gopalapatnam",
+      "Narava",
+      "NSTL",
+      "Prahladapuram",
+      "Yellapuvanipalem"
+    ],
+    "530028": [
+      "Simhachalam",
+      "Simhachalam Hills"
+    ],
+    "530029": [
+      "Durganagar",
+      "R R V Puram",
+      "Venkatapuram"
+    ],
+    "530031": [
+      "Devada",
+      "Islampeta",
+      "Visakhapatnam Steel Project"
+    ],
+    "530032": [
+      "Ukkunagaram",
+      "VM Steel Projrct Town Ship"
+    ],
+    "530035": [
+      "Visakhapatnam Port"
+    ],
+    "530040": [
+      "Arilova",
+      "Govt Dairy Farm",
+      "Pedagadili",
+      "Sri krishnapuram"
+    ],
+    "530041": [
+      "Pothinamallayapalem"
+    ],
+    "530043": [
+      "Dayalnagar",
+      "Visalakshinagar"
+    ],
+    "530044": [
+      "Balacheruvu",
+      "Dibbapalem",
+      "Gangavaram",
+      "Nadupuru",
+      "Pedagantyada"
+    ],
+    "530045": [
+      "Gitam Engg. College",
+      "Sagar Nagar",
+      "Yendada"
+    ],
+    "530046": [
+      "Duvvada",
+      "Pakeertekya",
+      "Vadlapudi",
+      "Vedullanarava"
+    ],
+    "530047": [
+      "Chintalaagaraharam",
+      "Porlupalem",
+      "Vepagunta (Visakhapatnam)"
+    ],
+    "530048": [
+      "Gayatri Engg College",
+      "Kommadi",
+      "Madhurawada",
+      "Marikavalasa"
+    ],
+    "530049": [
+      "Sez"
+    ],
+    "530051": [
+      "Sujatha Nagar"
+    ],
+    "530052": [
+      "Anandapuram (Visakhapatnam)",
+      "Tarluvada"
+    ],
+    "530053": [
+      "Aganampudi",
+      "Pedamadaka"
+    ],
+    "531163": [
+      "Bheemunipatnam",
+      "Boddapalem",
+      "Boyapalem",
+      "Chepaluppada",
+      "INS Kalinga",
+      "J.V.Agraharam",
+      "Kapuluppada",
+      "Kothaparadesipalem",
+      "Nerellavalasa",
+      "Peddipalem",
+      "Rayapalem",
+      "Vellanki",
+      "Vemulavalasa"
+    ],
+    "531173": [
+      "Chinamushidiwada",
+      "Chintalapalem",
+      "Gandigundam",
+      "Gidijala",
+      "Gorapalle",
+      "Gudilova",
+      "Gurrampalem",
+      "Pedagadi",
+      "Pendurthy",
+      "Rampuram",
+      "Saripalli",
+      "Sontyam",
+      "V. Juttada"
+    ]
+  },
+  "area_points": [
+    {
+      "area": "Kurupam Market",
+      "pincodes": [
+        "530001"
+      ],
+      "lat": 17.6985145,
+      "lng": 83.294862,
+      "ward": "Ward 39 - Thomson Street",
+      "km_to_ward": 0.59
+    },
+    {
+      "area": "KGH",
+      "pincodes": [
+        "530002"
+      ],
+      "lat": 17.7087374,
+      "lng": 83.3060385,
+      "ward": "Ward 29 - Kannayyapeta",
+      "km_to_ward": 0.69
+    },
+    {
+      "area": "Maharanipeta",
+      "pincodes": [
+        "530002"
+      ],
+      "lat": 17.7106864,
+      "lng": 83.313465,
+      "ward": "Ward 29 - Kannayyapeta",
+      "km_to_ward": 0.54
+    },
+    {
+      "area": "Turners Choultry",
+      "pincodes": [
+        "530002"
+      ],
+      "lat": 17.7090528,
+      "lng": 83.3009752,
+      "ward": "Ward 37 - Relli Veedhi",
+      "km_to_ward": 0.77
+    },
+    {
+      "area": "A U Engg College",
+      "pincodes": [
+        "530003"
+      ],
+      "lat": 17.728816,
+      "lng": 83.32008499999999,
+      "ward": "Ward 27 - VIP Road",
+      "km_to_ward": 0.51
+    },
+    {
+      "area": "Andhra University",
+      "pincodes": [
+        "530003"
+      ],
+      "lat": 17.7259095,
+      "lng": 83.3244216,
+      "ward": "Ward 8 - Law College",
+      "km_to_ward": 0.27
+    },
+    {
+      "area": "Chinawaltair",
+      "pincodes": [
+        "530003"
+      ],
+      "lat": 17.7257642,
+      "lng": 83.3361327,
+      "ward": "Ward 91 - Nethaji Veedhi",
+      "km_to_ward": 0.25
+    },
+    {
+      "area": "Ghandhi Place",
+      "pincodes": [
+        "530003"
+      ],
+      "lat": 17.7300005,
+      "lng": 83.3016545,
+      "ward": "Ward 61 - Gandhiji Street",
+      "km_to_ward": 0
+    },
+    {
+      "area": "Pithapuram Colony",
+      "pincodes": [
+        "530003"
+      ],
+      "lat": 17.734703,
+      "lng": 83.3268324,
+      "ward": "Ward 10 - Rajeev Nagar",
+      "km_to_ward": 0.04
+    },
+    {
+      "area": "Vidya Bhavan",
+      "pincodes": [
+        "530003"
+      ],
+      "lat": 17.7220212,
+      "lng": 83.32877409999999,
+      "ward": "Ward 8 - Law College",
+      "km_to_ward": 0.37
+    },
+    {
+      "area": "Gnanapuram",
+      "pincodes": [
+        "530004"
+      ],
+      "lat": 17.7207517,
+      "lng": 83.28471549999999,
+      "ward": "Ward 77 - Goruduvanipalem",
+      "km_to_ward": 1
+    },
+    {
+      "area": "LIC Building",
+      "pincodes": [
+        "530004"
+      ],
+      "lat": 17.7223862,
+      "lng": 83.3022885,
+      "ward": "Ward 32 - South Jail Road",
+      "km_to_ward": 0.38
+    },
+    {
+      "area": "Gandhigram (Visakhapatnam)",
+      "pincodes": [
+        "530005"
+      ],
+      "lat": 17.6815466,
+      "lng": 83.2617452,
+      "ward": "Ward 85 - Talariavanipalem",
+      "km_to_ward": 1.18
+    },
+    {
+      "area": "Nausenabagh",
+      "pincodes": [
+        "530005"
+      ],
+      "lat": 17.6821757,
+      "lng": 83.25461519999999,
+      "ward": "Ward 82 - Gandhi Nagar & Anjayya Colony & Income Tax St.",
+      "km_to_ward": 0.92
+    },
+    {
+      "area": "Yarada",
+      "pincodes": [
+        "530005"
+      ],
+      "lat": 17.6630996,
+      "lng": 83.27802779999999,
+      "ward": "Ward 64 - Yarada",
+      "km_to_ward": 0
+    },
+    {
+      "area": "Industrial Estate (Visakhapatnam)",
+      "pincodes": [
+        "530007"
+      ],
+      "lat": 17.7391633,
+      "lng": 83.2633123,
+      "ward": "Ward 9 - Ramalayam Street",
+      "km_to_ward": 1.14
+    },
+    {
+      "area": "Muralinagar",
+      "pincodes": [
+        "530007"
+      ],
+      "lat": 17.7472398,
+      "lng": 83.2626433,
+      "ward": "Ward 51 - Madhavadhara",
+      "km_to_ward": 0.5
+    },
+    {
+      "area": "Kancharapalem",
+      "pincodes": [
+        "530008"
+      ],
+      "lat": 17.7354064,
+      "lng": 83.27378569999999,
+      "ward": "Ward 46 - Madhusudhan Nagar",
+      "km_to_ward": 1.04
+    },
+    {
+      "area": "Marripalem Vuda Colony",
+      "pincodes": [
+        "530009"
+      ],
+      "lat": 17.740063,
+      "lng": 83.251907,
+      "ward": "Ward 53 - Bhaskar Gardens",
+      "km_to_ward": 0.52
+    },
+    {
+      "area": "N A D",
+      "pincodes": [
+        "530009"
+      ],
+      "lat": 17.7447092,
+      "lng": 83.2318634,
+      "ward": "Ward 67 - Ganesh Nagar",
+      "km_to_ward": 0.63
+    },
+    {
+      "area": "Visakhapatnam Airport",
+      "pincodes": [
+        "530009"
+      ],
+      "lat": 17.7283829,
+      "lng": 83.22338719999999,
+      "ward": "Ward 89 - Chandra Nagar",
+      "km_to_ward": 1.87
+    },
+    {
+      "area": "Malkapuram",
+      "pincodes": [
+        "530011"
+      ],
+      "lat": 17.6854667,
+      "lng": 83.2432403,
+      "ward": "Ward 81 - Parts of GNT Road",
+      "km_to_ward": 0.41
+    },
+    {
+      "area": "Autonagar",
+      "pincodes": [
+        "530012"
+      ],
+      "lat": 17.6962258,
+      "lng": 83.1874184,
+      "ward": "Ward 71 - Auto Nagar",
+      "km_to_ward": 0
+    },
+    {
+      "area": "B H P V",
+      "pincodes": [
+        "530012"
+      ],
+      "lat": 17.702254,
+      "lng": 83.2009613,
+      "ward": "Ward 70 - Chattivanipalem",
+      "km_to_ward": 1.02
+    },
+    {
+      "area": "Jaggayyapalem",
+      "pincodes": [
+        "530012"
+      ],
+      "lat": 17.7212715,
+      "lng": 83.1960967,
+      "ward": "Ward 68 - Akkireddy palem Main road Akkireddy Palem",
+      "km_to_ward": 0.7
+    },
+    {
+      "area": "Mindi",
+      "pincodes": [
+        "530012"
+      ],
+      "lat": 17.7032853,
+      "lng": 83.21572479999999,
+      "ward": "Ward 70 - Chattivanipalem",
+      "km_to_ward": 1.56
+    },
+    {
+      "area": "Sheelanagar",
+      "pincodes": [
+        "530012"
+      ],
+      "lat": 17.7161359,
+      "lng": 83.19668490000001,
+      "ward": "Ward 68 - Akkireddy palem Main road Akkireddy Palem",
+      "km_to_ward": 1.1
+    },
+    {
+      "area": "Tunglam",
+      "pincodes": [
+        "530012"
+      ],
+      "lat": 17.7064655,
+      "lng": 83.1903543,
+      "ward": "Ward 84 - Takasi veedhi part",
+      "km_to_ward": 0.49
+    },
+    {
+      "area": "P & T Colony (VM)",
+      "pincodes": [
+        "530013"
+      ],
+      "lat": 17.7362142,
+      "lng": 83.3124448,
+      "ward": "Ward 5 - Boyyipalem Junction",
+      "km_to_ward": 0.65
+    },
+    {
+      "area": "Naval Dock Yard",
+      "pincodes": [
+        "530014"
+      ],
+      "lat": 17.6953754,
+      "lng": 83.26242520000001,
+      "ward": "Ward 81 - Parts of GNT Road",
+      "km_to_ward": 2.2
+    },
+    {
+      "area": "Zinc Smelter P",
+      "pincodes": [
+        "530015"
+      ],
+      "lat": 17.6883446,
+      "lng": 83.2242184,
+      "ward": "Ward 58 - Ajantha Colony",
+      "km_to_ward": 0.84
+    },
+    {
+      "area": "Akkayyapalem",
+      "pincodes": [
+        "530016"
+      ],
+      "lat": 17.7352775,
+      "lng": 83.29995249999999,
+      "ward": "Ward 26 - Lalitha Nagar",
+      "km_to_ward": 0.15
+    },
+    {
+      "area": "Dwarakanagar",
+      "pincodes": [
+        "530016"
+      ],
+      "lat": 17.7294167,
+      "lng": 83.3092679,
+      "ward": "Ward 59 - Ashok Nagar Colony",
+      "km_to_ward": 0.37
+    },
+    {
+      "area": "L B Colony",
+      "pincodes": [
+        "530017"
+      ],
+      "lat": 17.7328338,
+      "lng": 83.3368562,
+      "ward": "Ward 20 - Peawaltari Junction",
+      "km_to_ward": 0.38
+    },
+    {
+      "area": "M.V.P.Colony",
+      "pincodes": [
+        "530017"
+      ],
+      "lat": 17.7413117,
+      "lng": 83.3345037,
+      "ward": "Ward 19 - MVP Sector-12",
+      "km_to_ward": 0.49
+    },
+    {
+      "area": "Marripalem",
+      "pincodes": [
+        "530018"
+      ],
+      "lat": 17.740063,
+      "lng": 83.251907,
+      "ward": "Ward 53 - Bhaskar Gardens",
+      "km_to_ward": 0.52
+    },
+    {
+      "area": "Dabagardens",
+      "pincodes": [
+        "530020"
+      ],
+      "lat": 17.7160309,
+      "lng": 83.2974204,
+      "ward": "Ward 32 - South Jail Road",
+      "km_to_ward": 0.53
+    },
+    {
+      "area": "VM Bus Station",
+      "pincodes": [
+        "530020"
+      ],
+      "lat": 17.7668055,
+      "lng": 83.2480916,
+      "ward": "Ward 80 - Tadi",
+      "km_to_ward": 2.22
+    },
+    {
+      "area": "H B Colony",
+      "pincodes": [
+        "530022"
+      ],
+      "lat": 17.745901,
+      "lng": 83.3231217,
+      "ward": "Ward 16 - HB Colony",
+      "km_to_ward": 0
+    },
+    {
+      "area": "Isakathota",
+      "pincodes": [
+        "530022"
+      ],
+      "lat": 17.7412623,
+      "lng": 83.3248275,
+      "ward": "Ward 24 - Kranthi Nagar",
+      "km_to_ward": 0.13
+    },
+    {
+      "area": "Salagramapuram",
+      "pincodes": [
+        "530024"
+      ],
+      "lat": 17.7405973,
+      "lng": 83.2896351,
+      "ward": "Ward 45 - Port Quarters",
+      "km_to_ward": 0.35
+    },
+    {
+      "area": "Gajuwaka",
+      "pincodes": [
+        "530026"
+      ],
+      "lat": 17.6852956,
+      "lng": 83.20374009999999,
+      "ward": "Ward 2 - Sabbivanipeta",
+      "km_to_ward": 0.63
+    },
+    {
+      "area": "Gopalapatnam",
+      "pincodes": [
+        "530027"
+      ],
+      "lat": 17.7479751,
+      "lng": 83.2179139,
+      "ward": "Ward 89 - Chandra Nagar",
+      "km_to_ward": 0.44
+    },
+    {
+      "area": "Narava",
+      "pincodes": [
+        "530027"
+      ],
+      "lat": 17.7436092,
+      "lng": 83.18391369999999,
+      "ward": "Ward 88 - Narava",
+      "km_to_ward": 0
+    },
+    {
+      "area": "NSTL",
+      "pincodes": [
+        "530027"
+      ],
+      "lat": 17.7464123,
+      "lng": 83.2385559,
+      "ward": "Ward 67 - Ganesh Nagar",
+      "km_to_ward": 0.62
+    },
+    {
+      "area": "Prahladapuram",
+      "pincodes": [
+        "530027"
+      ],
+      "lat": 17.7620112,
+      "lng": 83.22115389999999,
+      "ward": "Ward 93 - Sai Durga Nagar",
+      "km_to_ward": 0.5
+    },
+    {
+      "area": "Yellapuvanipalem",
+      "pincodes": [
+        "530027"
+      ],
+      "lat": 17.7375519,
+      "lng": 83.2164679,
+      "ward": "Ward 89 - Chandra Nagar",
+      "km_to_ward": 0.73
+    },
+    {
+      "area": "Simhachalam",
+      "pincodes": [
+        "530028"
+      ],
+      "lat": 17.7711568,
+      "lng": 83.2358316,
+      "ward": "Ward 98 - Appannapalem",
+      "km_to_ward": 1.29
+    },
+    {
+      "area": "Simhachalam Hills",
+      "pincodes": [
+        "530028"
+      ],
+      "lat": 17.7606318,
+      "lng": 83.266657,
+      "ward": "Ward 51 - Madhavadhara",
+      "km_to_ward": 1.61
+    },
+    {
+      "area": "Durganagar",
+      "pincodes": [
+        "530029"
+      ],
+      "lat": 17.806298,
+      "lng": 83.35684549999999,
+      "ward": "Ward 7 - Vambay Colony (Blocks) 1A",
+      "km_to_ward": 1.16
+    },
+    {
+      "area": "R R V Puram",
+      "pincodes": [
+        "530029"
+      ],
+      "lat": 17.757362,
+      "lng": 83.2144596,
+      "ward": "Ward 62 - Achi Naidu Thota",
+      "km_to_ward": 0.68
+    },
+    {
+      "area": "Venkatapuram",
+      "pincodes": [
+        "530029"
+      ],
+      "lat": 17.9213945,
+      "lng": 83.36170419999999,
+      "ward": "Ward 92 - Venkatapuram",
+      "km_to_ward": 0
+    },
+    {
+      "area": "Visakhapatnam Steel Project",
+      "pincodes": [
+        "530031"
+      ],
+      "lat": 17.6345641,
+      "lng": 83.1970511,
+      "ward": "Ward 76 - Bala Cheruvu Sivalayam Veedhi",
+      "km_to_ward": 3.65
+    },
+    {
+      "area": "Visakhapatnam Port",
+      "pincodes": [
+        "530035"
+      ],
+      "lat": 17.6944247,
+      "lng": 83.30081009999999,
+      "ward": "Ward 39 - Thomson Street",
+      "km_to_ward": 0.75
+    },
+    {
+      "area": "Arilova",
+      "pincodes": [
+        "530040"
+      ],
+      "lat": 17.7666503,
+      "lng": 83.313465,
+      "ward": "Ward 13 - Sundarayya nagar",
+      "km_to_ward": 0.11
+    },
+    {
+      "area": "Govt Dairy Farm",
+      "pincodes": [
+        "530040"
+      ],
+      "lat": 17.7222158,
+      "lng": 83.31443829999999,
+      "ward": "Ward 27 - VIP Road",
+      "km_to_ward": 0.58
+    },
+    {
+      "area": "Pedagadili",
+      "pincodes": [
+        "530040"
+      ],
+      "lat": 17.7592328,
+      "lng": 83.32082109999999,
+      "ward": "Ward 11 - Raveendra Nagar -II",
+      "km_to_ward": 0.79
+    },
+    {
+      "area": "Sri krishnapuram",
+      "pincodes": [
+        "530040"
+      ],
+      "lat": 17.7717683,
+      "lng": 83.2801588,
+      "ward": "Ward 69 - Chukkavaani palem",
+      "km_to_ward": 1.84
+    },
+    {
+      "area": "Pothinamallayapalem",
+      "pincodes": [
+        "530041"
+      ],
+      "lat": 17.8040515,
+      "lng": 83.346666,
+      "ward": "Ward 6 - Car shed Junction",
+      "km_to_ward": 0.1
+    },
+    {
+      "area": "Dayalnagar",
+      "pincodes": [
+        "530043"
+      ],
+      "lat": 17.6754715,
+      "lng": 83.2150266,
+      "ward": "Ward 66 - Azeemabad",
+      "km_to_ward": 0.38
+    },
+    {
+      "area": "Visalakshinagar",
+      "pincodes": [
+        "530043"
+      ],
+      "lat": 17.7536964,
+      "lng": 83.3420893,
+      "ward": "Ward 19 - MVP Sector-12",
+      "km_to_ward": 1.23
+    },
+    {
+      "area": "Balacheruvu",
+      "pincodes": [
+        "530044"
+      ],
+      "lat": 17.6542733,
+      "lng": 83.1960966,
+      "ward": "Ward 76 - Bala Cheruvu Sivalayam Veedhi",
+      "km_to_ward": 1.48
+    },
+    {
+      "area": "Dibbapalem",
+      "pincodes": [
+        "530044"
+      ],
+      "lat": 17.6322406,
+      "lng": 83.2365482,
+      "ward": "Ward 82 - Gandhi Nagar & Anjayya Colony & Income Tax St.",
+      "km_to_ward": 4.96
+    },
+    {
+      "area": "Gangavaram",
+      "pincodes": [
+        "530044"
+      ],
+      "lat": 17.6322406,
+      "lng": 83.2365482,
+      "ward": "Ward 82 - Gandhi Nagar & Anjayya Colony & Income Tax St.",
+      "km_to_ward": 4.96
+    },
+    {
+      "area": "Nadupuru",
+      "pincodes": [
+        "530044"
+      ],
+      "lat": 17.6714105,
+      "lng": 83.1983904,
+      "ward": "Ward 76 - Bala Cheruvu Sivalayam Veedhi",
+      "km_to_ward": 0.45
+    },
+    {
+      "area": "Pedagantyada",
+      "pincodes": [
+        "530044"
+      ],
+      "lat": 17.6665858,
+      "lng": 83.20630829999999,
+      "ward": "Ward 75 - Pedagantyada",
+      "km_to_ward": 0
+    },
+    {
+      "area": "Gitam Engg. College",
+      "pincodes": [
+        "530045"
+      ],
+      "lat": 17.7805278,
+      "lng": 83.374883,
+      "ward": "Ward 55 - Jashuvanagar",
+      "km_to_ward": 1.34
+    },
+    {
+      "area": "Sagar Nagar",
+      "pincodes": [
+        "530045"
+      ],
+      "lat": 17.7651566,
+      "lng": 83.356231,
+      "ward": "Ward 55 - Jashuvanagar",
+      "km_to_ward": 1.78
+    },
+    {
+      "area": "Yendada",
+      "pincodes": [
+        "530045"
+      ],
+      "lat": 17.7751229,
+      "lng": 83.3632739,
+      "ward": "Ward 55 - Jashuvanagar",
+      "km_to_ward": 0.56
+    },
+    {
+      "area": "Duvvada",
+      "pincodes": [
+        "530046"
+      ],
+      "lat": 17.6970004,
+      "lng": 83.1466159,
+      "ward": "Ward 87 - Kurmannapalem Part",
+      "km_to_ward": 2.22
+    },
+    {
+      "area": "Vadlapudi",
+      "pincodes": [
+        "530046"
+      ],
+      "lat": 17.6887498,
+      "lng": 83.1774301,
+      "ward": "Ward 87 - Kurmannapalem Part",
+      "km_to_ward": 1.18
+    },
+    {
+      "area": "Chintalaagaraharam",
+      "pincodes": [
+        "530047"
+      ],
+      "lat": 17.7848326,
+      "lng": 83.1997296,
+      "ward": "Ward 95 - MES Layout",
+      "km_to_ward": 0.22
+    },
+    {
+      "area": "Vepagunta (Visakhapatnam)",
+      "pincodes": [
+        "530047"
+      ],
+      "lat": 17.7759818,
+      "lng": 83.21646439999999,
+      "ward": "Ward 98 - Appannapalem",
+      "km_to_ward": 0.83
+    },
+    {
+      "area": "Gayatri Engg College",
+      "pincodes": [
+        "530048"
+      ],
+      "lat": 17.8204597,
+      "lng": 83.342295,
+      "ward": "Ward 38 - Agraharam Veedhi",
+      "km_to_ward": 1.75
+    },
+    {
+      "area": "Madhurawada",
+      "pincodes": [
+        "530048"
+      ],
+      "lat": 17.8243075,
+      "lng": 83.35642829999999,
+      "ward": "Ward 7 - Vambay Colony (Blocks) 1A",
+      "km_to_ward": 1.52
+    },
+    {
+      "area": "Marikavalasa",
+      "pincodes": [
+        "530048"
+      ],
+      "lat": 17.8286437,
+      "lng": 83.3702528,
+      "ward": "Ward 7 - Vambay Colony (Blocks) 1A",
+      "km_to_ward": 1.79
+    },
+    {
+      "area": "Sez",
+      "pincodes": [
+        "530049"
+      ],
+      "lat": 17.7081356,
+      "lng": 83.152447,
+      "ward": "Ward 87 - Kurmannapalem Part",
+      "km_to_ward": 2.45
+    },
+    {
+      "area": "Sujatha Nagar",
+      "pincodes": [
+        "530051"
+      ],
+      "lat": 17.798598,
+      "lng": 83.2144596,
+      "ward": "Ward 96 - Pendurthi old Village",
+      "km_to_ward": 0.97
+    },
+    {
+      "area": "Aganampudi",
+      "pincodes": [
+        "530053"
+      ],
+      "lat": 17.6864348,
+      "lng": 83.1377658,
+      "ward": "Ward 87 - Kurmannapalem Part",
+      "km_to_ward": 3.07
+    },
+    {
+      "area": "Boddapalem",
+      "pincodes": [
+        "531163"
+      ],
+      "lat": 17.8842857,
+      "lng": 83.3854977,
+      "ward": "Ward 92 - Venkatapuram",
+      "km_to_ward": 4.83
+    },
+    {
+      "area": "Boyapalem",
+      "pincodes": [
+        "531163"
+      ],
+      "lat": 17.7324917,
+      "lng": 83.2842438,
+      "ward": "Ward 77 - Goruduvanipalem",
+      "km_to_ward": 1.22
+    },
+    {
+      "area": "INS Kalinga",
+      "pincodes": [
+        "531163"
+      ],
+      "lat": 17.86286,
+      "lng": 83.41365309999999,
+      "ward": "Ward 90 - Vidyuth Nagar",
+      "km_to_ward": 3.23
+    },
+    {
+      "area": "Chinamushidiwada",
+      "pincodes": [
+        "531173"
+      ],
+      "lat": 17.8023759,
+      "lng": 83.204814,
+      "ward": "Ward 96 - Pendurthi old Village",
+      "km_to_ward": 0.56
+    },
+    {
+      "area": "Chintalapalem",
+      "pincodes": [
+        "531173"
+      ],
+      "lat": 17.8548652,
+      "lng": 83.2017384,
+      "ward": "Ward 14 - Near N R I Hospital",
+      "km_to_ward": 3.66
+    },
+    {
+      "area": "Gurrampalem",
+      "pincodes": [
+        "531173"
+      ],
+      "lat": 17.820374,
+      "lng": 83.1986155,
+      "ward": "Ward 14 - Near N R I Hospital",
+      "km_to_ward": 0.25
+    },
+    {
+      "area": "Pendurthy",
+      "pincodes": [
+        "531173"
+      ],
+      "lat": 17.80552,
+      "lng": 83.20891259999999,
+      "ward": "Ward 96 - Pendurthi old Village",
+      "km_to_ward": 0
+    },
+    {
+      "area": "V. Juttada",
+      "pincodes": [
+        "531173"
+      ],
+      "lat": 17.8260649,
+      "lng": 83.2328608,
+      "ward": "Ward 96 - Pendurthi old Village",
+      "km_to_ward": 3.41
+    }
+  ]
+}

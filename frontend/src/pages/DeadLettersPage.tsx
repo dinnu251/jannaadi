@@ -9,10 +9,17 @@ const DeadLettersPage: React.FC = () => {
   const t = translations[language];
   const [items, setItems] = useState<DeadLetter[]>([]);
   const [loading, setLoading] = useState(true);
+  const [loadError, setLoadError] = useState<string | null>(null);
 
   useEffect(() => {
     api.getDeadLetters().then(res => {
-      if (res.data) setItems(res.data.items);
+      if (res.data) {
+        setItems(res.data.items);
+      } else {
+        // Bug fix: a 403 (non-admin) or real server error previously fell through
+        // to fake mock dead-letter data with no indication it wasn't real.
+        setLoadError(res.error?.message ?? 'Could not load dead letters. Admin access is required.');
+      }
       setLoading(false);
     });
   }, []);
@@ -26,6 +33,10 @@ const DeadLettersPage: React.FC = () => {
 
       {loading ? (
         <p>Loading...</p>
+      ) : loadError ? (
+        <div role="alert" style={{ padding: 'var(--spacing-md)', backgroundColor: '#FDECEA', color: 'var(--color-error)', borderRadius: 'var(--border-radius-sm)' }}>
+          {loadError}
+        </div>
       ) : (
         <div style={{ display: 'grid', gap: 'var(--spacing-md)' }}>
           {items.map(item => (

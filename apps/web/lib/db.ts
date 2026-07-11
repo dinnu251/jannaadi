@@ -12,9 +12,12 @@ const g = globalThis as unknown as { __jannaadiPool?: Pool };
 
 export function db(): Pool {
   if (!g.__jannaadiPool) {
-    if (!process.env.DATABASE_URL) throw new Error("DATABASE_URL not set");
+    // Web app connects as jannaadi_web (non-owner) so RLS policies bite.
+    // Worker connects as jannaadi_owner (bypasses RLS — processes all rows).
+    const connStr = process.env.WEB_DATABASE_URL ?? process.env.DATABASE_URL;
+    if (!connStr) throw new Error("WEB_DATABASE_URL (or DATABASE_URL) not set");
     g.__jannaadiPool = new Pool({
-      connectionString: process.env.DATABASE_URL,
+      connectionString: connStr,
       max: 10,
       // a DB restart must surface as a loud error, not a silent hang on a dead socket
       connectionTimeoutMillis: 10_000,
@@ -24,6 +27,28 @@ export function db(): Pool {
     g.__jannaadiPool.on("error", (e) => console.error(`[pg pool] idle client error: ${e.message}`));
   }
   return g.__jannaadiPool;
+}
+
+// Owner pool — BYPASSES RLS. Use ONLY for queries that are self-scoping by
+// construction: the Twilio STATUS lookup filters by sender_ref = HMAC of the
+// requesting phone number (a caller can only ever derive their own ref), so it
+// can't read anyone else's rows. Anonymous webhooks have no session for the RLS
+// DAL, and the DEMO_MODE worker already runs on this same owner connection.
+const go = globalThis as unknown as { __jannaadiOwnerPool?: Pool };
+export function ownerDb(): Pool {
+  if (!go.__jannaadiOwnerPool) {
+    const connStr = process.env.DATABASE_URL ?? process.env.WEB_DATABASE_URL;
+    if (!connStr) throw new Error("DATABASE_URL not set");
+    go.__jannaadiOwnerPool = new Pool({
+      connectionString: connStr,
+      max: 4,
+      connectionTimeoutMillis: 10_000,
+      query_timeout: 30_000,
+      keepAlive: true,
+    });
+    go.__jannaadiOwnerPool.on("error", (e) => console.error(`[pg owner pool] idle client error: ${e.message}`));
+  }
+  return go.__jannaadiOwnerPool;
 }
 
 // RLS DAL. BEGIN → set_config(user_id) → set_config(role) → query → COMMIT.

@@ -12,13 +12,16 @@
   
   --color-error: #C0392B; /* Red (Dead-letters only) */
   --color-error-light: #D9534F;
-  
+
+  --color-success: #4A7C59; /* Moss — resolved/verified, semantic, separate from the saffron accent */
+  --color-warning: #B7791F; /* Amber — in-progress/acknowledged */
+
   --color-text-main: #2C3E50;
   --color-text-muted: #7F8C8D;
   --color-text-inverse: #FFFFFF;
 
   /* Typography */
-  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-family: 'Outfit', 'Noto Sans Telugu', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   
   /* Layout & Spacing */
   --spacing-xs: 4px;
@@ -46,6 +49,8 @@
 body {
   font-family: var(--font-family);
   background-color: var(--color-background);
+  background-image: radial-gradient(circle at 15% 50%, rgba(242, 163, 78, 0.08), transparent 25%), radial-gradient(circle at 85% 30%, rgba(26, 112, 119, 0.08), transparent 25%);
+  background-attachment: fixed;
   color: var(--color-text-main);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
@@ -78,8 +83,21 @@ button {
 }
 
 /* Base App Container - Mobile First */
+/* Bug fix: min-height doesn't give descendants a definite height to resolve
+   height:100% against, so panes meant to scroll internally (e.g. the
+   dashboard's ranked-priority list) instead grew #root to their full content
+   height, stretching the whole page to thousands of px and pushing sibling
+   panels (like the heatmap) far below the viewport. height:100vh gives #root
+   (and <main> below it) a real height to resolve height:100% against; <main>
+   is the actual scroll boundary (see App.tsx) so plain content pages keep
+   scrolling normally while the dashboard's own overflow:hidden root opts it
+   out in favour of its per-column internal scroll. */
+html, body {
+  height: 100%;
+}
+
 #root {
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -89,18 +107,27 @@ button {
   background-color: var(--color-primary);
   color: var(--color-text-inverse);
   padding: var(--spacing-sm) var(--spacing-lg);
-  border-radius: var(--border-radius-md);
-  font-weight: 500;
-  transition: background-color 0.2s ease;
+  border-radius: var(--border-radius-full);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  box-shadow: 0 4px 14px 0 rgba(15, 82, 87, 0.39);
+  transition: all 0.3s ease;
 }
 
-.btn-primary:hover {
+.btn-primary:hover:not(:disabled) {
   background-color: var(--color-primary-light);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(15, 82, 87, 0.23);
+}
+
+.btn-primary:active:not(:disabled) {
+  transform: translateY(0);
 }
 
 .btn-primary:disabled {
-  opacity: 0.7;
+  opacity: 0.6;
   cursor: not-allowed;
+  box-shadow: none;
 }
 
 .btn-accent {
@@ -132,11 +159,19 @@ button {
 }
 
 .card {
-  background-color: var(--color-surface);
-  border-radius: var(--border-radius-md);
-  padding: var(--spacing-md);
-  box-shadow: var(--shadow-sm);
-  border: 1px solid rgba(0,0,0,0.05);
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 30px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
 .input-field {

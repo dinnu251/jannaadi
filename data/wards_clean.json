@@ -5,7 +5,7 @@
     "lat": 17.7384,
     "lng": 83.3862,
     "population": 18098,
-    "demo_weight": 1
+    "demo_weight": 1.054
   },
   {
     "ward_number": 2,
@@ -13,7 +13,7 @@
     "lat": 17.6864,
     "lng": 83.2096,
     "population": 17480,
-    "demo_weight": 1
+    "demo_weight": 0.984
   },
   {
     "ward_number": 3,
@@ -29,77 +29,77 @@
     "lat": 17.7383,
     "lng": 83.3626,
     "population": 19116,
-    "demo_weight": 1
+    "demo_weight": 0.977
   },
   {
     "ward_number": 5,
     "name": "Ward 5 - Boyyipalem Junction",
-    "lat": 17.7652,
-    "lng": 83.2568,
+    "lat": 17.7332549,
+    "lng": 83.3071796,
     "population": 20977,
-    "demo_weight": 1
+    "demo_weight": 0.998
   },
   {
     "ward_number": 6,
     "name": "Ward 6 - Car shed Junction",
-    "lat": 17.7063,
-    "lng": 83.3546,
+    "lat": 17.8045,
+    "lng": 83.3458,
     "population": 20365,
     "demo_weight": 1
   },
   {
     "ward_number": 7,
     "name": "Ward 7 - Vambay Colony (Blocks) 1A",
-    "lat": 17.7707,
-    "lng": 83.2833,
+    "lat": 17.8133266,
+    "lng": 83.36491439999999,
     "population": 21600,
     "demo_weight": 1
   },
   {
     "ward_number": 8,
     "name": "Ward 8 - Law College",
-    "lat": 17.7513,
-    "lng": 83.3815,
+    "lat": 17.724617,
+    "lng": 83.32662359999999,
     "population": 22544,
     "demo_weight": 1
   },
   {
     "ward_number": 9,
     "name": "Ward 9 - Ramalayam Street",
-    "lat": 17.6527,
-    "lng": 83.2542,
+    "lat": 17.7477098,
+    "lng": 83.2574405,
     "population": 18585,
     "demo_weight": 1
   },
   {
     "ward_number": 10,
     "name": "Ward 10 - Rajeev Nagar",
-    "lat": 17.7161,
-    "lng": 83.3765,
+    "lat": 17.7343372,
+    "lng": 83.3269492,
     "population": 18260,
     "demo_weight": 1
   },
   {
     "ward_number": 11,
     "name": "Ward 11 - Raveendra Nagar -II",
-    "lat": 17.8161,
-    "lng": 83.1573,
+    "lat": 17.7662096,
+    "lng": 83.3221541,
     "population": 16995,
     "demo_weight": 1
   },
   {
     "ward_number": 12,
     "name": "Ward 12 - Rajiv nagar & Central prison",
-    "lat": 17.8201,
-    "lng": 83.3891,
+    "lat": 17.7343372,
+    "lng": 83.3269492,
     "population": 18904,
     "demo_weight": 1
   },
   {
     "ward_number": 13,
     "name": "Ward 13 - Sundarayya nagar",
-    "lat": 17.6616,
-    "lng": 83.3476,
+    "lat": 17.7673639,
+    "lng": 83.3127965,
     "population": 17178,
     "demo_weight": 1
   },
@@ -114,120 +114,120 @@
   {
     "ward_number": 15,
     "name": "Ward 15 - Seethammadhara Junction",
-    "lat": 17.6691,
-    "lng": 83.2444,
+    "lat": 17.7432977,
+    "lng": 83.3143005,
     "population": 17575,
     "demo_weight": 1
   },
   {
     "ward_number": 16,
     "name": "Ward 16 - HB Colony",
-    "lat": 17.8242,
-    "lng": 83.2256,
+    "lat": 17.745901,
+    "lng": 83.3231217,
     "population": 18141,
     "demo_weight": 1
   },
   {
     "ward_number": 17,
     "name": "Ward 17 - Kotha Venkojipalem",
-    "lat": 17.6983,
-    "lng": 83.2801,
+    "lat": 17.7447411,
+    "lng": 83.32846769999999,
     "population": 18566,
     "demo_weight": 1
   },
   {
     "ward_number": 18,
     "name": "Ward 18 - Samatha college area",
-    "lat": 17.6966,
-    "lng": 83.3615,
+    "lat": 17.7427463,
+    "lng": 83.3389988,
     "population": 21832,
     "demo_weight": 1
   },
   {
     "ward_number": 19,
     "name": "Ward 19 - MVP Sector-12",
-    "lat": 17.6972,
-    "lng": 83.3341,
+    "lat": 17.7431283,
+    "lng": 83.3387462,
     "population": 19348,
     "demo_weight": 1
   },
   {
     "ward_number": 20,
     "name": "Ward 20 - Peawaltari Junction",
-    "lat": 17.7774,
-    "lng": 83.2339,
+    "lat": 17.7321626,
+    "lng": 83.3333481,
     "population": 20497,
     "demo_weight": 1
   },
   {
     "ward_number": 21,
     "name": "Ward 21 - Harbour Park road",
-    "lat": 17.7683,
-    "lng": 83.1999,
+    "lat": 17.7146419,
+    "lng": 83.3180021,
     "population": 17526,
     "demo_weight": 1
   },
   {
     "ward_number": 22,
     "name": "Ward 22 - Sivajipalem",
-    "lat": 17.7552,
-    "lng": 83.1642,
+    "lat": 17.735462,
+    "lng": 83.3275007,
     "population": 21633,
     "demo_weight": 1
   },
   {
     "ward_number": 23,
     "name": "Ward 23 - EENADU Main Road",
-    "lat": 17.7798,
-    "lng": 83.1867,
+    "lat": 17.7255443,
+    "lng": 83.3334491,
     "population": 21119,
     "demo_weight": 1
   },
   {
     "ward_number": 24,
     "name": "Ward 24 - Kranthi Nagar",
-    "lat": 17.7626,
-    "lng": 83.2137,
+    "lat": 17.7411896,
+    "lng": 83.3260387,
     "population": 20827,
     "demo_weight": 1
   },
   {
     "ward_number": 25,
     "name": "Ward 25 - Madhura Nagar",
-    "lat": 17.7834,
-    "lng": 83.3733,
+    "lat": 17.7332622,
+    "lng": 83.3061117,
     "population": 19227,
     "demo_weight": 1
   },
   {
     "ward_number": 26,
     "name": "Ward 26 - Lalitha Nagar",
-    "lat": 17.7196,
-    "lng": 83.1554,
+    "lat": 17.735181,
+    "lng": 83.301374,
     "population": 20160,
     "demo_weight": 1
   },
   {
     "ward_number": 27,
     "name": "Ward 27 - VIP Road",
-    "lat": 17.7175,
-    "lng": 83.3115,
+    "lat": 17.727303,
+    "lng": 83.3155883,
     "population": 21878,
     "demo_weight": 1
   },
   {
     "ward_number": 28,
     "name": "Ward 28 - Circuit House",
-    "lat": 17.7591,
-    "lng": 83.2545,
+    "lat": 17.7157736,
+    "lng": 83.3070558,
     "population": 23127,
     "demo_weight": 1
   },
   {
     "ward_number": 29,
     "name": "Ward 29 - Kannayyapeta",
-    "lat": 17.8063,
-    "lng": 83.396,
+    "lat": 17.713914,
+    "lng": 83.3096372,
     "population": 21037,
     "demo_weight": 1
   },
@@ -250,32 +250,32 @@
   {
     "ward_number": 32,
     "name": "Ward 32 - South Jail Road",
-    "lat": 17.7693,
-    "lng": 83.2313,
+    "lat": 17.7203848,
+    "lng": 83.2993944,
     "population": 18193,
     "demo_weight": 1
   },
   {
     "ward_number": 33,
     "name": "Ward 33 - South Jail Road",
-    "lat": 17.688,
-    "lng": 83.3763,
+    "lat": 17.7203848,
+    "lng": 83.2993944,
     "population": 18043,
     "demo_weight": 1
   },
   {
     "ward_number": 34,
     "name": "Ward 34 - SRMT Road",
-    "lat": 17.7394,
-    "lng": 83.3674,
+    "lat": 17.6922185,
+    "lng": 83.2024528,
     "population": 17500,
     "demo_weight": 1
   },
   {
     "ward_number": 35,
     "name": "Ward 35 - Stadium Road",
-    "lat": 17.7788,
-    "lng": 83.1943,
+    "lat": 17.7409404,
+    "lng": 83.3020657,
     "population": 19037,
     "demo_weight": 1
   },
@@ -290,8 +290,8 @@
   {
     "ward_number": 37,
     "name": "Ward 37 - Relli Veedhi",
-    "lat": 17.8191,
-    "lng": 83.2723,
+    "lat": 17.7025354,
+    "lng": 83.3034462,
     "population": 20013,
     "demo_weight": 1
   },
@@ -306,46 +306,46 @@
   {
     "ward_number": 39,
     "name": "Ward 39 - Thomson Street",
-    "lat": 17.7688,
-    "lng": 83.1707,
+    "lat": 17.693291,
+    "lng": 83.2938056,
     "population": 19567,
     "demo_weight": 1
   },
   {
     "ward_number": 40,
     "name": "Ward 40 - Akc Colony",
-    "lat": 17.6804,
-    "lng": 83.2729,
+    "lat": 17.6901387,
+    "lng": 83.2395271,
     "population": 21234,
     "demo_weight": 1
   },
   {
     "ward_number": 41,
     "name": "Ward 41 - Jaganadhapuram",
-    "lat": 17.7768,
-    "lng": 83.2236,
+    "lat": 17.730362,
+    "lng": 83.2986712,
     "population": 19645,
     "demo_weight": 1
   },
   {
     "ward_number": 42,
     "name": "Ward 42 - Jaganadhapuram",
-    "lat": 17.7396,
-    "lng": 83.2679,
+    "lat": 17.730362,
+    "lng": 83.2986712,
     "population": 17924,
     "demo_weight": 1
   },
   {
     "ward_number": 43,
     "name": "Ward 43 - Akkayyapalem 80 Feet road",
-    "lat": 17.6585,
-    "lng": 83.3619,
+    "lat": 17.7353412,
+    "lng": 83.2970861,
     "population": 21065,
     "demo_weight": 1
   },
   {
     "ward_number": 44,
-    "name": "Ward 44 - (name pending)",
+    "name": "Ward 44 - Santoshi Matha Temple",
     "lat": 17.7916,
     "lng": 83.3093,
     "population": 21232,
@@ -354,32 +354,32 @@
   {
     "ward_number": 45,
     "name": "Ward 45 - Port Quarters",
-    "lat": 17.8332,
-    "lng": 83.3298,
+    "lat": 17.7416425,
+    "lng": 83.2927399,
     "population": 19760,
     "demo_weight": 1
   },
   {
     "ward_number": 46,
     "name": "Ward 46 - Madhusudhan Nagar",
-    "lat": 17.7174,
-    "lng": 83.2382,
+    "lat": 17.7432952,
+    "lng": 83.2789861,
     "population": 17505,
     "demo_weight": 1
   },
   {
     "ward_number": 47,
     "name": "Ward 47 - Ambedkar Nagar",
-    "lat": 17.6829,
-    "lng": 83.2988,
+    "lat": 17.7675654,
+    "lng": 83.31421089999999,
     "population": 17618,
     "demo_weight": 1
   },
   {
     "ward_number": 48,
     "name": "Ward 48 - ASR Nagar",
-    "lat": 17.7536,
-    "lng": 83.2952,
+    "lat": 17.7456511,
+    "lng": 83.3131307,
     "population": 17833,
     "demo_weight": 1
   },
@@ -402,8 +402,8 @@
   {
     "ward_number": 51,
     "name": "Ward 51 - Madhavadhara",
-    "lat": 17.6627,
-    "lng": 83.3485,
+    "lat": 17.7486038,
+    "lng": 83.2581908,
     "population": 17845,
     "demo_weight": 1
   },
@@ -418,16 +418,16 @@
   {
     "ward_number": 53,
     "name": "Ward 53 - Bhaskar Gardens",
-    "lat": 17.7445,
-    "lng": 83.2528,
+    "lat": 17.7419061,
+    "lng": 83.24735969999999,
     "population": 17719,
     "demo_weight": 1
   },
   {
     "ward_number": 54,
     "name": "Ward 54 - 104 Area Main Road",
-    "lat": 17.8306,
-    "lng": 83.1567,
+    "lat": 17.7255443,
+    "lng": 83.3334491,
     "population": 18036,
     "demo_weight": 1
   },
@@ -458,88 +458,88 @@
   {
     "ward_number": 58,
     "name": "Ward 58 - Ajantha Colony",
-    "lat": 17.7731,
-    "lng": 83.3274,
+    "lat": 17.6913219,
+    "lng": 83.2315287,
     "population": 17957,
     "demo_weight": 1
   },
   {
     "ward_number": 59,
     "name": "Ward 59 - Ashok Nagar Colony",
-    "lat": 17.7245,
-    "lng": 83.3071,
+    "lat": 17.7261165,
+    "lng": 83.3090675,
     "population": 17591,
     "demo_weight": 1
   },
   {
     "ward_number": 60,
     "name": "Ward 60 - Ashok Nagar",
-    "lat": 17.8305,
-    "lng": 83.3475,
+    "lat": 17.7261165,
+    "lng": 83.3090675,
     "population": 18132,
     "demo_weight": 1
   },
   {
     "ward_number": 61,
     "name": "Ward 61 - Gandhiji Street",
-    "lat": 17.7691,
-    "lng": 83.3076,
+    "lat": 17.7300005,
+    "lng": 83.3016545,
     "population": 17963,
     "demo_weight": 1
   },
   {
     "ward_number": 62,
     "name": "Ward 62 - Achi Naidu Thota",
-    "lat": 17.8129,
-    "lng": 83.2551,
+    "lat": 17.7575234,
+    "lng": 83.2080778,
     "population": 18923,
     "demo_weight": 1
   },
   {
     "ward_number": 63,
     "name": "Ward 63 - Chinthala Lova",
-    "lat": 17.6893,
-    "lng": 83.2998,
+    "lat": 17.7313142,
+    "lng": 83.29736890000001,
     "population": 17521,
     "demo_weight": 1
   },
   {
     "ward_number": 64,
     "name": "Ward 64 - Yarada",
-    "lat": 17.7753,
-    "lng": 83.2048,
+    "lat": 17.6630996,
+    "lng": 83.27802779999999,
     "population": 18487,
     "demo_weight": 1
   },
   {
     "ward_number": 65,
     "name": "Ward 65 - Sanjeevagiricolony",
-    "lat": 17.6907,
-    "lng": 83.2737,
+    "lat": 17.6804113,
+    "lng": 83.21728379999999,
     "population": 18802,
     "demo_weight": 1
   },
   {
     "ward_number": 66,
     "name": "Ward 66 - Azeemabad",
-    "lat": 17.8239,
-    "lng": 83.3077,
+    "lat": 17.6774041,
+    "lng": 83.2121164,
     "population": 18959,
     "demo_weight": 1
   },
   {
     "ward_number": 67,
     "name": "Ward 67 - Ganesh Nagar",
-    "lat": 17.6653,
-    "lng": 83.3622,
+    "lat": 17.7411891,
+    "lng": 83.2365482,
     "population": 19345,
     "demo_weight": 1
   },
   {
     "ward_number": 68,
     "name": "Ward 68 - Akkireddy palem Main road Akkireddy Palem",
-    "lat": 17.8362,
-    "lng": 83.2268,
+    "lat": 17.7237581,
+    "lng": 83.1900371,
     "population": 21214,
     "demo_weight": 1
   },
@@ -554,56 +554,56 @@
   {
     "ward_number": 70,
     "name": "Ward 70 - Chattivanipalem",
-    "lat": 17.6564,
-    "lng": 83.2568,
+    "lat": 17.693852,
+    "lng": 83.2047934,
     "population": 19596,
     "demo_weight": 1
   },
   {
     "ward_number": 71,
     "name": "Ward 71 - Auto Nagar",
-    "lat": 17.8035,
-    "lng": 83.2197,
+    "lat": 17.6962258,
+    "lng": 83.1874184,
     "population": 18653,
     "demo_weight": 1
   },
   {
     "ward_number": 72,
     "name": "Ward 72 - Chinagantyada SC Colony",
-    "lat": 17.6908,
-    "lng": 83.2771,
+    "lat": 17.6807712,
+    "lng": 83.19236339999999,
     "population": 17452,
     "demo_weight": 1
   },
   {
     "ward_number": 73,
     "name": "Ward 73 - China Nadupuru part",
-    "lat": 17.689,
-    "lng": 83.266,
+    "lat": 17.6685742,
+    "lng": 83.1949839,
     "population": 17611,
     "demo_weight": 1
   },
   {
     "ward_number": 74,
     "name": "Ward 74 - Nehru Nagar",
-    "lat": 17.7323,
-    "lng": 83.2274,
+    "lat": 17.7696223,
+    "lng": 83.31284889999999,
     "population": 17514,
     "demo_weight": 1
   },
   {
     "ward_number": 75,
     "name": "Ward 75 - Pedagantyada",
-    "lat": 17.7467,
-    "lng": 83.2305,
+    "lat": 17.6665858,
+    "lng": 83.20630829999999,
     "population": 20038,
     "demo_weight": 1
   },
   {
     "ward_number": 76,
     "name": "Ward 76 - Bala Cheruvu Sivalayam Veedhi",
-    "lat": 17.8484,
-    "lng": 83.3547,
+    "lat": 17.6673412,
+    "lng": 83.19880409999999,
     "population": 17775,
     "demo_weight": 1
   },
@@ -626,8 +626,8 @@
   {
     "ward_number": 79,
     "name": "Ward 79 - Sivaji Nagar",
-    "lat": 17.8172,
-    "lng": 83.217,
+    "lat": 17.7690128,
+    "lng": 83.30882609999999,
     "population": 17643,
     "demo_weight": 1
   },
@@ -642,8 +642,8 @@
   {
     "ward_number": 81,
     "name": "Ward 81 - Parts of GNT Road",
-    "lat": 17.8021,
-    "lng": 83.3196,
+    "lat": 17.6890937,
+    "lng": 83.2427571,
     "population": 20869,
     "demo_weight": 1
   },
@@ -682,32 +682,32 @@
   {
     "ward_number": 86,
     "name": "Ward 86 - Uppara colony",
-    "lat": 17.7074,
-    "lng": 83.3699,
+    "lat": 17.6901387,
+    "lng": 83.2395271,
     "population": 21658,
     "demo_weight": 1
   },
   {
     "ward_number": 87,
     "name": "Ward 87 - Kurmannapalem Part",
-    "lat": 17.7187,
-    "lng": 83.2849,
+    "lat": 17.6905906,
+    "lng": 83.1664418,
     "population": 21183,
     "demo_weight": 1
   },
   {
     "ward_number": 88,
     "name": "Ward 88 - Narava",
-    "lat": 17.7425,
-    "lng": 83.3138,
+    "lat": 17.7436092,
+    "lng": 83.18391369999999,
     "population": 17416,
     "demo_weight": 1
   },
   {
     "ward_number": 89,
     "name": "Ward 89 - Chandra Nagar",
-    "lat": 17.7209,
-    "lng": 83.2593,
+    "lat": 17.7441354,
+    "lng": 83.21707169999999,
     "population": 20370,
     "demo_weight": 1
   },
@@ -722,24 +722,24 @@
   {
     "ward_number": 91,
     "name": "Ward 91 - Nethaji Veedhi",
-    "lat": 17.8456,
-    "lng": 83.187,
+    "lat": 17.7248925,
+    "lng": 83.3339524,
     "population": 20959,
     "demo_weight": 1
   },
   {
     "ward_number": 92,
     "name": "Ward 92 - Venkatapuram",
-    "lat": 17.8039,
-    "lng": 83.2794,
+    "lat": 17.9213945,
+    "lng": 83.36170419999999,
     "population": 20770,
     "demo_weight": 1
   },
   {
     "ward_number": 93,
     "name": "Ward 93 - Sai Durga Nagar",
-    "lat": 17.8002,
-    "lng": 83.3997,
+    "lat": 17.7662613,
+    "lng": 83.2196268,
     "population": 20469,
     "demo_weight": 1
   },
@@ -754,32 +754,32 @@
   {
     "ward_number": 95,
     "name": "Ward 95 - MES Layout",
-    "lat": 17.7532,
-    "lng": 83.3478,
+    "lat": 17.7863518,
+    "lng": 83.2010688,
     "population": 18348,
     "demo_weight": 1
   },
   {
     "ward_number": 96,
     "name": "Ward 96 - Pendurthi old Village",
-    "lat": 17.7949,
-    "lng": 83.294,
+    "lat": 17.80552,
+    "lng": 83.20891259999999,
     "population": 21594,
-    "demo_weight": 1
+    "demo_weight": 0.961
   },
   {
     "ward_number": 97,
     "name": "Ward 97 - Kranthi Nagar",
-    "lat": 17.6795,
-    "lng": 83.3354,
+    "lat": 17.7411896,
+    "lng": 83.3260387,
     "population": 19627,
     "demo_weight": 1
   },
   {
     "ward_number": 98,
     "name": "Ward 98 - Appannapalem",
-    "lat": 17.811,
-    "lng": 83.2949,
+    "lat": 17.7743915,
+    "lng": 83.2241707,
     "population": 20837,
     "demo_weight": 1
   }

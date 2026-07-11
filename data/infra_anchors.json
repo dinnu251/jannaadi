@@ -1,0 +1,1091 @@
+[
+  {
+    "name": "Vizag Railway Station",
+    "category": "railway_station",
+    "lat": 17.7216616,
+    "lng": 83.29037009999999,
+    "ward": "Ward 32 - South Jail Road",
+    "km_to_ward": 0.97,
+    "address": "P7CR+M49, Railway Quarters, Mahaarajupeta, Visakhapatnam, Andhra Pradesh 530004"
+  },
+  {
+    "name": "Visakhapatnam Railway Station",
+    "category": "railway_station",
+    "lat": 17.7213754,
+    "lng": 83.2904709,
+    "ward": "Ward 32 - South Jail Road",
+    "km_to_ward": 0.95,
+    "address": "Railway Quarters, Railway New Colony, Visakhapatnam, Andhra Pradesh 530004"
+  },
+  {
+    "name": "Visakhapatnam Railway Station lipt road",
+    "category": "railway_station",
+    "lat": 17.7213754,
+    "lng": 83.2904709,
+    "ward": "Ward 32 - South Jail Road",
+    "km_to_ward": 0.95,
+    "address": "Upper Class Waiting Room, Platform # 1, Visakhapatnam Junction, Railway Station, Waltair S"
+  },
+  {
+    "name": "Visakhapatnam Junction Railway Station",
+    "category": "railway_station",
+    "lat": 17.7214423,
+    "lng": 83.29066809999999,
+    "ward": "Ward 32 - South Jail Road",
+    "km_to_ward": 0.93,
+    "address": "P7CR+H7F, Railway Quarters, Railway New Colony, Visakhapatnam, Andhra Pradesh 530004"
+  },
+  {
+    "name": "VSKP RAILWAY STATION",
+    "category": "railway_station",
+    "lat": 17.7208345,
+    "lng": 83.2892897,
+    "ward": "Ward 32 - South Jail Road",
+    "km_to_ward": 1.07,
+    "address": "P7CQ+8PM, Railway Quarters, Mahaarajupeta, Visakhapatnam, Andhra Pradesh 530004"
+  },
+  {
+    "name": "Vishakhapatnam Railway Junction Platform#8",
+    "category": "railway_station",
+    "lat": 17.7207748,
+    "lng": 83.28987409999999,
+    "ward": "Ward 32 - South Jail Road",
+    "km_to_ward": 1.01,
+    "address": "P7CQ+8W5, Railway Quarters, Railway New Colony, Visakhapatnam, Andhra Pradesh 530004"
+  },
+  {
+    "name": "Visakhapatnam Railway Station Platform#2 & 3",
+    "category": "railway_station",
+    "lat": 17.722494,
+    "lng": 83.28966319999999,
+    "ward": "Ward 32 - South Jail Road",
+    "km_to_ward": 1.06,
+    "address": "Railway Station, Waltair Station Approach Rd, Railway Quarters, Railway New Colony, Visakh"
+  },
+  {
+    "name": "Simhachalam",
+    "category": "railway_station",
+    "lat": 17.7452529,
+    "lng": 83.2208428,
+    "ward": "Ward 89 - Chandra Nagar",
+    "km_to_ward": 0.42,
+    "address": "gopalapatnam to narava fob, NH 5 Main Road, Nad Junction, Gopalapatnam, Simhachalam, Visak"
+  },
+  {
+    "name": "railway station",
+    "category": "railway_station",
+    "lat": 17.7212004,
+    "lng": 83.28927639999999,
+    "ward": "Ward 32 - South Jail Road",
+    "km_to_ward": 1.08,
+    "address": "34, Rossillon St, Railway Quarters, Gnanapuram, Visakhapatnam, Andhra Pradesh 530004"
+  },
+  {
+    "name": "Visakhapatnam Railway Station Out Gate",
+    "category": "railway_station",
+    "lat": 17.7227134,
+    "lng": 83.2909423,
+    "ward": "Ward 32 - South Jail Road",
+    "km_to_ward": 0.93,
+    "address": "P7FR+39P, Railway Quarters, Railway New Colony, Visakhapatnam, Andhra Pradesh 530004"
+  },
+  {
+    "name": "East Coast Railway Reservation Visakhapatnam",
+    "category": "railway_station",
+    "lat": 17.7189336,
+    "lng": 83.3027962,
+    "ward": "Ward 32 - South Jail Road",
+    "km_to_ward": 0.39,
+    "address": "Railway Station, Main Rd, Railway New Colony, Visakhapatnam, Andhra Pradesh 530020"
+  },
+  {
+    "name": "Railway station platform no5",
+    "category": "railway_station",
+    "lat": 17.7226326,
+    "lng": 83.28938959999999,
+    "ward": "Ward 32 - South Jail Road",
+    "km_to_ward": 1.09,
+    "address": "P7FQ+3Q2, Railway Quarters, Railway New Colony, Visakhapatnam, Andhra Pradesh 530004"
+  },
+  {
+    "name": "Duvvada",
+    "category": "railway_station",
+    "lat": 17.7030425,
+    "lng": 83.1511067,
+    "ward": "Ward 87 - Kurmannapalem Part",
+    "km_to_ward": 2.13,
+    "address": "Duvvada, Visakhapatnam, Duvvada, Andhra Pradesh 530046"
+  },
+  {
+    "name": "Visakhapatnam Railway station Bus Bay (City Bus Stop)",
+    "category": "railway_station",
+    "lat": 17.7228427,
+    "lng": 83.29076289999999,
+    "ward": "Ward 32 - South Jail Road",
+    "km_to_ward": 0.95,
+    "address": "P7FR+48J, Waltair Station Approach Rd, Railway Quarters, Railway New Colony, Visakhapatnam"
+  },
+  {
+    "name": "132 kV Peda Waltair Substation",
+    "category": "substation",
+    "lat": 17.7299238,
+    "lng": 83.32975619999999,
+    "ward": "Ward 20 - Peawaltari Junction",
+    "km_to_ward": 0.45,
+    "address": "P8HH+XW6, Karakachettu Rd, Chinna Waltair, Pedda Waltair, Visakhapatnam, Andhra Pradesh 53"
+  },
+  {
+    "name": "AP TRANSCO Substation",
+    "category": "substation",
+    "lat": 17.7384567,
+    "lng": 83.3083314,
+    "ward": "Ward 5 - Boyyipalem Junction",
+    "km_to_ward": 0.59,
+    "address": "50-27-5/1, C/o, TPT Colony, Balayya Sastri Layout, Seethammadara, Visakhapatnam, Andhra Pr"
+  },
+  {
+    "name": "APEPDCL Pedagantyada Sub-Station",
+    "category": "substation",
+    "lat": 17.6683825,
+    "lng": 83.2081479,
+    "ward": "Ward 75 - Pedagantyada",
+    "km_to_ward": 0.28,
+    "address": "M695+972, Pedagantyada, Gajuwaka, Andhra Pradesh 530044"
+  },
+  {
+    "name": "Electricity Office and Substation",
+    "category": "substation",
+    "lat": 17.7239134,
+    "lng": 83.3049556,
+    "ward": "Ward 59 - Ashok Nagar Colony",
+    "km_to_ward": 0.5,
+    "address": "TSR Complex, 6&7, Waltair Station Approach Rd, Dwaraka Nagar, Visakhapatnam, Andhra Prades"
+  },
+  {
+    "name": "Malkapuram Substation & ADE office",
+    "category": "substation",
+    "lat": 17.6881909,
+    "lng": 83.25278519999999,
+    "ward": "Ward 81 - Parts of GNT Road",
+    "km_to_ward": 1.07,
+    "address": "M7Q3+74F, HPCL Steel Plant, Visakhapatnam, Andhra Pradesh 530011"
+  },
+  {
+    "name": "33/11kv Arilova Substation",
+    "category": "substation",
+    "lat": 17.7629334,
+    "lng": 83.31175859999999,
+    "ward": "Ward 13 - Sundarayya nagar",
+    "km_to_ward": 0.5,
+    "address": "530040, Chinna Gadhili, Hanumanthavaka, Visakhapatnam, Andhra Pradesh 530040"
+  },
+  {
+    "name": "AP Transco Visakhapatnam Port 132 Kv Sub Station",
+    "category": "substation",
+    "lat": 17.70444,
+    "lng": 83.2904605,
+    "ward": "Ward 39 - Thomson Street",
+    "km_to_ward": 1.29,
+    "address": "P73R+Q5G, HPCL Steel Plant, Visakhapatnam, Andhra Pradesh 530001"
+  },
+  {
+    "name": "AP TRANSCO",
+    "category": "substation",
+    "lat": 17.7282536,
+    "lng": 83.2813903,
+    "ward": "Ward 77 - Goruduvanipalem",
+    "km_to_ward": 0.68,
+    "address": "kancharapalem, near paydamamda temple ,132/33kv common point substation, Kancharapalem Por"
+  },
+  {
+    "name": "APEPDCL Sub-Station VIP Road.",
+    "category": "substation",
+    "lat": 17.7307615,
+    "lng": 83.31489479999999,
+    "ward": "Ward 27 - VIP Road",
+    "km_to_ward": 0.39,
+    "address": "Swarnabarathi Indoor Stadium, Rama Talkies Rd, Resapuvanipalem, Dwaraka Nagar, Visakhapatn"
+  },
+  {
+    "name": "Madhurawada Substation & DE Office Zone 3",
+    "category": "substation",
+    "lat": 17.8212045,
+    "lng": 83.35730029999999,
+    "ward": "Ward 7 - Vambay Colony (Blocks) 1A",
+    "km_to_ward": 1.19,
+    "address": "R9C4+FWM, Priyadarshini Colony, Srinivasa Nagar, Madhurawada, Madhuravada, Andhra Pradesh "
+  },
+  {
+    "name": "Power House",
+    "category": "substation",
+    "lat": 17.723915,
+    "lng": 83.32831519999999,
+    "ward": "Ward 8 - Law College",
+    "km_to_ward": 0.2,
+    "address": "Power House, Andhra University South Campus, Andhra University, Visakhapatnam, Andhra Prad"
+  },
+  {
+    "name": "Yarada Substation",
+    "category": "substation",
+    "lat": 17.6796361,
+    "lng": 83.26696729999999,
+    "ward": "Ward 85 - Talariavanipalem",
+    "km_to_ward": 1.04,
+    "address": "M7H8+VQ4, Naval Sailors Colony, Hindustan Shipyard Colony, Visakhapatnam, Andhra Pradesh 5"
+  },
+  {
+    "name": "Electrical Sub-station",
+    "category": "substation",
+    "lat": 17.6832455,
+    "lng": 83.1934849,
+    "ward": "Ward 72 - Chinagantyada SC Colony",
+    "km_to_ward": 0.3,
+    "address": "M5MV+79X, Vidya Nagar, Sri Nagar, Gajuwaka, Andhra Pradesh 530026"
+  },
+  {
+    "name": "Bhanojithota sub station",
+    "category": "substation",
+    "lat": 17.6770104,
+    "lng": 83.22120249999999,
+    "ward": "Ward 65 - Sanjeevagiricolony",
+    "km_to_ward": 0.56,
+    "address": "14-8-25/12/A, Pedagantyada, Gajuwaka, Andhra Pradesh 530026"
+  },
+  {
+    "name": "Aptransco Gangavaram Port Substation",
+    "category": "substation",
+    "lat": 17.6589563,
+    "lng": 83.20717119999999,
+    "ward": "Ward 75 - Pedagantyada",
+    "km_to_ward": 0.85,
+    "address": "M654+HVM, Pedagantyada, Gajuwaka, Andhra Pradesh 530044"
+  },
+  {
+    "name": "33KV D3-Visakhapatnam Sub Station Apepdcl",
+    "category": "substation",
+    "lat": 17.7149159,
+    "lng": 83.3065713,
+    "ward": "Ward 28 - Circuit House",
+    "km_to_ward": 0.11,
+    "address": "P874+XJ8, Waltair Main Rd, Ram Nagar, Visakhapatnam, Andhra Pradesh 530002"
+  },
+  {
+    "name": "Electrical Sub-Station",
+    "category": "substation",
+    "lat": 17.748259,
+    "lng": 83.32450779999999,
+    "ward": "Ward 16 - HB Colony",
+    "km_to_ward": 0.3,
+    "address": "P8XF+8R2, Durga Nagar, H B Colony, Visakhapatnam, Andhra Pradesh 530022"
+  },
+  {
+    "name": "Madhawadhara Substation",
+    "category": "substation",
+    "lat": 17.7507867,
+    "lng": 83.24469669999999,
+    "ward": "Ward 53 - Bhaskar Gardens",
+    "km_to_ward": 1.03,
+    "address": "Q62V+8V8, Vuda Layout, Madhavadhara, Visakhapatnam, Andhra Pradesh 530018"
+  },
+  {
+    "name": "Electrical Sub Station",
+    "category": "substation",
+    "lat": 17.7701253,
+    "lng": 83.29174549999999,
+    "ward": "Ward 79 - Sivaji Nagar",
+    "km_to_ward": 1.81,
+    "address": "Q7CR+3M5, Mudsarlova, Sundarayya Nagar, Durga Nagar, Arilova, Adavivaram, Andhra Pradesh 5"
+  },
+  {
+    "name": "APEPDCL Electrical Substation",
+    "category": "substation",
+    "lat": 17.7267785,
+    "lng": 83.32524339999999,
+    "ward": "Ward 8 - Law College",
+    "km_to_ward": 0.28,
+    "address": "P8GF+MXM, Andhra University South Campus, Andhra University, Visakhapatnam, Andhra Pradesh"
+  },
+  {
+    "name": "APEPDCL 33/11 kV Sub-station",
+    "category": "substation",
+    "lat": 17.6968497,
+    "lng": 83.1747007,
+    "ward": "Ward 87 - Kurmannapalem Part",
+    "km_to_ward": 1.12,
+    "address": "Plot no, 6, Vadlapudi, Apiic society layout, Auto Nagar, Gajuwaka, Andhra Pradesh 530012"
+  },
+  {
+    "name": "Electrical Substation",
+    "category": "substation",
+    "lat": 17.6931701,
+    "lng": 83.20727180000002,
+    "ward": "Ward 70 - Chattivanipalem",
+    "km_to_ward": 0.27,
+    "address": "M6V4+7W6, Gajuwaka, Andhra Pradesh 530026"
+  },
+  {
+    "name": "VPT Electrical Sub station",
+    "category": "substation",
+    "lat": 17.739711,
+    "lng": 83.2919138,
+    "ward": "Ward 45 - Port Quarters",
+    "km_to_ward": 0.23,
+    "address": "P7QR+VQM, Port Quarters, Kailasapuram, Visakhapatnam, Andhra Pradesh 530024"
+  },
+  {
+    "name": "Pedda Waltair Electrical Substation",
+    "category": "substation",
+    "lat": 17.7306743,
+    "lng": 83.3356033,
+    "ward": "Ward 20 - Peawaltari Junction",
+    "km_to_ward": 0.29,
+    "address": "Pedda Waltair Electrical Substation, Karakachettu Rd, Near Laxmi Ganapathi Temple, Chinna "
+  },
+  {
+    "name": "Dairy Farm Substation",
+    "category": "substation",
+    "lat": 17.7634698,
+    "lng": 83.313559,
+    "ward": "Ward 13 - Sundarayya nagar",
+    "km_to_ward": 0.44,
+    "address": "Q877+9CM, BRTS Rd, Chinna Gadhili, Arilova, Visakhapatnam, Andhra Pradesh 530040"
+  },
+  {
+    "name": "Electrical Sub Satation",
+    "category": "substation",
+    "lat": 17.8793174,
+    "lng": 83.3755386,
+    "ward": "Ward 90 - Vidyuth Nagar",
+    "km_to_ward": 4.87,
+    "address": "V9HG+P6F, Vemulavalasa, Andhra Pradesh 531163"
+  },
+  {
+    "name": "Electrical substation",
+    "category": "substation",
+    "lat": 17.6910488,
+    "lng": 83.1905908,
+    "ward": "Ward 71 - Auto Nagar",
+    "km_to_ward": 0.67,
+    "address": "22/a, d block, Auto Nagar, Gajuwaka, Andhra Pradesh 530012"
+  },
+  {
+    "name": "Power substation",
+    "category": "substation",
+    "lat": 17.6764045,
+    "lng": 83.2421782,
+    "ward": "Ward 82 - Gandhi Nagar & Anjayya Colony & Income Tax St.",
+    "km_to_ward": 0.97,
+    "address": "M6GR+HV7, Mulagada, Visakhapatnam, Andhra Pradesh 530011"
+  },
+  {
+    "name": "Electrical Sub-station",
+    "category": "substation",
+    "lat": 17.6719033,
+    "lng": 83.1707787,
+    "ward": "Ward 87 - Kurmannapalem Part",
+    "km_to_ward": 2.13,
+    "address": "M5CC+Q86, Gajuwaka, Andhra Pradesh 530031"
+  },
+  {
+    "name": "33/11KV GOPALAPATNAM RURAL SS",
+    "category": "substation",
+    "lat": 17.7609289,
+    "lng": 83.22213289999999,
+    "ward": "Ward 93 - Sai Durga Nagar",
+    "km_to_ward": 0.65,
+    "address": "Q66C+9VC, Krishna Nagar - Virat Nagar Rd, Durga Nagar, Prahaladapuram, Simhachalam, Vepagu"
+  },
+  {
+    "name": "Sagar nagar electricity office",
+    "category": "substation",
+    "lat": 17.7679922,
+    "lng": 83.3649337,
+    "ward": "Ward 55 - Jashuvanagar",
+    "km_to_ward": 1.38,
+    "address": "Q997+5XV, Yendada, Endada, Andhra Pradesh 530045"
+  },
+  {
+    "name": "Asst.Divisional Engineer/Asst.Engineer Eastern Power Distribution Company Of Andhra Pradesh Limited",
+    "category": "substation",
+    "lat": 17.7037523,
+    "lng": 83.2053734,
+    "ward": "Ward 70 - Chattivanipalem",
+    "km_to_ward": 1.1,
+    "address": "P634+G45, Gajuwaka, Akkireddypalem, Gajuwaka, Andhra Pradesh 530012"
+  },
+  {
+    "name": "Substation 4, East Coast Railway",
+    "category": "substation",
+    "lat": 17.72497,
+    "lng": 83.3001678,
+    "ward": "Ward 32 - South Jail Road",
+    "km_to_ward": 0.52,
+    "address": "P8F2+X3M, Waltair Station Approach Rd, Dondaparthy, Railway New Colony, Visakhapatnam, And"
+  },
+  {
+    "name": "33/kv / 11/kv substation tennetinagar",
+    "category": "substation",
+    "lat": 17.7503624,
+    "lng": 83.2624925,
+    "ward": "Ward 51 - Madhavadhara",
+    "km_to_ward": 0.5,
+    "address": "Q726+4XX, Tenneti Nagar, Muralinagar, Madhavadhara, Visakhapatnam, Andhra Pradesh 530007"
+  },
+  {
+    "name": "APEPDCL Circle Office",
+    "category": "substation",
+    "lat": 17.7151986,
+    "lng": 83.3071482,
+    "ward": "Ward 28 - Circuit House",
+    "km_to_ward": 0.06,
+    "address": "P884+3VC, Waltair Main Rd, Opposite to Hotel Green Park, Jagadamba Junction, Visakhapatnam"
+  },
+  {
+    "name": "GE (ND) COMPLIANT CELL",
+    "category": "substation",
+    "lat": 17.724977,
+    "lng": 83.2950608,
+    "ward": "Ward 32 - South Jail Road",
+    "km_to_ward": 0.69,
+    "address": "P7FW+X2V, Railway New Colony, Visakhapatnam, Andhra Pradesh 530004"
+  },
+  {
+    "name": "AP EASTERN POWER DISTRIBUTION COMPANY",
+    "category": "substation",
+    "lat": 17.714915,
+    "lng": 83.3241403,
+    "ward": "Ward 21 - Harbour Park road",
+    "km_to_ward": 0.65,
+    "address": "P87F+XM6, RK Beach Rd, Yoga Village, HPCL Colony, Pandurangapuram, Visakhapatnam, Andhra P"
+  },
+  {
+    "name": "11kv Substation.",
+    "category": "substation",
+    "lat": 17.6732227,
+    "lng": 83.2806567,
+    "ward": "Ward 49 - Kamakshi Nagar",
+    "km_to_ward": 0.98,
+    "address": "M7FJ+77M, Dolphin Hill Rd, Gajuwaka, Andhra Pradesh 530005"
+  },
+  {
+    "name": "SCADA CONTROL ROOM",
+    "category": "substation",
+    "lat": 17.7299126,
+    "lng": 83.329595,
+    "ward": "Ward 20 - Peawaltari Junction",
+    "km_to_ward": 0.47,
+    "address": "P8HH+XR9, Pedda Waltair, Visakhapatnam, Andhra Pradesh 530017"
+  },
+  {
+    "name": "APEPDCL Harita 33/11 KV substation",
+    "category": "substation",
+    "lat": 17.8177584,
+    "lng": 83.3814883,
+    "ward": "Ward 7 - Vambay Colony (Blocks) 1A",
+    "km_to_ward": 1.82,
+    "address": "Harita township, 100 Feet Rd, Madhurawada, Madhuravada, Andhra Pradesh 530045"
+  },
+  {
+    "name": "Electrical Sub Station",
+    "category": "substation",
+    "lat": 17.78245,
+    "lng": 83.3585028,
+    "ward": "Ward 55 - Jashuvanagar",
+    "km_to_ward": 0.47,
+    "address": "Q9J5+XCC, Sandipini Nagar, Yendada, Endada, Andhra Pradesh 530045"
+  },
+  {
+    "name": "Pothinamallayya Palem Current Office",
+    "category": "substation",
+    "lat": 17.7990924,
+    "lng": 83.3451838,
+    "ward": "Ward 6 - Car shed Junction",
+    "km_to_ward": 0.6,
+    "address": "Q8XW+J3M, Sri Surya Tulasi Nagar, Pothinamallayya Palem, Potinamallayyapalem, Andhra Prade"
+  },
+  {
+    "name": "Electric sub-station vadlapudi",
+    "category": "substation",
+    "lat": 17.6828066,
+    "lng": 83.1787385,
+    "ward": "Ward 72 - Chinagantyada SC Colony",
+    "km_to_ward": 1.46,
+    "address": "M5MH+4FH, Vadlapudi, Kurmannapalem, Gajuwaka, Andhra Pradesh 530046"
+  },
+  {
+    "name": "APEPDCL",
+    "category": "substation",
+    "lat": 17.7386352,
+    "lng": 83.3087029,
+    "ward": "Ward 5 - Boyyipalem Junction",
+    "km_to_ward": 0.62,
+    "address": "50-27-5/1, C/o, TPT Colony, Balayya Sastri Layout, Seethammadara, Visakhapatnam, Andhra Pr"
+  },
+  {
+    "name": "Muvvala Vani Palem MVP Colony Substation",
+    "category": "substation",
+    "lat": 17.7410059,
+    "lng": 83.33630989999999,
+    "ward": "Ward 18 - Samatha college area",
+    "km_to_ward": 0.34,
+    "address": "SECTOR-3, D.No.1-77-1, Plot No.10/3, MVP Double Rd, MVP Sector 3, Sector 4, Sector 7, MVP "
+  },
+  {
+    "name": "Electricity Govt Office",
+    "category": "substation",
+    "lat": 17.7278364,
+    "lng": 83.28132269999999,
+    "ward": "Ward 77 - Goruduvanipalem",
+    "km_to_ward": 0.64,
+    "address": "P7HJ+4GP, Kancharapalem Port Quarters, Kancharapalem, Visakhapatnam, Andhra Pradesh 530008"
+  },
+  {
+    "name": "Electrical sub station,Sathivanipalem",
+    "category": "substation",
+    "lat": 17.723698,
+    "lng": 83.1859868,
+    "ward": "Ward 68 - Akkireddy palem Main road Akkireddy Palem",
+    "km_to_ward": 0.43,
+    "address": "P5FP+F9H, Sathivani Palam, Kotta Narava, Andhra Pradesh 530012"
+  },
+  {
+    "name": "Electrical Sub Station",
+    "category": "substation",
+    "lat": 17.8264616,
+    "lng": 83.39705049999999,
+    "ward": "Ward 90 - Vidyuth Nagar",
+    "km_to_ward": 1.49,
+    "address": "VUDA layout, R9GW+HRM, Kapuluppada, Andhra Pradesh 531163"
+  },
+  {
+    "name": "IndPower",
+    "category": "substation",
+    "lat": 17.7009774,
+    "lng": 83.1800658,
+    "ward": "Ward 71 - Auto Nagar",
+    "km_to_ward": 0.94,
+    "address": "Plot No. 61, Block - E, Auto Nagar, Auto Nagar, Gajuwaka, Andhra Pradesh 530012"
+  },
+  {
+    "name": "Ahaskara Transformers And Services Private Limited",
+    "category": "substation",
+    "lat": 17.698785,
+    "lng": 83.1965565,
+    "ward": "Ward 34 - SRMT Road",
+    "km_to_ward": 0.96,
+    "address": "Block No. B-12, Near Visakha Wire Ropes Autonagar, Gajuwaka, Andhra Pradesh 530012"
+  },
+  {
+    "name": "Electrical Sub-Station",
+    "category": "substation",
+    "lat": 17.7450426,
+    "lng": 83.24234469999999,
+    "ward": "Ward 53 - Bhaskar Gardens",
+    "km_to_ward": 0.64,
+    "address": "58-14-88, 93, Netaji Colony, Marripalem, Visakhapatnam, Andhra Pradesh 530009"
+  },
+  {
+    "name": "Rajeev Nagar Substation",
+    "category": "substation",
+    "lat": 17.706272,
+    "lng": 83.15427199999999,
+    "ward": "Ward 87 - Kurmannapalem Part",
+    "km_to_ward": 2.17,
+    "address": "P543+GQV, Duvvada, Visakhapatnam, Duvvada, Andhra Pradesh 530049"
+  },
+  {
+    "name": "APEPDCL",
+    "category": "substation",
+    "lat": 17.7026874,
+    "lng": 83.2941373,
+    "ward": "Ward 37 - Relli Veedhi",
+    "km_to_ward": 0.99,
+    "address": "P73V+3MC, Raja Rammohan Roy Rd, Kotha Rd, Mtc palem, Jagadamba Junction, Visakhapatnam, An"
+  },
+  {
+    "name": "Substation",
+    "category": "substation",
+    "lat": 17.7724632,
+    "lng": 83.3709071,
+    "ward": "Ward 55 - Jashuvanagar",
+    "km_to_ward": 1.25,
+    "address": "Q9CC+X9M, Yendada, Endada, Andhra Pradesh 530045"
+  },
+  {
+    "name": "APEPDCL Substation",
+    "category": "substation",
+    "lat": 17.7470199,
+    "lng": 83.2735716,
+    "ward": "Ward 46 - Madhusudhan Nagar",
+    "km_to_ward": 0.71,
+    "address": "P7WF+P83, Kapparada NGGO Colony, Srinivasa Nagar, Madhavadhara, Visakhapatnam, Andhra Prad"
+  },
+  {
+    "name": "Eastern Power Distribution Company Of AP",
+    "category": "substation",
+    "lat": 17.7133503,
+    "lng": 83.2993154,
+    "ward": "Ward 32 - South Jail Road",
+    "km_to_ward": 0.78,
+    "address": "P77X+8PW, Waltair Station Approach Rd, Dolphin Area, Allipuram, Visakhapatnam, Andhra Prad"
+  },
+  {
+    "name": "APEPDCL ASRNagar 33/11KV Substation",
+    "category": "substation",
+    "lat": 17.7467206,
+    "lng": 83.3077728,
+    "ward": "Ward 48 - ASR Nagar",
+    "km_to_ward": 0.58,
+    "address": "P8W5+M4J, Maruti Nagar, Seethammadara, Adavivaram, Andhra Pradesh 530013"
+  },
+  {
+    "name": "Aganampudi APEPDCL 33/11 Substation",
+    "category": "substation",
+    "lat": 17.6861744,
+    "lng": 83.144368,
+    "ward": "Ward 87 - Kurmannapalem Part",
+    "km_to_ward": 2.39,
+    "address": "M4PV+FP9, Gallavanipalem, Prasanthinagar, Aganampudi, Gajuwaka, Andhra Pradesh 530053"
+  },
+  {
+    "name": "Apepdcl Electrical Substatio",
+    "category": "substation",
+    "lat": 17.7307216,
+    "lng": 83.3355273,
+    "ward": "Ward 20 - Peawaltari Junction",
+    "km_to_ward": 0.28,
+    "address": "8-1-97, Waltair Main Rd, Near Laxmi Ganapathi Temple, Waltair Main Rd, Near Laxmi Ganapath"
+  },
+  {
+    "name": "33/11 KV Duvvada TIDCO SS",
+    "category": "substation",
+    "lat": 17.7026998,
+    "lng": 83.13776399999999,
+    "ward": "Ward 87 - Kurmannapalem Part",
+    "km_to_ward": 3.32,
+    "address": "P43Q+34C, Duvvada, Andhra Pradesh 530053"
+  },
+  {
+    "name": "PG POWER SYSTEMS",
+    "category": "power_grid",
+    "lat": 17.7205031,
+    "lng": 83.3314027,
+    "ward": "Ward 91 - Nethaji Veedhi",
+    "km_to_ward": 0.56,
+    "address": "Shripal Towers 502C Kirlampudi Layout Plot 44 & 45 Land mark: Vijaya Ganapathy Temple, Kir"
+  },
+  {
+    "name": "BSNL Velampeta Telephone Exchange",
+    "category": "bsnl",
+    "lat": 17.7039432,
+    "lng": 83.29650099999999,
+    "ward": "Ward 37 - Relli Veedhi",
+    "km_to_ward": 0.75,
+    "address": "Town Kotha Rd, opposite to BSNL Tower, Velampeta, Port Area, Visakhapatnam, Andhra Pradesh"
+  },
+  {
+    "name": "BSNL office",
+    "category": "bsnl",
+    "lat": 17.7217569,
+    "lng": 83.33341779999999,
+    "ward": "Ward 91 - Nethaji Veedhi",
+    "km_to_ward": 0.35,
+    "address": "7-1-75 GROUND FLOO BESIDES SCHOOL OF DIST EDN, Chinna Waltair Main Rd, M V V ESTEEM, Kirla"
+  },
+  {
+    "name": "Bsnl (Customer Care)",
+    "category": "bsnl",
+    "lat": 17.7176999,
+    "lng": 83.3016732,
+    "ward": "Ward 32 - South Jail Road",
+    "km_to_ward": 0.38,
+    "address": "1, Daba Garden Rd, State Bank Of India Colony, Daba Gardens, Allipuram, Visakhapatnam, And"
+  },
+  {
+    "name": "Bsnl Exchange",
+    "category": "bsnl",
+    "lat": 17.6709718,
+    "lng": 83.20088109999999,
+    "ward": "Ward 76 - Bala Cheruvu Sivalayam Veedhi",
+    "km_to_ward": 0.46,
+    "address": "samatha nagar mig143,, Kothakarnavani Palem, Pedagantyada, Gajuwaka, Andhra Pradesh 530044"
+  },
+  {
+    "name": "BSNL Office",
+    "category": "bsnl",
+    "lat": 17.740153,
+    "lng": 83.2648364,
+    "ward": "Ward 9 - Ramalayam Street",
+    "km_to_ward": 1.15,
+    "address": "Telephone Exchange, Near Vth Town Police Station, Opp. Coca Cola CompanyVisakhapatnam, P7R"
+  },
+  {
+    "name": "BSNL Office",
+    "category": "bsnl",
+    "lat": 17.7189364,
+    "lng": 83.30275209999999,
+    "ward": "Ward 32 - South Jail Road",
+    "km_to_ward": 0.39,
+    "address": "36-6-2, Daba Garden Rd Opposite Prema Samajam, Opposite BSNL Office, Daba Garden Rd, Oppos"
+  },
+  {
+    "name": "BSNL Office",
+    "category": "bsnl",
+    "lat": 17.7304375,
+    "lng": 83.31339059999999,
+    "ward": "Ward 27 - VIP Road",
+    "km_to_ward": 0.42,
+    "address": "P8J7+59C, stadium road, near bullaya College and swarnabharti, Dwaraka Nagar, Visakhapatna"
+  },
+  {
+    "name": "BSNL - Mindi Telephone Exchange",
+    "category": "bsnl",
+    "lat": 17.7017692,
+    "lng": 83.2066526,
+    "ward": "Ward 70 - Chattivanipalem",
+    "km_to_ward": 0.9,
+    "address": "Ramnagar, Mindi, Gajuwaka, Andhra Pradesh 530012"
+  },
+  {
+    "name": "BSNL Telephone Exchange",
+    "category": "bsnl",
+    "lat": 17.7431163,
+    "lng": 83.2362749,
+    "ward": "Ward 67 - Ganesh Nagar",
+    "km_to_ward": 0.22,
+    "address": "58-13-16/1, Bus Stop Ln, Near NAD Cross Road, Nad Junction, Shanti Nagar, Marripalem, Visa"
+  },
+  {
+    "name": "BSNL Office",
+    "category": "bsnl",
+    "lat": 17.7042675,
+    "lng": 83.29724259999999,
+    "ward": "Ward 37 - Relli Veedhi",
+    "km_to_ward": 0.68,
+    "address": "26-15-65, Main Rd, 33 Godowns, AVN College Down, Jagadamba Junction, Visakhapatnam, Andhra"
+  },
+  {
+    "name": "BSNL GM Office",
+    "category": "bsnl",
+    "lat": 17.7193479,
+    "lng": 83.302854,
+    "ward": "Ward 32 - South Jail Road",
+    "km_to_ward": 0.38,
+    "address": "P893+P4Q, Puthvari St, Mahaarajupeta, Visakhapatnam, Andhra Pradesh 530020"
+  },
+  {
+    "name": "BSNL Telephone Exchange, Akkayapalem",
+    "category": "bsnl",
+    "lat": 17.7305358,
+    "lng": 83.2966816,
+    "ward": "Ward 63 - Chinthala Lova",
+    "km_to_ward": 0.11,
+    "address": "Jaganadhapuram, Akkayyapalem, Visakhapatnam, Andhra Pradesh 530016"
+  },
+  {
+    "name": "BSNL Telephone Exchange Lalithanagar",
+    "category": "bsnl",
+    "lat": 17.7327009,
+    "lng": 83.2996745,
+    "ward": "Ward 41 - Jaganadhapuram",
+    "km_to_ward": 0.28,
+    "address": "45-30-7/1, Sangam Office Rd, Lalitha Nagar, Akkayyapalem, Visakhapatnam, Andhra Pradesh 53"
+  },
+  {
+    "name": "Bharat Sanchar Nigam Limited",
+    "category": "bsnl",
+    "lat": 17.7410391,
+    "lng": 83.3350901,
+    "ward": "Ward 19 - MVP Sector-12",
+    "km_to_ward": 0.45,
+    "address": "P8RP+C28, MVP Double Rd, Beside ATM, Sector 8, MVP Colony, Visakhapatnam, Andhra Pradesh 5"
+  },
+  {
+    "name": "BSNL Telephone Office",
+    "category": "bsnl",
+    "lat": 17.8137422,
+    "lng": 83.2070414,
+    "ward": "Ward 96 - Pendurthi old Village",
+    "km_to_ward": 0.94,
+    "address": "R674+FRV, Mahalaxmi Nagar, Pendurthi, Pendurti, Andhra Pradesh 531173"
+  },
+  {
+    "name": "BSNL OFFICE",
+    "category": "bsnl",
+    "lat": 17.6385583,
+    "lng": 83.1727676,
+    "ward": "Ward 73 - China Nadupuru part",
+    "km_to_ward": 4.08,
+    "address": "J5QF+C4C, Vizag Steel Plant Plaza Rd, Siddeswaram, Visakhapatnam Steel Plant, Gajuwaka, An"
+  },
+  {
+    "name": "BSNL Office",
+    "category": "bsnl",
+    "lat": 17.752345,
+    "lng": 83.21709899999999,
+    "ward": "Ward 89 - Chandra Nagar",
+    "km_to_ward": 0.91,
+    "address": "near, Rythu Bazar Rd, Tailors Colony, Gopalapatnam, Simhachalam, Pullambotlapalem, Andhra "
+  },
+  {
+    "name": "BSNL Mobile Services & Bill collection Centre",
+    "category": "bsnl",
+    "lat": 17.7185603,
+    "lng": 83.3020906,
+    "ward": "Ward 32 - South Jail Road",
+    "km_to_ward": 0.35,
+    "address": "BSNL Office back side road Krishna Nagar Rd, P892+CRG, Daba Gardens, Allipuram, Visakhapat"
+  },
+  {
+    "name": "BSNL Office",
+    "category": "bsnl",
+    "lat": 17.7201978,
+    "lng": 83.19881939999999,
+    "ward": "Ward 68 - Akkireddy palem Main road Akkireddy Palem",
+    "km_to_ward": 1.01,
+    "address": "Adari Complex, Venkateswara Colony Rd, beside SBI Bank, opposite Electrical Sub Station, V"
+  },
+  {
+    "name": "BSNL Store",
+    "category": "bsnl",
+    "lat": 17.720447,
+    "lng": 83.29629,
+    "ward": "Ward 32 - South Jail Road",
+    "km_to_ward": 0.33,
+    "address": "33-14-140, MAIN ROAD, Wireless Colony, ALLIPURAM, Mahaarajupeta, Visakhapatnam, Andhra Pra"
+  },
+  {
+    "name": "BSNL Office",
+    "category": "bsnl",
+    "lat": 17.8271558,
+    "lng": 83.357923,
+    "ward": "Ward 7 - Vambay Colony (Blocks) 1A",
+    "km_to_ward": 1.71,
+    "address": "beside IOCL petrol bunk, Srinivasa Nagar, Madhurawada, Kommadi, Madhuravada, Andhra Prades"
+  },
+  {
+    "name": "Narsimhanagar BSNL Telephone Exchange",
+    "category": "bsnl",
+    "lat": 17.7419933,
+    "lng": 83.2906154,
+    "ward": "Ward 45 - Port Quarters",
+    "km_to_ward": 0.23,
+    "address": "P7RR+Q6X, Unnamed Road, Port Quarters, Kailasapuram, Visakhapatnam, Andhra Pradesh 530024"
+  },
+  {
+    "name": "BSNL Office, 30-6-41/1, Krishna Gardens Rd",
+    "category": "bsnl",
+    "lat": 17.7186539,
+    "lng": 83.3019012,
+    "ward": "Ward 32 - South Jail Road",
+    "km_to_ward": 0.33,
+    "address": "BSNL Office, GVMC BACK SIDE, 30-6-41/1, Krishna Gardens Rd, Daba Gardens, Allipuram, Visak"
+  },
+  {
+    "name": "Bharat Sanchar Nigam Limited",
+    "category": "bsnl",
+    "lat": 17.7436959,
+    "lng": 83.31760779999999,
+    "ward": "Ward 15 - Seethammadhara Junction",
+    "km_to_ward": 0.35,
+    "address": "P8V9+F2H, HB Colony Rd, Last Bus Stop, H B Colony, Visakhapatnam, Andhra Pradesh 530022"
+  },
+  {
+    "name": "EPDCL cmd office",
+    "category": "discom_office",
+    "lat": 17.7390625,
+    "lng": 83.30817189999999,
+    "ward": "Ward 5 - Boyyipalem Junction",
+    "km_to_ward": 0.65,
+    "address": "P8Q5+H76, TPT Colony, Balayya Sastri Layout, Seethammadara, Visakhapatnam, Andhra Pradesh "
+  },
+  {
+    "name": "APEPDCL Office, Eastern Power",
+    "category": "discom_office",
+    "lat": 17.767611,
+    "lng": 83.36595899999999,
+    "ward": "Ward 55 - Jashuvanagar",
+    "km_to_ward": 1.44,
+    "address": "Q998+29W, Beach Rd, Yendada, Bheemunipatnam, Endada, Andhra Pradesh 530045"
+  },
+  {
+    "name": "ARILOVA APEPDCL OFFICE",
+    "category": "discom_office",
+    "lat": 17.7629026,
+    "lng": 83.31231819999999,
+    "ward": "Ward 13 - Sundarayya nagar",
+    "km_to_ward": 0.5,
+    "address": "Q876+5W8, Chinna Gadhili, Hanumanthavaka, Visakhapatnam, Andhra Pradesh 530040"
+  },
+  {
+    "name": "apepdcl S.E office kakinada",
+    "category": "discom_office",
+    "lat": 17.7272791,
+    "lng": 83.3006637,
+    "ward": "Ward 61 - Gandhiji Street",
+    "km_to_ward": 0.32,
+    "address": "P8G2+W77, g.t road, beside jamiya maseed, Beside Ramalayam, Dondaparthy, Railway New Colon"
+  },
+  {
+    "name": "Laxminarayana APEPDCL",
+    "category": "discom_office",
+    "lat": 17.7028405,
+    "lng": 83.2942133,
+    "ward": "Ward 37 - Relli Veedhi",
+    "km_to_ward": 0.98,
+    "address": "26-8-66, Raja Rammohan Roy Rd, Mtc palem, Jagadamba Junction, Visakhapatnam, Andhra Prades"
+  },
+  {
+    "name": "Andhra Pradesh Eastern Power Distribution Corporation Limited",
+    "category": "discom_office",
+    "lat": 17.6904382,
+    "lng": 83.1902166,
+    "ward": "Ward 71 - Auto Nagar",
+    "km_to_ward": 0.71,
+    "address": "M5RR+53G, Sri Nagar Rd, Auto Nagar, Gajuwaka, Andhra Pradesh 530012"
+  },
+  {
+    "name": "Current Office Gopalapatnam (APEPDCL)",
+    "category": "discom_office",
+    "lat": 17.7578141,
+    "lng": 83.21790039999999,
+    "ward": "Ward 93 - Sai Durga Nagar",
+    "km_to_ward": 0.96,
+    "address": "Q659+45C, Prahaladapuram, Simhachalam, Vepagunta, Andhra Pradesh 530029"
+  },
+  {
+    "name": "APEPDCL electric control",
+    "category": "discom_office",
+    "lat": 17.6831487,
+    "lng": 83.1933967,
+    "ward": "Ward 72 - Chinagantyada SC Colony",
+    "km_to_ward": 0.29,
+    "address": "27-1-23, NH16, Coastal Andhra Region, National Highway 16, Coastal Andhra Region, Chaitany"
+  },
+  {
+    "name": "APEPDCL office, Thatichetlapalem section, Visakhapatnam, Andhrapradesh",
+    "category": "discom_office",
+    "lat": 17.7230353,
+    "lng": 83.29804659999999,
+    "ward": "Ward 32 - South Jail Road",
+    "km_to_ward": 0.33,
+    "address": "P7FX+667, Railway Quarters, Mahaarajupeta, Visakhapatnam, Andhra Pradesh 530004"
+  },
+  {
+    "name": "CURRENT OFFICE APEPDCL(vims)",
+    "category": "discom_office",
+    "lat": 17.7581747,
+    "lng": 83.32845189999999,
+    "ward": "Ward 11 - Raveendra Nagar -II",
+    "km_to_ward": 1.11,
+    "address": "Q85H+798 Visakha Institute of Medical Sciences, Hanumanthavaka, Visakhapatnam, Andhra Prad"
+  },
+  {
+    "name": "APEPDCL office",
+    "category": "discom_office",
+    "lat": 17.7557865,
+    "lng": 83.3431545,
+    "ward": "Ward 19 - MVP Sector-12",
+    "km_to_ward": 1.48,
+    "address": "Q84V+77P, Unnamed Road, Dayal Nagar Colony, Vishalakshi Nagar, Visakhapatnam, Andhra Prade"
+  },
+  {
+    "name": "ApEpdcl Bill payment",
+    "category": "discom_office",
+    "lat": 17.7408015,
+    "lng": 83.2638611,
+    "ward": "Ward 9 - Ramalayam Street",
+    "km_to_ward": 1.03,
+    "address": "AH45, Muralinagar, Madhavadhara, Visakhapatnam, Andhra Pradesh 530007"
+  },
+  {
+    "name": "Electrical Sub-Station APEPDCL",
+    "category": "discom_office",
+    "lat": 17.7322635,
+    "lng": 83.29741829999999,
+    "ward": "Ward 63 - Chinthala Lova",
+    "km_to_ward": 0.11,
+    "address": "P7JW+WX3, Akkayyapalem, Visakhapatnam, Andhra Pradesh 530016"
+  },
+  {
+    "name": "APEPDCL District Stores",
+    "category": "discom_office",
+    "lat": 17.7599143,
+    "lng": 83.2174237,
+    "ward": "Ward 93 - Sai Durga Nagar",
+    "km_to_ward": 0.74,
+    "address": "Q658+XX7, NAD Rd, Vepagunta Main Road, R. R. V. Puram (P. O), Vepagunta, Function Hall, Pr"
+  },
+  {
+    "name": "Office Of The Deputy Chief Electrical Inspector (APEPDCL)",
+    "category": "discom_office",
+    "lat": 17.7414281,
+    "lng": 83.3385693,
+    "ward": "Ward 18 - Samatha college area",
+    "km_to_ward": 0.15,
+    "address": "2/10, opp. A.S Raja Womens College, Sector 10, MVP Colony, Visakhapatnam, Andhra Pradesh 5"
+  },
+  {
+    "name": "Eastern Power Distribution Company Of Andhra Pradesh Limited - Power Bill Center",
+    "category": "discom_office",
+    "lat": 17.7410209,
+    "lng": 83.33618539999999,
+    "ward": "Ward 18 - Samatha college area",
+    "km_to_ward": 0.35,
+    "address": "P8RP+CF3, MVP Double Rd, Sector 8, MVP Colony, Visakhapatnam, Andhra Pradesh 530017"
+  },
+  {
+    "name": "APEPDCL TRAINING CENTRE EPTI and CoEET",
+    "category": "discom_office",
+    "lat": 17.7674354,
+    "lng": 83.3664123,
+    "ward": "Ward 55 - Jashuvanagar",
+    "km_to_ward": 1.48,
+    "address": "Sagar Nagar, Visakhapatnam, Endada, Andhra Pradesh 530045"
+  },
+  {
+    "name": "CMD camp office, APEPDCL",
+    "category": "discom_office",
+    "lat": 17.7378694,
+    "lng": 83.30823219999999,
+    "ward": "Ward 5 - Boyyipalem Junction",
+    "km_to_ward": 0.53,
+    "address": "P8Q5+47G, NRI Hospital Rd, TPT Colony, Balayya Sastri Layout, Seethammadara, Visakhapatnam"
+  },
+  {
+    "name": "Eastern Power Disribution Company Of Andhra Pradesh Limited",
+    "category": "discom_office",
+    "lat": 17.729904,
+    "lng": 83.3295517,
+    "ward": "Ward 20 - Peawaltari Junction",
+    "km_to_ward": 0.47,
+    "address": "P8HH+XR7, Waltair Main Rd, Pedda Waltair, Visakhapatnam, Andhra Pradesh 530017"
+  },
+  {
+    "name": "Power Office( Gopalapatnam power office) or Eastern power office",
+    "category": "discom_office",
+    "lat": 17.7579507,
+    "lng": 83.2174725,
+    "ward": "Ward 93 - Sai Durga Nagar",
+    "km_to_ward": 0.95,
+    "address": "Q658+5XQ, Prahaladapuram, Simhachalam, Vepagunta, Andhra Pradesh 530029"
+  },
+  {
+    "name": "APEPDCL",
+    "category": "discom_office",
+    "lat": 17.7236756,
+    "lng": 83.1860073,
+    "ward": "Ward 68 - Akkireddy palem Main road Akkireddy Palem",
+    "km_to_ward": 0.43,
+    "address": "P5FP+FCC, Kotta Narava, Andhra Pradesh 530012"
+  },
+  {
+    "name": "APTIDCO parlovapeta",
+    "category": "discom_office",
+    "lat": 17.7378994,
+    "lng": 83.3084932,
+    "ward": "Ward 5 - Boyyipalem Junction",
+    "km_to_ward": 0.53,
+    "address": "APEPDCL CMD Residence, TPT Colony, Balayya Sastri Layout, Seethammadara, Visakhapatnam, An"
+  }
+]

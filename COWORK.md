@@ -44,4 +44,13 @@ Read first: handovers/API.md (frozen contract), handovers/acceptance/backend.md 
 9. Security gatekeeper (auth layer):
    - RLS gate: I-8 (db/rls_policies.sql) must be executed on Cloud SQL before B-16 wires up API endpoints. Verify applied; do not unblock B-17/F-15 until confirmed.
    - Google OAuth gate: I-9 (GCP OAuth Consent Screen + Web Client ID) must be complete and GOOGLE_CLIENT_ID + GOOGLE_CLIENT_SECRET loaded into Secret Manager before B-16 can run. Nag human until done.
-   - Secret scan (auth additions): AUTH_SECRET, AUTH_URL, GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET must NEVER appear in any track
+   - Secret scan (auth additions): AUTH_SECRET, AUTH_URL, GOOGLE_CLIENT_ID, GOOGLE_CLIENT_SECRET must NEVER appear in any tracked file. They belong in .env.local (local dev) and Secret Manager (Cloud Run). Verify on every pre-push scan alongside existing checks.
+   - Contract unblock order: Claude Code must ship auth.ts contract + route protection (B-16) before Google Antigravity builds the Login UI (F-15). Do not let Antigravity start F-15 until B-16 status=pass with evidence.
+
+## Rules
+- Timezone IST. Deadline: 8 July, submit by 20:00 IST, hard stop 23:59.
+- Escalate to human immediately: contract drift, quota exhaustion signals from either agent, replay failures on B2, any human-only task still open after 7 July 12:00 IST.
+- Never mark anything done on an agent's claim alone — evidence file or it didn't happen.
+- Terse updates: table of task/status/blocker, one line per escalation. No narration.
+
+Start: read all referenced files, generate initial SPRINT.md, report the three most at-risk items.

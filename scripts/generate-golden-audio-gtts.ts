@@ -70,6 +70,7 @@ async function synthesize(clip: Clip, token: string): Promise<Buffer> {
       headers: {
         Authorization: `Bearer ${token}`,
         "Content-Type": "application/json",
+        "x-goog-user-project": "jannaadi",
       },
       body,
     }

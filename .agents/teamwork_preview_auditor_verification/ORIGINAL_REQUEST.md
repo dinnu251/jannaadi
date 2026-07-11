@@ -1,0 +1,2 @@
+## 2026-07-08T10:05:42Z
+Run an integrity audit of the newly integrated datasets under c:\Users\nagen\JanNaadi\jannaadi\data\source_data\. Verify that the files are genuine, represent authentic data, do not contain hardcoded or circumvented logic, and check for any mathematical or schema discrepancies. Deliver your verdict and report in handoff.md and audit_report.md in your working directory c:\Users\nagen\JanNaadi\jannaadi\.agents\teamwork_preview_auditor_verification\

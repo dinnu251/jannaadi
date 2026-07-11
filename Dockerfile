@@ -13,6 +13,15 @@ COPY package.json package-lock.json ./
 COPY apps/web/package.json apps/web/package.json
 RUN npm ci
 
+# Stage 1b: Build the Vite SPA (frontend/) — served same-origin by the web role
+# via the fallback rewrite in apps/web/next.config.ts (Auth.js cookies just work)
+FROM base AS spa
+WORKDIR /spa
+COPY frontend/package.json frontend/package-lock.json ./
+RUN npm ci --no-audit --no-fund
+COPY frontend .
+RUN npm run build
+
 # Stage 2: Build the application
 FROM base AS builder
 WORKDIR /app
@@ -36,9 +45,10 @@ EXPOSE 8080
 RUN addgroup --system --gid 1001 nodejs
 RUN adduser --system --uid 1001 nextjs
 
-# Standalone build output (web role). No public/ dir in this app — API routes only.
+# Standalone build output (web role) + the SPA as its public dir
 COPY --from=builder --chown=nextjs:nodejs /app/apps/web/.next/standalone ./
 COPY --from=builder --chown=nextjs:nodejs /app/apps/web/.next/static ./apps/web/.next/static
+COPY --from=spa --chown=nextjs:nodejs /spa/dist ./apps/web/public
 # /api/rank reads api/rank.sql at runtime (resolved ../../api from the server cwd)
 COPY --from=builder --chown=nextjs:nodejs /app/api ./api
 # Worker role: sources + pruned prod node_modules (tsx is a prod dep; overwrites the

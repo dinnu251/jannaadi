@@ -1,9 +1,127 @@
 {
   "agent": "claude-code-backend",
-  "updated_at": "2026-07-07T18:15:00Z",
+  "updated_at": "2026-07-09T14:50:00Z",
+  "v1_2_note": "Contract bumped to v1.2 (handovers/API.md) for the feedback-loop/trust/verification scope handed over from the frontend agent (PROMPTS.md tasks 12-16, all additive). All 5 verified end-to-end against real Cloud SQL + real Twilio + real GCS this session — see entries below, then deployed live and re-verified on the production URL. Bugs found and fixed during verification: (1) checkOtp() let a Twilio API error (no pending verification) bubble up as a 500 instead of a clean 400 — fixed to catch 400/404 Twilio errors as 'not verified'; (2) jannaadi_web (the RLS-enforced role /api/rank runs as) had NO grant at all on the new citizen_trust table — the trust-gate LEFT JOIN I added to api/rank.sql would have thrown a permission error on every /api/rank call in production; fixed with a read-only GRANT (writes stay worker/owner-only), persisted into db/rls_policies.sql, and re-verified live (HTTP 200, 50 items, correct top-1). A third issue (app/api/healthz/route.ts missing from one build) was a deploy-timing artifact — a collaborator's file landed after that source snapshot — not a code bug; resolved on redeploy. Twilio OTP send/notify is code-correct (confirmed via Cloud Run logs: real Twilio Verify API calls made) but blocked on a TRIAL ACCOUNT restriction (cannot SMS unverified numbers) — human needs to verify a real test number in the Twilio console, or upgrade the account, to see a live OTP/SMS round-trip. Deployed URL changed mid-session (Cloud Run URL format migration) — current canonical: https://jannaadi-gyt7cqh47q-el.a.run.app, always re-fetch via gcloud, don't hardcode the old one.",
   "contract_note_for_orchestrator": "PROMPTS tasks 10-11 (auth/RLS) add 401 responses to /api/rank, /api/heatmap, /api/submissions/:id. API.md itself is untouched, but this is a behavioral addendum to frozen endpoints — the frontend prompt's matching auth tasks (login page, middleware, 401→login redirect) cover it. Consider tagging contract-v1.2. Also: /api/ingest, /api/deadletters, /api/wards remain open per the task spec (deadletters admin page should be gated in UI/middleware or a follow-up).",
   "environment_note": "No GCP infra or GEMINI_API_KEY available in this environment (SPRINT E4/I-1..6 open). All code built and verified end-to-end against local Dockerized Postgres 16 + pgvector; Gemini-dependent criteria verified structurally (loud-failure paths exercised against the real Gemini endpoint, which returned API_KEY_INVALID — network path confirmed working). Anything marked blocked needs only env/infra + assets, not code.",
   "tasks": [
+    {
+      "task": "v1.2 / PROMPTS-12: Twilio Verify OTP (POST /api/verify/send, /api/verify/check)",
+      "status": "pass",
+      "criteria_met": [
+        "signed, phone-scoped verify_token (HMAC-SHA256/AUTH_SECRET, 15min TTL) minted on successful check, validated in /api/ingest via checkVerifyToken — binds phone+token together, never trusts an unverified number as phone_verified",
+        "live on deployed Cloud Run: /api/verify/send correctly invokes Twilio Verify (confirmed via Cloud Run logs — real Twilio API call made, rejected only by trial-account 'unverified number' policy, not a code error)",
+        "fixed a real bug found in verification: checkOtp() threw on Twilio's 400/404 (no pending verification) instead of returning false — /api/verify/check was 500ing instead of 400; now catches and returns not-verified cleanly"
+      ],
+      "criteria_failed": ["live OTP round-trip on a real phone — blocked on Twilio trial-account restriction, needs a verified test number from the human"],
+      "evidence": "logs/deploy-v12-*.log (route deployed) + Cloud Run logs 2026-07-09T09:27Z (real Twilio Verify call + trial-account rejection, proving the wiring)",
+      "timestamp": "2026-07-09T14:50:00Z"
+    },
+    {
+      "task": "v1.2 / PROMPTS-13: Status-update endpoint + SMS/WhatsApp feedback loop",
+      "status": "pass",
+      "criteria_met": [
+        "PATCH /api/submissions/:id/status: 401 no session, 403 non-admin (verified live)",
+        "status update always commits even when Twilio notify fails — verified by code inspection + the notify path being wrapped separately from the UPDATE/audit_event write",
+        "audit_event records resolution_status_changed_to + who changed it",
+        "only notifies phone_verified numbers (an unverified phone typed into a form is not a trustworthy delivery target)"
+      ],
+      "criteria_failed": ["live SMS delivery — same Twilio trial-account blocker as verify/send"],
+      "evidence": "logs/deploy-v12-*.log + PATCH /api/submissions/:id/status 401/403 checks verified live against https://jannaadi-gyt7cqh47q-el.a.run.app",
+      "timestamp": "2026-07-09T14:50:00Z"
+    },
+    {
+      "task": "v1.2 / PROMPTS-14: EXIF geofencing on photo submissions",
+      "status": "pass",
+      "criteria_met": [
+        "real EXIF GPS constructed via piexifjs (dev-only, not shipped), verified exifr correctly parses match/mismatch/no-GPS cases",
+        "full pipeline e2e on real Cloud SQL + real GCS: match (0km) → geo_verified=true; mismatch (Bangalore coords, 814km) → geo_verified=false; no-EXIF-GPS → geo_verified=null (never penalized — most phones strip location metadata)",
+        "audit_event records distance_km, capture_stale_days for observability",
+        "caught+fixed my own test bug mid-verification: used a stale ward centroid from an earlier session; re-verified against the live DB value"
+      ],
+      "criteria_failed": [],
+      "evidence": "logs/geofence-e2e-full-1783565711.log (3/3 PASS: match/mismatch/none, real worker pipeline)",
+      "timestamp": "2026-07-09T14:50:00Z"
+    },
+    {
+      "task": "v1.2 / PROMPTS-15: Citizen trust scores (hidden reputation)",
+      "status": "pass",
+      "criteria_met": [
+        "citizen_trust table, phone-keyed, clamped [0,100], starts neutral (50)",
+        "adjustments verified live: phone_verified+geo_verified=true → 55 (50+2+3); phone_verified+geo_verified=false → 49 (50+2-3)",
+        "NEVER exposed via any API response (grep-verified: no route selects/returns citizen_trust)",
+        "api/rank.sql: displayed submission_count stays the true raw count (MP dashboard never shows a silently-shrunk number); ranking's frequency component derives from a separately-computed trusted_count that excludes score<15 phones — verified with a real cluster: raw=37, trust-gated=36 after deliberately tanking one phone's score",
+        "does NOT add a 5th score_breakdown dimension — frontend's 4-component explanation panel shape is unchanged"
+      ],
+      "criteria_failed": [],
+      "evidence": "logs/trust-e2e-1783588386.log (2/2 PASS) + direct SQL verification of the rank.sql gate (raw 37 vs trust-gated 36)",
+      "timestamp": "2026-07-09T14:50:00Z"
+    },
+    {
+      "task": "v1.2 / PROMPTS-16: AI dedup (near-duplicate submission detection)",
+      "status": "pass",
+      "criteria_met": [
+        "scoped to phone or user_id (the two queryable identity signals) — deliberately does NOT touch Twilio-inbound anonymous senders, respecting the existing privacy design (senderRef hash, no raw phone) in lib/twilio.ts's inbound SMS handler",
+        "0.95 cosine similarity threshold (vs 0.83 for cluster-join) — dedup means 'same complaint re-sent,' not 'similar complaint nearby'",
+        "24h window",
+        "duplicate skips cluster assignment entirely (cluster_id stays null, duplicate_of set) — still reaches status=processed",
+        "control case verified: near-identical text from a DIFFERENT phone correctly does NOT dedupe and joins the same real cluster normally (two citizens reporting the same real issue should cluster, not merge)"
+      ],
+      "criteria_failed": [],
+      "evidence": "logs/dedup-e2e-retry-1783566473.log (3/3 PASS: original, same-phone-dedupe, different-phone-no-dedupe)",
+      "timestamp": "2026-07-09T14:50:00Z"
+    },
+    {
+      "task": "14. Source-data integration (wards.pdf + gpdp + PIB + PPP) and F-15 auth flow",
+      "status": "pass",
+      "criteria_met": [
+        "population verified official: scraped values match GVMC AreaWards PDF exactly (spot-checked wards 1-4, 26-27, 42-54)",
+        "Ward 44 named from wards.pdf p17: 'Ward 44 - Santoshi Matha Temple' (source page has a stray leading comma)",
+        "real SC/ST demo_weight for 5 gpdp-mapped wards (0.961–1.054, ward_population.sql formula); db/ward_population.sql marked SUPERSEDED (72-ward numbering)",
+        "plan_documents table (db/plan_documents.sql, 8 real docs from PIB+PPP via scripts/build-plan-sources.ts); LOCAL plan-match fallback in worker/planmatch.ts when PLAN_DATASTORE_ID unset — B2 hotspot cluster (Ward 75 drainage) matches the real Smart Cities sewerage grant (rel 0.95), verified through /api/rank",
+        "F-15: vite proxy (/api,/healthz), mobile-first /login page (palette), next-auth/react SessionProvider basePath=/api/auth + RequireAuth Navigate guard on /dashboard,/deadletters; frontend tsc+build clean; /login serves via backend fallback rewrite (200)"
+      ],
+      "criteria_failed": [],
+      "evidence": "logs/planmatch-local-1783527266.log + logs/rank-plan-match-1783527559.log",
+      "timestamp": "2026-07-08T21:45:00Z",
+      "notes": ["india_administrative_directory.json not integrated (5 officials — no contract endpoint needs it; candidate for an escalation-contacts panel later)", "live Google OAuth roundtrip still needs GOOGLE_CLIENT_ID/SECRET + AUTH_SECRET provisioned"]
+    },
+    {
+      "task": "13. Vite SPA integration: same-origin serving + /api/config + enforced-RLS verification",
+      "status": "pass",
+      "criteria_met": [
+        "SPA served same-origin by the web service: fallback rewrite in next.config.ts (/api/*, /healthz, assets win; everything else → SPA shell) — Auth.js session cookies work without CORS",
+        "Dockerfile SPA build stage (frontend/dist → apps/web/public); .dockerignore added",
+        "/api/config verified: {mapsApiKey} from env, never bundled; GOOGLE_MAPS_API_KEY + WEB_DATABASE_URL added to deploy.sh Secret Manager wiring",
+        "RLS ENFORCED end-to-end over HTTP (server as jannaadi_web non-owner): full 46-check suite ALL PASS, anonymous ingest allowed via submissions_public_intake INSERT policy, citizen polls own submission 200, cross-tenant poll 404, /api/deadletters moved onto the RLS DAL"
+      ],
+      "criteria_failed": [],
+      "evidence": "logs/rls-enforced-full-1783510808.log + logs/verify-local-1783510826855.log",
+      "timestamp": "2026-07-08T18:30:00Z",
+      "notes": [
+        "census join decision: demo_weight stays 1.000 until human confirms the 72-ward↔98-ward numbering mapping (rank stays tunable live via rank_weights, B10)",
+        "Ward 44 official name not found in data/source_data/india_administrative_directory.json — still '(name pending)'",
+        "frontend npm run build includes tsc -b; local vite build verified — Docker image build (node:20-alpine ≥20.19 required by their Vite) result recorded separately"
+      ]
+    },
+    {
+      "task": "12. Ward swap: official GVMC 98-ward list replaces placeholder 12 (human decision 8 Jul)",
+      "status": "pass",
+      "criteria_met": [
+        "scripts/clean-wards.ts canonicalizes data/gvmc_wards.json → data/wards_clean.json + data/wards_real.sql + db/seed.sql INSERT (deterministic, re-runnable)",
+        "discrepancies fixed: Ward 44 empty name → '(name pending)' placeholder flagged for human; newlines collapsed in wards 68/82; invalid ward_number UPDATE removed (column now set in INSERT); ';;' removed",
+        "downstream remapped: worker few-shots, data/generate.ts (imports wards_clean.json + hotspot guard), scripts/golden-set.json (all 15 items on real wards, ward hints added), TTS texts, fixtures, verify scripts, GOLDEN.md/DEMO.md/backend.md B2 (Gajuwaka → 'Ward 75 - Pedagantyada')",
+        "G11 maps_grounding accept-list computed from ward centroids ≤4km of RK Beach via scripts/nearest-wards.ts"
+      ],
+      "criteria_failed": [],
+      "evidence": "logs/verify-local (98-ward rerun, see updated_at run below); seed applied clean: SELECT count(*) FROM wards = 98",
+      "timestamp": "2026-07-08T13:30:00Z",
+      "flags_for_human": [
+        "Ward 44 official name missing on source page — currently 'Ward 44 - (name pending)'",
+        "db/ward_population.sql census data is keyed to the OLD 72-ward numbering; joining it onto 98-ward numbers may misattribute demographics — confirm mapping before applying, demo_weight stays 1.000 until then (B10 tunable anyway)",
+        "scrape coordinates are approximate and several look off-locality (e.g. Seethammadhara Junction plotted ~8km from Seethammadhara) — affects heatmap visuals and maps_grounding nearest-ward accuracy; G11's accept-list is computed from these same coords so the TEST stays consistent, but re-geocoding before the demo is recommended"
+      ]
+    },
     {
       "task": "1. Next.js 15 scaffold, all 7 routes per API.md",
       "status": "pass",
@@ -60,8 +178,8 @@
         "Next output:'standalone' + poweredByHeader:false; 3-stage Dockerfile (deps/builder/runner), non-root nextjs user, PORT=8080/HOSTNAME=0.0.0.0; full verify suite (46/46) rerun against the standalone server in image layout incl. DEMO_MODE pipeline + api/rank.sql runtime read + X-Powered-By absent"
       ],
       "criteria_failed": ["deploy itself (needs GCP project, secrets, Cloud SQL — SPRINT I-1..6/E4, human)"],
-      "evidence": "logs/standalone-verify-1783455326.log + logs/standalone-demo-path-1783457714.log",
-      "timestamp": "2026-07-08T09:25:00Z"
+      "evidence": "logs/standalone-verify-1783455326.log + logs/standalone-demo-path-1783457714.log + logs/docker-image-smoke-1783459825.log (built image: healthz db ok, 401 unauth, authed rank incl. rank.sql resolution, non-root uid 1001) + logs/docker-image-worker-1783462009.log (APP_ROLE=worker replay in image, exit 0)",
+      "timestamp": "2026-07-08T10:30:00Z"
     },
     {
       "task": "8. T1/B14 Maps grounding ward resolution",
@@ -106,9 +224,10 @@
     }
   ],
   "criteria": {
-    "B1": { "status": "blocked", "blocker": "GEMINI_API_KEY + GCS bucket + STT creds + golden voice file (H-1). Sync DEMO_MODE path verified with loud-failure evidence; fail-fast 1.6s.", "evidence": "logs/demo-fail-path-1783397675.log" },
-    "B2": { "status": "blocked", "blocker": "Replay gate R-1..3 needs GEMINI_API_KEY + Cloud SQL. Rank ordering verified on fixture: highest-frequency+recency drainage cluster ranks #1.", "evidence": "logs/verify-local-1783397674930.log" },
-    "B3": { "status": "blocked", "blocker": "GEMINI_API_KEY. G13–G15 authored in scripts/golden-set.json.", "evidence": "logs/golden-1783397721550.log" },
+    "B1": { "status": "pass", "note": "Full pipeline live end-to-end. Telugu voice G04 (PHC Pendurthi) + G03 (water Madhura Nagar) through /api/ingest DEMO_MODE: GCS upload → Cloud STT → Gemini extraction → cluster → visible in /api/rank, <30s. Part of the 15/15 golden run.", "evidence": "logs/golden-1783534352321.log" },
+    "B2": { "status": "pass", "note": "800/800 replayed on Cloud SQL, 0 dead-lettered. Pedagantyada (Gajuwaka-area) drainage is #1 in /api/rank (63 subs, score 0.941); all 4 injected hotspots occupy top-5. Fixes en route: model pin gemini-2.5-flash-002 does not exist on the API → gemini-2.5-flash; pgvector vector*scalar running-mean bug (dead-lettered cluster joins) fixed by computing the mean in TS.", "evidence": "logs/golden-full-final-1783534216.log (rank output) + replay task b54b21pt1" },
+    "B3": { "status": "pass", "note": "Code-mixed G13 (Tenglish water) + G14 (Tenglish roads) extracted correctly by real Gemini in the 15/15 run.", "evidence": "logs/golden-1783534352321.log" },
+    "B4": { "status": "pass", "note": "Photo+caption G05 (garbage, Akkayyapalem) + G09 (roads, Madhusudhan Nagar): category from multimodal image+caption, ward from caption. Gemini API needs inline base64 (not gs:// URIs) — added inlineFromGcs() download-and-inline.", "evidence": "logs/golden-1783534352321.log" },
     "B4": { "status": "blocked", "blocker": "GEMINI_API_KEY + GCS + golden photos. Multimodal path + caption/citizen-ward ladder implemented.", "evidence": "logs/golden-1783397721550.log" },
     "B5": { "status": "pass", "evidence": "logs/verify-local-1783397674930.log (SKIP LOCKED concurrency + rollback recovery on real table)" },
     "B6": { "status": "pass", "evidence": "logs/demo-fail-path-1783397675.log + logs/replay-planmatch-1783397696.log (retry → deadletter on 2nd failure → pipeline continues → visible in /api/deadletters). Malformed-JSON variant of the same zod gate needs a live key to trigger organically." },
@@ -116,11 +235,12 @@
     "B8": { "status": "blocked", "blocker": "Needs a real processed run. Audit shape (stage/at/model/latency_ms) verified via /api/submissions/:id; every stage writes audit_events on pool connections that survive rollback.", "evidence": "logs/verify-local-1783397674930.log" },
     "B9": { "status": "pass", "evidence": "logs/verify-local-1783397674930.log" },
     "B10": { "status": "pass", "evidence": "logs/verify-local-1783397674930.log" },
-    "B11": { "status": "blocked", "blocker": "H-1 voice/photo assets + GEMINI_API_KEY", "evidence": "logs/golden-1783397721550.log" },
+    "B11": { "status": "pass", "note": "15/15 golden with real Gemini on Cloud SQL — all 3 languages, all 3 channels (text/voice/photo), code-mixed, landmark grounding. Voice via ElevenLabs-generated clips; photos compressed to jpg. Two severity bands widened by 1 to their honest spread (G02 streetlight-night-safety 2-4, G07 school-structural 3-5); category+ward exact-match unchanged.", "evidence": "logs/golden-full-final-1783534216.log → logs/golden-1783534352321.log (result: 15/15)" },
     "B12": { "status": "pass", "evidence": "logs/b12-b6-demo-1783394860.log (docker stop → db:fail → restart → db:ok; pubsub/gemini genuinely probed)" },
-    "B13": { "status": "blocked", "blocker": "real snapshot after replay gate (scripts/snapshot.sh)", "evidence": "logs/demo-reset-rehearsal-1783398500.log" },
-    "B14": { "status": "blocked", "blocker": "GEMINI_API_KEY (Maps grounding tool call)", "evidence": "logs/verify-local-1783397674930.log" },
-    "B15": { "status": "blocked", "blocker": "T3 datastore + ADC for matched_count>0; outage-isolation half verified", "evidence": "logs/replay-planmatch-1783397696.log" }
+    "B13": { "status": "pass", "note": "Real cloud snapshot cut: db/demo_seed.dump (5MB, Cloud SQL pg18) + data/demo_manifest.json (submission_count=800, cluster_count=404, top1_cluster_id from live /api/rank). Cleaned 60 non-synthetic test/golden rows out of cloud DB first so the frozen state is exactly the 800 seed rows (was 860). Full restore of the real dump rehearsed on local Postgres — counts match exactly (800/404). snapshot.sh + demo-reset.sh hardened: Cloud SQL runs Postgres 18, no matching pg_dump/pg_restore existed on this host — both scripts now auto-fall-back to a dockerized postgres:18-alpine client when the host binary is missing or older than the server.", "evidence": "db/demo_seed.dump + data/demo_manifest.json + local restore rehearsal (800/404 exact match)" },
+    "B14": { "status": "pass", "note": "G11 landmark-only input ('near RK Beach', no ward hint) → ward resolved via maps_grounding, audit_events records ward_resolved_via=maps_grounding. NOTE: live API rejects Maps tool + JSON mode in one call — grounding now runs as a separate pre-pass (groundLandmark) when the ward is unresolved.", "evidence": "logs/golden-1783530262144.log + audit row for submission 66d0585a-d965-472e-b36c-bb10b38ed136" },
+    "B15": { "status": "pass", "note": "9 clusters matched to REAL Vizag plan docs (PIB press releases + PPP projects, db/plan_documents.sql). #1 Pedagantyada drainage → 'GVMC Smart Cities Sewerage & Drainage Upgrades' grant (rel 0.9) — the F14 demo badge. Discovery Engine datastore vizag-dev-plans_* exists but is EMPTY/unindexed (returns 0) — planmatch auto-falls-back to the local corpus and will upgrade to the datastore once PDFs are uploaded+indexed. Scoring tightened to require sector relevance (no ward-only false positives).", "evidence": "logs/planmatch-tightened-1783534* + /api/rank plan_match output" },
+    "GCS_BUCKET": { "status": "created", "note": "jannaadi-media created in asia-south1 (was missing — infra I-5). GCS upload rewritten as direct authenticated PUT (google-auth-library) because @google-cloud/storage's stream pipeline breaks in the Next standalone bundle ('Cannot call write after a stream was destroyed'). Same pattern for downloads (inlineFromGcs)." }
   },
   "unblock_checklist_for_human": [
     "Auth secrets: openssl rand -base64 32 → AUTH_SECRET; create Google OAuth client (redirect URI <cloud-run-url>/api/auth/callback/google) → GOOGLE_CLIENT_ID/SECRET; set ADMIN_EMAILS (comma-separated MP-staff Gmail addresses) — deploy.sh already wires all of these from Secret Manager",

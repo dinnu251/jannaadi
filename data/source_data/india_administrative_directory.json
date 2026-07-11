@@ -1,0 +1,63 @@
+{
+  "source_url": "india.gov.in",
+  "district": "Visakhapatnam",
+  "state": "Andhra Pradesh",
+  "state_headquarters": "Amaravati",
+  "officials": [
+    {
+      "designation": "District Collector & District Magistrate",
+      "name": "Shri M. N. Harendhira Prasad, IAS",
+      "department": "Revenue and District Administration",
+      "office_address": "Collectorate Office, Maharanipeta, Visakhapatnam - 530002",
+      "contact": {
+        "phone": "+91-891-2565007",
+        "email": "collector_vsp@ap.gov.in",
+        "website": "https://visakhapatnam.ap.gov.in"
+      }
+    },
+    {
+      "designation": "Commissioner, Greater Visakhapatnam Municipal Corporation",
+      "name": "Dr. P. Sampath Kumar, IAS",
+      "department": "Municipal Administration (GVMC)",
+      "office_address": "GVMC Main Office, Tenneti Nagar, Visakhapatnam - 530003",
+      "contact": {
+        "phone": "+91-891-2746300",
+        "email": "commissioner.gvmc@gmail.com",
+        "website": "https://gvmc.gov.in"
+      }
+    },
+    {
+      "designation": "Commissioner of Police, Visakhapatnam City",
+      "name": "Shri Dr. A. Ravi Shankar, IPS",
+      "department": "Home (Police Dept)",
+      "office_address": "Police Commissionerate, Suryabagh, Visakhapatnam - 530020",
+      "contact": {
+        "phone": "+91-891-2565454",
+        "email": "cop.vsp@ap.gov.in",
+        "website": "https://vizagcitypolice.gov.in"
+      }
+    },
+    {
+      "designation": "Joint Collector & Additional District Magistrate",
+      "name": "Shri K. Mayur Ashok, IAS",
+      "department": "Revenue and District Administration",
+      "office_address": "Collectorate Office, Maharanipeta, Visakhapatnam - 530002",
+      "contact": {
+        "phone": "+91-891-2563121",
+        "email": "jc_vsp@ap.gov.in",
+        "website": "https://visakhapatnam.ap.gov.in"
+      }
+    },
+    {
+      "designation": "Metropolitan Commissioner, VMRDA",
+      "name": "Smt. K. Sandhya Rani, IRAS",
+      "department": "Visakhapatnam Metropolitan Region Development Authority",
+      "office_address": "VMRDA Office Complex, Siripuram, Visakhapatnam - 530003",
+      "contact": {
+        "phone": "+91-891-2754133",
+        "email": "mcvmrda@ap.gov.in",
+        "website": "https://vmrda.gov.in"
+      }
+    }
+  ]
+}

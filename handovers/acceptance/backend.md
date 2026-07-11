@@ -3,7 +3,7 @@ Owner: Claude Code + gloop. Reviewer subagent verifies each item with evidence b
 
 ## Pipeline correctness
 - [ ] B1: Telugu voice sample → processed submission with correct category+ward → visible in /api/rank within 30s (DEMO_MODE)
-- [ ] B2: 800 seed rows ingested → injected hotspots surface: Gajuwaka drainage cluster in top-5 of /api/rank
+- [ ] B2: 800 seed rows ingested → injected hotspots surface: 'Ward 75 - Pedagantyada' (Gajuwaka-area) drainage cluster in top-5 of /api/rank (ward names remapped to the official GVMC 98-ward list, 8 Jul decision)
 - [ ] B3: Code-mixed (Tenglish) text input → correct extraction (golden set items G13–G15)
 - [ ] B4: Photo + Telugu caption → category classified, ward from caption or citizen selection
 

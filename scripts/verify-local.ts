@@ -47,7 +47,7 @@ async function main() {
   // ── /api/wards ──
   {
     const { status, body } = await j("/api/wards");
-    check("wards: 200 + 12 wards with name/lat/lng", status === 200 && body?.wards?.length === 12 && body.wards.every((w: any) => w.name && typeof w.lat === "number" && typeof w.lng === "number"));
+    check("wards: 200 + 98 wards with name/lat/lng", status === 200 && body?.wards?.length === 98 && body.wards.every((w: any) => w.name && typeof w.lat === "number" && typeof w.lng === "number"));
   }
 
   // ── /api/rank: shape + B9 + B15 ──
@@ -57,7 +57,7 @@ async function main() {
     check("rank: weights object sums to 1", Math.abs(Object.values(body.weights as Record<string, number>).reduce((a, b) => a + b, 0) - 1) < 1e-6, JSON.stringify(body.weights));
     check("rank: 3 items, rank field 1..3", body.items?.length === 3 && body.items.every((it: any, i: number) => it.rank === i + 1));
     const top = body.items[0];
-    check("rank: Gajuwaka drainage cluster is top-1 (freq+recency dominate)", top.cluster_id === "11111111-1111-1111-1111-111111111111", `top=${top.title_en}`);
+    check("rank: Pedagantyada (Gajuwaka-area) drainage cluster is top-1 (freq+recency dominate)", top.cluster_id === "11111111-1111-1111-1111-111111111111", `top=${top.title_en}`);
     for (const it of body.items) {
       const bd = it.score_breakdown;
       check(`rank: ${it.ward} score_breakdown complete (B9)`, ["frequency", "severity", "recency", "demographic"].every((k) => typeof bd?.[k] === "number"));
@@ -71,8 +71,8 @@ async function main() {
     check("rank: {none:true} plan_match → null (B15)", byId["22222222-2222-2222-2222-222222222222"].plan_match === null);
     check("rank: NULL plan_match → null (B15)", byId["33333333-3333-3333-3333-333333333333"].plan_match === null);
     // filters
-    const f = await j("/api/rank?ward=Gajuwaka&category=drainage");
-    check("rank: ward+category filter", f.body.items.length === 1 && f.body.items[0].ward === "Gajuwaka");
+    const f = await j(`/api/rank?ward=${encodeURIComponent("Ward 75 - Pedagantyada")}&category=drainage`);
+    check("rank: ward+category filter (ward name with spaces)", f.body.items.length === 1 && f.body.items[0].ward === "Ward 75 - Pedagantyada");
     const bad = await j("/api/rank?category=nonsense");
     check("rank: invalid category → 400 shaped error", bad.status === 400 && bad.body?.error?.code === "invalid_category");
   }
@@ -143,7 +143,7 @@ async function main() {
     form3.set("channel", "text");
     form3.set("text", "గాజువాకలో డ్రైనేజీ సమస్య టెస్ట్");
     form3.set("lang_hint", "te");
-    form3.set("ward", "Gajuwaka");
+    form3.set("ward", "Ward 75 - Pedagantyada");
     const r3 = await fetch(`${BASE}/api/ingest`, { method: "POST", body: form3 });
     const b3: any = await r3.json();
     // no Pub/Sub locally → persisted + deadlettered + shaped 502, never silent

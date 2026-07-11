@@ -33,6 +33,7 @@ export async function GET(req: NextRequest) {
       return jsonError(400, "invalid_category", parsed.error.issues.map((i) => `${i.path.join(".")}: ${i.message}`).join("; "));
     const ward = parsed.data.ward ?? null;
     const category = parsed.data.category ?? null;
+    const lang = parsed.data.lang ?? "en";
 
     const [weightsRes, itemsRes] = await Promise.all([
       rlsQuery("SELECT key, weight FROM rank_weights"),
@@ -55,12 +56,32 @@ export async function GET(req: NextRequest) {
       for (const r of rows) samples.set(r.cluster_id, [...(samples.get(r.cluster_id) ?? []), r.id]);
     }
 
+    // lang=te|hi: localized display title per cluster — the newest member submission's
+    // summary_original in the requested language ('mixed' rows count for te: they're
+    // Telugu-English code-mixed). Clusters store only title_en, so this is a join,
+    // not a translation; clusters with no matching-language member fall back to
+    // title_en client-side. Additive field — contract v1.1 items keep title_en.
+    const localized = new Map<string, string>();
+    if (lang !== "en" && clusterIds.length) {
+      const langsWanted = lang === "te" ? ["te", "mixed"] : [lang];
+      const { rows } = await rlsQuery(
+        `SELECT DISTINCT ON (cluster_id) cluster_id, summary_original
+         FROM submissions
+         WHERE cluster_id = ANY($1::uuid[]) AND lang = ANY($2::lang_code[])
+           AND summary_original IS NOT NULL AND length(trim(summary_original)) > 0
+         ORDER BY cluster_id, submitted_at DESC`,
+        [clusterIds, langsWanted]
+      );
+      for (const r of rows) localized.set(r.cluster_id, (r.summary_original as string).slice(0, 120));
+    }
+
     const items = itemsRes.rows.map((r, i) => {
       const pm = r.plan_match; // T3/B15: pass through only real matches, never the {none:true} sentinel
       return {
         cluster_id: r.cluster_id,
         rank: i + 1,
         title_en: r.title_en,
+        title_localized: localized.get(r.cluster_id) ?? null,
         category: r.category,
         ward: r.ward,
         submission_count: r.submission_count,

@@ -3,6 +3,7 @@ import { useLanguage } from '../LanguageContext';
 import { translations } from '../i18n';
 import { api, type Ward } from '../api';
 import { Mic, Image as ImageIcon, FileText, Send, CheckCircle2, Loader2, StopCircle } from 'lucide-react';
+import ChannelsPanel from '../components/ChannelsPanel';
 
 const SubmitPage: React.FC = () => {
   const { language } = useLanguage();
@@ -27,7 +28,8 @@ const SubmitPage: React.FC = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submissionId, setSubmissionId] = useState<string | null>(null);
   const [status, setStatus] = useState<string>('');
-  
+  const [submitError, setSubmitError] = useState<string | null>(null);
+
   const [isCached, setIsCached] = useState(false);
 
   useEffect(() => {
@@ -86,10 +88,11 @@ const SubmitPage: React.FC = () => {
     if (!text && !audioBlob && !photoBlob) return alert('Please provide text, audio, or photo');
 
     setIsSubmitting(true);
+    setSubmitError(null);
     const formData = new FormData();
     formData.append('ward', selectedWard);
     formData.append('lang_hint', language);
-    
+
     if (text) {
       formData.append('channel', 'text');
       formData.append('text', text);
@@ -102,21 +105,28 @@ const SubmitPage: React.FC = () => {
       if (caption) formData.append('caption', caption);
     }
 
+    // Bug fix: isSubmitting must always reset, and a real rejection (validation,
+    // rate limit, server error) must be shown — not silently swallowed, which
+    // previously left the button stuck on "Submitting..." with no explanation.
     try {
       const res = await api.ingestGrievance(formData);
       if (res.data) {
         setSubmissionId(res.data.submission_id);
         setStatus(res.data.status);
         if (res.cached) setIsCached(true);
-        
+
         // Start polling if not processed
         if (res.data.status !== 'processed') {
           pollStatus(res.data.submission_id);
         }
+      } else {
+        setSubmitError(res.error?.message ?? 'Submission was rejected. Please check your input and try again.');
       }
     } catch (err) {
       console.error(err);
-      alert('Failed to submit');
+      setSubmitError('Failed to submit. Please check your connection and try again.');
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -142,6 +152,7 @@ const SubmitPage: React.FC = () => {
     setPhotoBlob(null);
     setIsSubmitting(false);
     setIsCached(false);
+    setSubmitError(null);
   };
 
   if (submissionId) {
@@ -281,17 +292,29 @@ const SubmitPage: React.FC = () => {
           )}
         </div>
 
+        {/* Submit error — a real rejection (validation/rate-limit/server error) must
+            be visible, not silently swallowed */}
+        {submitError && (
+          <div role="alert" style={{ padding: 'var(--spacing-sm)', backgroundColor: '#FDECEA', color: 'var(--color-error)', borderRadius: 'var(--border-radius-sm)', fontSize: '0.85rem' }}>
+            {submitError}
+          </div>
+        )}
+
         {/* Submit Button */}
-        <button 
-          className="btn-primary" 
+        <button
+          className="btn-primary"
           style={{ width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', padding: '12px' }}
           onClick={handleSubmit}
           disabled={isSubmitting || (!text && !audioBlob && !photoBlob)}
         >
           {isSubmitting ? <><Loader2 className="lucide-spin" size={18} /> {t.submitting}</> : <><Send size={18} /> {t.submitBtn}</>}
         </button>
+
+        {/* Multi-channel intake: WhatsApp QR + call-in number (Twilio) — the visible
+            face of the no-app complaint channels. Hidden when channels unconfigured. */}
+        <ChannelsPanel />
       </div>
-      
+
       {/* Required for the pulse animation */}
       <style>{`
         @keyframes pulse {

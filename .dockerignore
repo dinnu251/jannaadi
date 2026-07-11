@@ -1,0 +1,13 @@
+.git
+node_modules
+**/node_modules
+**/.next
+frontend/dist
+logs
+*.log
+*.dump
+.env*
+credentials
+data/synthetic.jsonl
+handovers
+docs

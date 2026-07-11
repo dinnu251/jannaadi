@@ -1,0 +1,46 @@
+{
+  "source_url": "pib.gov.in",
+  "location_filter": "Visakhapatnam",
+  "press_releases": [
+    {
+      "release_id": "PIB-VIZ-202605-01",
+      "ministry": "Ministry of Railways",
+      "date": "2026-05-15T12:30:00Z",
+      "headline": "PM Modi Reviews Redevelopment Progress of Visakhapatnam Railway Station",
+      "city": "Visakhapatnam",
+      "text": "Prime Minister Narendra Modi today reviewed the redevelopment works of the Visakhapatnam Railway Station under the Amrit Bharat Station Scheme. The redevelopment, costing over Rs 450 crore, aims to transform the station into a world-class transit hub with state-of-the-art amenities, separate arrival and departure plazas, integration with other modes of transport, and eco-friendly features. The station will utilize smart lighting and solar power systems to achieve net-zero energy compliance.",
+      "associated_sectors": ["Railways", "Infrastructure", "Smart Cities"],
+      "impacted_wards": ["Ward 30 - Old Employment Office", "Ward 32 - South Jail Road"]
+    },
+    {
+      "release_id": "PIB-VIZ-202606-02",
+      "ministry": "Ministry of Ports, Shipping and Waterways",
+      "date": "2026-06-20T10:15:00Z",
+      "headline": "Union Minister Inspects Sagarmala Port Projects and Connectivity Corridors in Visakhapatnam",
+      "city": "Visakhapatnam",
+      "text": "The Union Minister for Ports, Shipping and Waterways inspected several key connectivity and capacity enhancement projects in Visakhapatnam today. Under the Sagarmala Programme, projects worth over Rs 1,200 crore are currently being executed, including the creation of a flyover from Convent Junction to Gajuwaka Road to streamline freight transport and minimize municipal traffic congestion. Special emphasis is being placed on environmental safeguards and mitigating dust pollution in coastal wards.",
+      "associated_sectors": ["Ports", "Roads", "Freight Transport"],
+      "impacted_wards": ["Ward 21 - Harbour Park road", "Ward 45 - Port Quarters"]
+    },
+    {
+      "release_id": "PIB-VIZ-202607-03",
+      "ministry": "Ministry of Housing and Urban Affairs",
+      "date": "2026-07-01T16:45:00Z",
+      "headline": "GVMC Receives Additional Smart Cities Grant for Urban Sewerage and Drainage Upgrades",
+      "city": "New Delhi",
+      "text": "The Ministry of Housing and Urban Affairs today sanctioned an additional grant of Rs 85 crore to the Greater Visakhapatnam Municipal Corporation (GVMC) under the Smart Cities Mission. The funding is earmarked specifically for resolving localized flooding and drainage issues in low-lying sectors including Pedagantyada, Gajuwaka, and parts of MVP Colony. GVMC will deploy real-time water logging sensors linked to the Integrated Command and Control Centre (ICCC) to optimize drainage pumping.",
+      "associated_sectors": ["Drainage", "Urban Water Management", "Smart Cities"],
+      "impacted_wards": ["Ward 19 - MVP Sector-12", "Ward 75 - Pedagantyada", "Ward 83 - Mirayala Colony"]
+    },
+    {
+      "release_id": "PIB-VIZ-202607-04",
+      "ministry": "Ministry of Heavy Industries",
+      "date": "2026-07-05T09:00:00Z",
+      "headline": "PM-eBus Sewa Initiative Rolls Out 100 Electric Buses in Visakhapatnam to Promote Clean Transit",
+      "city": "Visakhapatnam",
+      "text": "A fleet of 100 state-of-the-art electric buses was flagged off in Visakhapatnam today under the PM-eBus Sewa scheme. The initiative, funded in partnership with the State Government, aims to decarbonize public transit and provide reliable municipal transport. Charge depots have been constructed at Maddilapalem and Gajuwaka. The buses will serve routes linking major residential areas like Pendurthi, MVP Colony, and Seethammadhara to industrial hubs.",
+      "associated_sectors": ["Urban Transport", "Clean Energy", "Environment"],
+      "impacted_wards": ["Ward 15 - Seethammadhara Junction", "Ward 19 - MVP Sector-12", "Ward 96 - Pendurthi old Village"]
+    }
+  ]
+}

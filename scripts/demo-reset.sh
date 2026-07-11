@@ -25,10 +25,26 @@ echo "→ 1/5 truncate"
 $PSQL -c "TRUNCATE audit_events, deadletters, submissions, clusters RESTART IDENTITY CASCADE"
 
 echo "→ 2/5 restore $DUMP"
+# pg_restore refuses a server newer than itself (Cloud SQL runs Postgres 18) —
+# fall back to a dockerized pg18 client when the host binary is missing/older.
+restore_table() {
+  local t=$1
+  if command -v pg_restore >/dev/null 2>&1; then
+    local server_major host_major
+    server_major=$(psql "$DATABASE_URL" -Atqc "SHOW server_version_num" | cut -c1-2)
+    host_major=$(pg_restore --version | grep -oE '[0-9]+' | head -1)
+    if [ "$host_major" -ge "$server_major" ] 2>/dev/null; then
+      pg_restore --data-only --no-owner -t "$t" -d "$DATABASE_URL" "$DUMP"
+      return
+    fi
+  fi
+  docker run --rm --network host -v "$(pwd)/$DUMP:/dump.dump:ro" postgres:18-alpine \
+    pg_restore --data-only --no-owner -t "$t" -d "$DATABASE_URL" /dump.dump
+}
 # table-at-a-time restore in FK-safe order (clusters before submissions —
 # submissions.cluster_id references clusters)
 for t in clusters submissions audit_events deadletters; do
-  pg_restore --data-only --no-owner -t "$t" -d "$DATABASE_URL" "$DUMP"
+  restore_table "$t"
 done
 # -t table restore skips SEQUENCE SET entries — realign serials so new inserts don't collide
 $PSQL -c "SELECT setval('audit_events_id_seq', COALESCE((SELECT MAX(id) FROM audit_events), 1))" >/dev/null

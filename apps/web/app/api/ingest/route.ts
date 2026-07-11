@@ -8,7 +8,10 @@ import { z } from "zod";
 import { sessionUser } from "@/auth";
 import { db } from "@/lib/db";
 import { jsonError, handleRouteError } from "@/lib/api";
-import { uploadMedia, publishSubmission } from "@/lib/gcp";
+import { uploadMedia } from "@/lib/gcp";
+import { persistAndProcess } from "@/lib/intake";
+import { rateLimit, clientIp } from "@/lib/ratelimit";
+import { checkVerifyToken } from "@/lib/twilio";
 
 export const dynamic = "force-dynamic";
 export const maxDuration = 60; // DEMO_MODE sync processing budget (<30s target, B1)
@@ -23,6 +26,9 @@ const FieldsZ = z.object({
   text: z.string().max(MAX_TEXT).optional(),
   caption: z.string().max(MAX_TEXT).optional(),
   ward: z.string().optional(),
+  // v1.2: optional, explicit citizen opt-in for feedback-loop SMS/WhatsApp updates.
+  phone: z.string().regex(/^\+[1-9]\d{6,14}$/).optional(),
+  verify_token: z.string().optional(),
 });
 
 const AUDIO_EXT: Record<string, string> = { "audio/webm": "webm", "audio/wav": "wav", "audio/x-wav": "wav", "audio/mpeg": "mp3", "audio/mp3": "mp3" };
@@ -30,6 +36,10 @@ const IMAGE_EXT: Record<string, string> = { "image/jpeg": "jpg", "image/png": "p
 
 export async function POST(req: NextRequest) {
   try {
+    // Cheap first line of defence for an open, cost-incurring endpoint (Gemini/STT/GCS).
+    const rl = rateLimit(`ingest:${clientIp(req)}`, 30, 60_000);
+    if (!rl.ok) return jsonError(429, "rate_limited", `too many submissions — retry in ${rl.retryAfterSec}s`);
+
     const form = await req.formData().catch(() => null);
     if (!form) return jsonError(400, "bad_request", "expected multipart/form-data");
 
@@ -39,6 +49,8 @@ export async function POST(req: NextRequest) {
       text: typeof form.get("text") === "string" ? form.get("text") : undefined,
       caption: typeof form.get("caption") === "string" ? form.get("caption") : undefined,
       ward: typeof form.get("ward") === "string" ? (form.get("ward") as string) : undefined,
+      phone: typeof form.get("phone") === "string" ? (form.get("phone") as string) : undefined,
+      verify_token: typeof form.get("verify_token") === "string" ? (form.get("verify_token") as string) : undefined,
     });
     if (!parsed.success)
       return jsonError(400, "validation_failed", parsed.error.issues.map((i) => `${i.path.join(".")}: ${i.message}`).join("; "));
@@ -73,64 +85,39 @@ export async function POST(req: NextRequest) {
       if (!rows.length) return jsonError(400, "invalid_ward", `unknown ward: ${f.ward}`);
     }
 
-    const id = randomUUID();
-
-    // media → GCS before the row commits, so a processed row never points at nothing
+    // media → GCS before the row is created, so a processed row never points at nothing
     let mediaUri: string | null = null;
     if (media) {
       mediaUri = await uploadMedia(
-        `media/${id}.${media.ext}`,
+        `media/${randomUUID()}.${media.ext}`,
         Buffer.from(await media.file.arrayBuffer()),
         media.file.type || "application/octet-stream"
       );
     }
 
-    const lang = f.lang_hint === "auto" ? null : f.lang_hint;
-    const rawText = f.channel === "photo" ? (f.caption ?? null) : (f.text ?? null);
-    // Ingest stays open (citizens submit before/without signing in), but when a
-    // session exists the row is stamped with the Google user id so the RLS citizen
-    // policy lets them poll /api/submissions/:id for their own submission.
+    // v1.2: phone is stored only when verify_token proves it passed OTP for THIS
+    // number (checkVerifyToken binds phone+token together) — never store an unverified
+    // number as if it were confirmed, but never block the submission either.
+    const phoneVerified = !!(f.phone && checkVerifyToken(f.phone, f.verify_token));
+
     const user = await sessionUser();
-    if (user) {
-      await db().query(
-        `INSERT INTO submissions (id, status, channel, lang, raw_text, media_uri, ward, user_id)
-         VALUES ($1, 'received', $2, $3, $4, $5, $6, $7)`,
-        [id, f.channel, lang, rawText, mediaUri, f.ward ?? null, user.id]
-      );
-    } else {
-      await db().query(
-        `INSERT INTO submissions (id, status, channel, lang, raw_text, media_uri, ward)
-         VALUES ($1, 'received', $2, $3, $4, $5, $6)`,
-        [id, f.channel, lang, rawText, mediaUri, f.ward ?? null]
-      );
-    }
-    await db().query(
-      "INSERT INTO audit_events (submission_id, stage, detail) VALUES ($1, 'received', $2)",
-      [id, JSON.stringify({ channel: f.channel, lang_hint: f.lang_hint, media_uri: mediaUri, ward_hint: f.ward ?? null })]
-    );
+    const result = await persistAndProcess({
+      channel: f.channel,
+      lang: f.lang_hint === "auto" ? null : f.lang_hint,
+      rawText: f.channel === "photo" ? (f.caption ?? null) : (f.text ?? null),
+      mediaUri,
+      ward: f.ward ?? null,
+      userId: user?.id ?? null,
+      source: "web",
+      phone: f.phone ?? null,
+      phoneVerified,
+    });
 
-    if (process.env.DEMO_MODE === "true") {
-      // sync path (B1): same pipeline code as the worker, no Pub/Sub hop
-      const { initWorker, processSubmission } = await import("../../../../../worker/ingest");
-      await initWorker();
-      const result = await processSubmission(id);
-      if (result.status === "processed")
-        return NextResponse.json({ submission_id: id, status: "processed", cluster_id: result.cluster_id, category: result.category });
-      // failure already dead-lettered + status=failed by the pipeline — report loudly
-      return jsonError(422, "processing_failed", result.status === "failed" ? result.reason : "submission not in received state");
-    }
-
-    try {
-      await publishSubmission(id);
-    } catch (e) {
-      // row is safely persisted (replay picks up status=received) — but never silent:
-      await db().query(
-        "INSERT INTO deadletters (submission_id, failed_stage, reason, raw_response) VALUES ($1, 'received', 'pubsub_publish_failed', $2)",
-        [id, String(e).slice(0, 4000)]
-      );
-      return jsonError(502, "publish_failed", `submission ${id} persisted but Pub/Sub publish failed: ${e}`);
-    }
-    return NextResponse.json({ submission_id: id, status: "received" }, { status: 202 });
+    if (result.status === "processed")
+      return NextResponse.json({ submission_id: result.submission_id, status: "processed", cluster_id: result.cluster_id, category: result.category, ward: result.ward, duplicate_of: result.duplicate_of });
+    if (result.status === "failed")
+      return jsonError(result.code === "publish_failed" ? 502 : 422, result.code, result.message);
+    return NextResponse.json({ submission_id: result.submission_id, status: "received" }, { status: 202 });
   } catch (e) {
     return handleRouteError(e, "POST /api/ingest");
   }

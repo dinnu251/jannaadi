@@ -1,0 +1,1368 @@
+[
+  {
+    "name": "Ward 1 - Bunglow Metta",
+    "locality": "Bunglow Metta",
+    "old": [
+      17.7384,
+      83.3862
+    ],
+    "new": null,
+    "reason": "other_jurisdiction",
+    "action": "kept_old"
+  },
+  {
+    "name": "Ward 2 - Sabbivanipeta",
+    "locality": "Sabbivanipeta",
+    "old": [
+      17.6864,
+      83.2096
+    ],
+    "new": null,
+    "reason": "coarse(locality,political)",
+    "action": "kept_old"
+  },
+  {
+    "name": "Ward 3 - Telephone Exchange Area",
+    "locality": "Telephone Exchange Area",
+    "old": [
+      17.709,
+      83.2351
+    ],
+    "new": null,
+    "reason": "coarse(locality,political)",
+    "action": "kept_old"
+  },
+  {
+    "name": "Ward 4 - Nidigattu panchayat",
+    "locality": "Nidigattu panchayat",
+    "old": [
+      17.7383,
+      83.3626
+    ],
+    "new": null,
+    "reason": "coarse(locality,political)",
+    "action": "kept_old"
+  },
+  {
+    "name": "Ward 5 - Boyyipalem Junction",
+    "locality": "Boyyipalem Junction",
+    "old": [
+      17.7652,
+      83.2568
+    ],
+    "new": [
+      17.7332549,
+      83.3071796
+    ],
+    "moved_km": 6.41,
+    "matched": "Seethammapeta Main Rd, beside Canara Stores, Gurudwara, Seetamma Peta, Dwaraka Nagar, Visakhapatnam, Andhra Pradesh 530016, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 6 - Car shed Junction",
+    "locality": "Car shed Junction",
+    "old": [
+      17.7063,
+      83.3546
+    ],
+    "new": [
+      17.8045,
+      83.3458
+    ],
+    "moved_km": 10.96,
+    "matched": "Car Shed Junction, SBI Colony, Pothinamallayya Palem, Potinamallayyapalem, Andhra Pradesh 530041, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 7 - Vambay Colony (Blocks) 1A",
+    "locality": "Vambay Colony (Blocks) 1A",
+    "old": [
+      17.7707,
+      83.2833
+    ],
+    "new": [
+      17.8133266,
+      83.36491439999999
+    ],
+    "moved_km": 9.86,
+    "matched": "Vambay Colony, Chandrampalem, Srinivasa Nagar, Madhurawada, Madhuravada, Andhra Pradesh 530048, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 8 - Law College",
+    "locality": "Law College",
+    "old": [
+      17.7513,
+      83.3815
+    ],
+    "new": [
+      17.724617,
+      83.32662359999999
+    ],
+    "moved_km": 6.53,
+    "matched": "Law College, Andhra University South Campus, Andhra University, Visakhapatnam, Andhra Pradesh 530003, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 9 - Ramalayam Street",
+    "locality": "Ramalayam Street",
+    "old": [
+      17.6527,
+      83.2542
+    ],
+    "new": [
+      17.7477098,
+      83.2574405
+    ],
+    "moved_km": 10.57,
+    "matched": "Kodanda Ramalayam St, Kalinganagar, Madhavadhara, Visakhapatnam, Andhra Pradesh 530007, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 10 - Rajeev Nagar",
+    "locality": "Rajeev Nagar",
+    "old": [
+      17.7161,
+      83.3765
+    ],
+    "new": [
+      17.7343372,
+      83.3269492
+    ],
+    "moved_km": 5.63,
+    "matched": "Rajeev Nagar, Pithapuram Colony, Maddilapalem, Visakhapatnam, Andhra Pradesh 530017, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 11 - Raveendra Nagar -II",
+    "locality": "Raveendra Nagar -II",
+    "old": [
+      17.8161,
+      83.1573
+    ],
+    "new": [
+      17.7662096,
+      83.3221541
+    ],
+    "moved_km": 18.31,
+    "matched": "Ravindra Nagar, Visakhapatnam, Andhra Pradesh 530040, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 12 - Rajiv nagar & Central prison",
+    "locality": "Rajiv nagar & Central prison",
+    "old": [
+      17.8201,
+      83.3891
+    ],
+    "new": [
+      17.7343372,
+      83.3269492
+    ],
+    "moved_km": 11.59,
+    "matched": "Rajeev Nagar, Pithapuram Colony, Maddilapalem, Visakhapatnam, Andhra Pradesh 530017, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 13 - Sundarayya nagar",
+    "locality": "Sundarayya nagar",
+    "old": [
+      17.6616,
+      83.3476
+    ],
+    "new": [
+      17.7673639,
+      83.3127965
+    ],
+    "moved_km": 12.32,
+    "matched": "Sundarayya Nagar, Arilova, Visakhapatnam, Andhra Pradesh 530057, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 14 - Near N R I Hospital",
+    "locality": "Near N R I Hospital",
+    "old": [
+      17.8222,
+      83.1972
+    ],
+    "new": null,
+    "reason": "out_of_bbox",
+    "action": "kept_old"
+  },
+  {
+    "name": "Ward 15 - Seethammadhara Junction",
+    "locality": "Seethammadhara Junction",
+    "old": [
+      17.6691,
+      83.2444
+    ],
+    "new": [
+      17.7432977,
+      83.3143005
+    ],
+    "moved_km": 11.09,
+    "matched": "Seethammadhara Junction, Visakhapatnam, Andhra Pradesh 530013, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 16 - HB Colony",
+    "locality": "HB Colony",
+    "old": [
+      17.8242,
+      83.2256
+    ],
+    "new": [
+      17.745901,
+      83.3231217
+    ],
+    "moved_km": 13.51,
+    "matched": "H B Colony, Visakhapatnam, Andhra Pradesh, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 17 - Kotha Venkojipalem",
+    "locality": "Kotha Venkojipalem",
+    "old": [
+      17.6983,
+      83.2801
+    ],
+    "new": [
+      17.7447411,
+      83.32846769999999
+    ],
+    "moved_km": 7.27,
+    "matched": "Kotha Venkoji Palem Bus Stop, New Venkojipalem Main Road, Sector 1, New Venkojipalem, Visakhapatnam, Andhra Pradesh 530022, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 18 - Samatha college area",
+    "locality": "Samatha college area",
+    "old": [
+      17.6966,
+      83.3615
+    ],
+    "new": [
+      17.7427463,
+      83.3389988
+    ],
+    "moved_km": 5.66,
+    "matched": "MVP Cir, Sector 10, MVP Colony, Visakhapatnam, Andhra Pradesh 530017, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 19 - MVP Sector-12",
+    "locality": "MVP Sector-12",
+    "old": [
+      17.6972,
+      83.3341
+    ],
+    "new": [
+      17.7431283,
+      83.3387462
+    ],
+    "moved_km": 5.13,
+    "matched": "MVP Cir, MVP Colony, Visakhapatnam, Andhra Pradesh 530017, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 20 - Peawaltari Junction",
+    "locality": "Peawaltari Junction",
+    "old": [
+      17.7774,
+      83.2339
+    ],
+    "new": [
+      17.7321626,
+      83.3333481
+    ],
+    "moved_km": 11.67,
+    "matched": "Pedda Waltair Junction, Pedda Waltair, Visakhapatnam, Andhra Pradesh 530017, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 21 - Harbour Park road",
+    "locality": "Harbour Park road",
+    "old": [
+      17.7683,
+      83.1999
+    ],
+    "new": [
+      17.7146419,
+      83.3180021
+    ],
+    "moved_km": 13.86,
+    "matched": "Harbour Park Rd, Pandurangapuram, Visakhapatnam, Andhra Pradesh 530003, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 22 - Sivajipalem",
+    "locality": "Sivajipalem",
+    "old": [
+      17.7552,
+      83.1642
+    ],
+    "new": [
+      17.735462,
+      83.3275007
+    ],
+    "moved_km": 17.43,
+    "matched": "Shivaji Palem, Pithapuram Colony, Maddilapalem, Visakhapatnam, Andhra Pradesh, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 23 - EENADU Main Road",
+    "locality": "EENADU Main Road",
+    "old": [
+      17.7798,
+      83.1867
+    ],
+    "new": [
+      17.7255443,
+      83.3334491
+    ],
+    "moved_km": 16.67,
+    "matched": "Chinna Waltair Main Rd, Pedda Waltair, Visakhapatnam, Andhra Pradesh 530017, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 24 - Kranthi Nagar",
+    "locality": "Kranthi Nagar",
+    "old": [
+      17.7626,
+      83.2137
+    ],
+    "new": [
+      17.7411896,
+      83.3260387
+    ],
+    "moved_km": 12.13,
+    "matched": "Kranthi Nagar, Isukathota, Maddilapalem, Visakhapatnam, Andhra Pradesh 530022, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 25 - Madhura Nagar",
+    "locality": "Madhura Nagar",
+    "old": [
+      17.7834,
+      83.3733
+    ],
+    "new": [
+      17.7332622,
+      83.3061117
+    ],
+    "moved_km": 9.04,
+    "matched": "Madhuranagar, Dwaraka Nagar, Visakhapatnam, Andhra Pradesh 530016, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 26 - Lalitha Nagar",
+    "locality": "Lalitha Nagar",
+    "old": [
+      17.7196,
+      83.1554
+    ],
+    "new": [
+      17.735181,
+      83.301374
+    ],
+    "moved_km": 15.56,
+    "matched": "Lalitha Nagar, Akkayyapalem, Visakhapatnam, Andhra Pradesh 530016, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 27 - VIP Road",
+    "locality": "VIP Road",
+    "old": [
+      17.7175,
+      83.3115
+    ],
+    "new": [
+      17.727303,
+      83.3155883
+    ],
+    "moved_km": 1.17,
+    "matched": "VIP Rd, Visakhapatnam, Andhra Pradesh, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 28 - Circuit House",
+    "locality": "Circuit House",
+    "old": [
+      17.7591,
+      83.2545
+    ],
+    "new": [
+      17.7157736,
+      83.3070558
+    ],
+    "moved_km": 7.36,
+    "matched": "12-4-6, Green Park Hotel Rd, Jagadamba Centre, Daba Gardens, Allipuram, Visakhapatnam, Andhra Pradesh 530002, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 29 - Kannayyapeta",
+    "locality": "Kannayyapeta",
+    "old": [
+      17.8063,
+      83.396
+    ],
+    "new": [
+      17.713914,
+      83.3096372
+    ],
+    "moved_km": 13.75,
+    "matched": "beside Green Park Hotel Road, Jagadamba Junction, Visakhapatnam, Andhra Pradesh 530002, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 30 - Old Employment Office",
+    "locality": "Old Employment Office",
+    "old": [
+      17.7463,
+      83.3644
+    ],
+    "new": null,
+    "reason": "plus_code",
+    "action": "kept_old"
+  },
+  {
+    "name": "Ward 31 - Bheem Nagar",
+    "locality": "Bheem Nagar",
+    "old": [
+      17.6988,
+      83.3222
+    ],
+    "new": null,
+    "reason": "coarse(locality,political)",
+    "action": "kept_old"
+  },
+  {
+    "name": "Ward 32 - South Jail Road",
+    "locality": "South Jail Road",
+    "old": [
+      17.7693,
+      83.2313
+    ],
+    "new": [
+      17.7203848,
+      83.2993944
+    ],
+    "moved_km": 9.03,
+    "matched": "S Jail Rd, Visakhapatnam, Andhra Pradesh, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 33 - South Jail Road",
+    "locality": "South Jail Road",
+    "old": [
+      17.688,
+      83.3763
+    ],
+    "new": [
+      17.7203848,
+      83.2993944
+    ],
+    "moved_km": 8.91,
+    "matched": "S Jail Rd, Visakhapatnam, Andhra Pradesh, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 34 - SRMT Road",
+    "locality": "SRMT Road",
+    "old": [
+      17.7394,
+      83.3674
+    ],
+    "new": [
+      17.6922185,
+      83.2024528
+    ],
+    "moved_km": 18.24,
+    "matched": "SRMT Canteen Rd, Gajuwaka, Andhra Pradesh, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 35 - Stadium Road",
+    "locality": "Stadium Road",
+    "old": [
+      17.7788,
+      83.1943
+    ],
+    "new": [
+      17.7409404,
+      83.3020657
+    ],
+    "moved_km": 12.16,
+    "matched": "Stadium Road, Port Stadium Area, Kailasapuram, Visakhapatnam, Andhra Pradesh 530013, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 36 - Agraharam Veedhi",
+    "locality": "Agraharam Veedhi",
+    "old": [
+      17.7506,
+      83.2973
+    ],
+    "new": null,
+    "reason": "coarse(locality,political)",
+    "action": "kept_old"
+  },
+  {
+    "name": "Ward 37 - Relli Veedhi",
+    "locality": "Relli Veedhi",
+    "old": [
+      17.8191,
+      83.2723
+    ],
+    "new": [
+      17.7025354,
+      83.3034462
+    ],
+    "moved_km": 13.37,
+    "matched": "Relliveedhi, Visakhapatnam, Andhra Pradesh 530001, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 38 - Agraharam Veedhi",
+    "locality": "Agraharam Veedhi",
+    "old": [
+      17.8206,
+      83.3258
+    ],
+    "new": null,
+    "reason": "coarse(locality,political)",
+    "action": "kept_old"
+  },
+  {
+    "name": "Ward 39 - Thomson Street",
+    "locality": "Thomson Street",
+    "old": [
+      17.7688,
+      83.1707
+    ],
+    "new": [
+      17.693291,
+      83.2938056
+    ],
+    "moved_km": 15.51,
+    "matched": "Thomson street, Soldierpet, Port Area, Visakhapatnam, Andhra Pradesh 530001, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 40 - Akc Colony",
+    "locality": "Akc Colony",
+    "old": [
+      17.6804,
+      83.2729
+    ],
+    "new": [
+      17.6901387,
+      83.2395271
+    ],
+    "moved_km": 3.7,
+    "matched": "Annamma Colony Rd, Sriram Nagar, Visakhapatnam, Andhra Pradesh 530011, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 41 - Jaganadhapuram",
+    "locality": "Jaganadhapuram",
+    "old": [
+      17.7768,
+      83.2236
+    ],
+    "new": [
+      17.730362,
+      83.2986712
+    ],
+    "moved_km": 9.48,
+    "matched": "Jaganadhapuram, Visakhapatnam, Andhra Pradesh 530016, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 42 - Jaganadhapuram",
+    "locality": "Jaganadhapuram",
+    "old": [
+      17.7396,
+      83.2679
+    ],
+    "new": [
+      17.730362,
+      83.2986712
+    ],
+    "moved_km": 3.42,
+    "matched": "Jaganadhapuram, Visakhapatnam, Andhra Pradesh 530016, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 43 - Akkayyapalem 80 Feet road",
+    "locality": "Akkayyapalem 80 Feet road",
+    "old": [
+      17.6585,
+      83.3619
+    ],
+    "new": [
+      17.7353412,
+      83.2970861
+    ],
+    "moved_km": 10.96,
+    "matched": "Akkayyapalem 80 Feet Rd, Akkayyapalem, Visakhapatnam, Andhra Pradesh 530016, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 44 - Santoshi Matha Temple",
+    "locality": "Santoshi Matha Temple",
+    "old": [
+      17.7916,
+      83.3093
+    ],
+    "new": null,
+    "reason": "plus_code",
+    "action": "kept_old"
+  },
+  {
+    "name": "Ward 45 - Port Quarters",
+    "locality": "Port Quarters",
+    "old": [
+      17.8332,
+      83.3298
+    ],
+    "new": [
+      17.7416425,
+      83.2927399
+    ],
+    "moved_km": 10.91,
+    "matched": "Port Quarters, Kailasapuram, Visakhapatnam, Andhra Pradesh, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 46 - Madhusudhan Nagar",
+    "locality": "Madhusudhan Nagar",
+    "old": [
+      17.7174,
+      83.2382
+    ],
+    "new": [
+      17.7432952,
+      83.2789861
+    ],
+    "moved_km": 5.19,
+    "matched": "Madhusudan Nagar, Srinivasa Nagar, Kancharapalem, Visakhapatnam, Andhra Pradesh 530008, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 47 - Ambedkar Nagar",
+    "locality": "Ambedkar Nagar",
+    "old": [
+      17.6829,
+      83.2988
+    ],
+    "new": [
+      17.7675654,
+      83.31421089999999
+    ],
+    "moved_km": 9.55,
+    "matched": "Ambedkar Nagar, Arilova, Visakhapatnam, Andhra Pradesh 530057, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 48 - ASR Nagar",
+    "locality": "ASR Nagar",
+    "old": [
+      17.7536,
+      83.2952
+    ],
+    "new": [
+      17.7456511,
+      83.3131307
+    ],
+    "moved_km": 2.09,
+    "matched": "ASR Nagar, Seethammadara, Visakhapatnam, Andhra Pradesh 530013, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 49 - Kamakshi Nagar",
+    "locality": "Kamakshi Nagar",
+    "old": [
+      17.6819,
+      83.2791
+    ],
+    "new": null,
+    "reason": "plus_code",
+    "action": "kept_old"
+  },
+  {
+    "name": "Ward 50 - Manchu Konda Thota",
+    "locality": "Manchu Konda Thota",
+    "old": [
+      17.783,
+      83.3433
+    ],
+    "new": null,
+    "reason": "plus_code",
+    "action": "kept_old"
+  },
+  {
+    "name": "Ward 51 - Madhavadhara",
+    "locality": "Madhavadhara",
+    "old": [
+      17.6627,
+      83.3485
+    ],
+    "new": [
+      17.7486038,
+      83.2581908
+    ],
+    "moved_km": 13.52,
+    "matched": "Madhavadhara, Visakhapatnam, Andhra Pradesh, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 52 - Air Port & New Police Quarters",
+    "locality": "Air Port & New Police Quarters",
+    "old": [
+      17.7106,
+      83.3589
+    ],
+    "new": null,
+    "reason": "plus_code",
+    "action": "kept_old"
+  },
+  {
+    "name": "Ward 53 - Bhaskar Gardens",
+    "locality": "Bhaskar Gardens",
+    "old": [
+      17.7445,
+      83.2528
+    ],
+    "new": [
+      17.7419061,
+      83.24735969999999
+    ],
+    "moved_km": 0.64,
+    "matched": "Bhaskar Gardens, FCI Nagar, Marripalem, Visakhapatnam, Andhra Pradesh 530018, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 54 - 104 Area Main Road",
+    "locality": "104 Area Main Road",
+    "old": [
+      17.8306,
+      83.1567
+    ],
+    "new": [
+      17.7255443,
+      83.3334491
+    ],
+    "moved_km": 22.06,
+    "matched": "Chinna Waltair Main Rd, Pedda Waltair, Visakhapatnam, Andhra Pradesh 530017, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 55 - Jashuvanagar",
+    "locality": "Jashuvanagar",
+    "old": [
+      17.7801,
+      83.3622
+    ],
+    "new": null,
+    "reason": "coarse(locality,political)",
+    "action": "kept_old"
+  },
+  {
+    "name": "Ward 56 - Dayanand nagar",
+    "locality": "Dayanand nagar",
+    "old": [
+      17.8205,
+      83.1553
+    ],
+    "new": null,
+    "reason": "coarse(locality,political)",
+    "action": "kept_old"
+  },
+  {
+    "name": "Ward 57 - Asivanipalem",
+    "locality": "Asivanipalem",
+    "old": [
+      17.7787,
+      83.1692
+    ],
+    "new": null,
+    "reason": "plus_code",
+    "action": "kept_old"
+  },
+  {
+    "name": "Ward 58 - Ajantha Colony",
+    "locality": "Ajantha Colony",
+    "old": [
+      17.7731,
+      83.3274
+    ],
+    "new": [
+      17.6913219,
+      83.2315287
+    ],
+    "moved_km": 13.63,
+    "matched": "Ajantha Colony, Sriram Nagar, Visakhapatnam, Andhra Pradesh 530011, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 59 - Ashok Nagar Colony",
+    "locality": "Ashok Nagar Colony",
+    "old": [
+      17.7245,
+      83.3071
+    ],
+    "new": [
+      17.7261165,
+      83.3090675
+    ],
+    "moved_km": 0.28,
+    "matched": "Ashok Nagar, Dwaraka Nagar, Visakhapatnam, Andhra Pradesh 530016, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 60 - Ashok Nagar",
+    "locality": "Ashok Nagar",
+    "old": [
+      17.8305,
+      83.3475
+    ],
+    "new": [
+      17.7261165,
+      83.3090675
+    ],
+    "moved_km": 12.3,
+    "matched": "Ashok Nagar, Dwaraka Nagar, Visakhapatnam, Andhra Pradesh 530016, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 61 - Gandhiji Street",
+    "locality": "Gandhiji Street",
+    "old": [
+      17.7691,
+      83.3076
+    ],
+    "new": [
+      17.7300005,
+      83.3016545
+    ],
+    "moved_km": 4.39,
+    "matched": "Rajiv Gandhi St, Dondaparthy, Railway New Colony, Visakhapatnam, Andhra Pradesh 530016, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 62 - Achi Naidu Thota",
+    "locality": "Achi Naidu Thota",
+    "old": [
+      17.8129,
+      83.2551
+    ],
+    "new": [
+      17.7575234,
+      83.2080778
+    ],
+    "moved_km": 7.92,
+    "matched": "Naidu Thota, Visakhapatnam, Andhra Pradesh, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 63 - Chinthala Lova",
+    "locality": "Chinthala Lova",
+    "old": [
+      17.6893,
+      83.2998
+    ],
+    "new": [
+      17.7313142,
+      83.29736890000001
+    ],
+    "moved_km": 4.68,
+    "matched": "45-35-51, jagannadhapuram, Akkayyapalem Main Rd, Akkayyapalem, Visakhapatnam, Andhra Pradesh 530016, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 64 - Yarada",
+    "locality": "Yarada",
+    "old": [
+      17.7753,
+      83.2048
+    ],
+    "new": [
+      17.6630996,
+      83.27802779999999
+    ],
+    "moved_km": 14.69,
+    "matched": "Yarada, Gajuwaka, Andhra Pradesh 530005, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 65 - Sanjeevagiricolony",
+    "locality": "Sanjeevagiricolony",
+    "old": [
+      17.6907,
+      83.2737
+    ],
+    "new": [
+      17.6804113,
+      83.21728379999999
+    ],
+    "moved_km": 6.09,
+    "matched": "Sanjeev Giri colony, Gajuwaka, Andhra Pradesh 530026, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 66 - Azeemabad",
+    "locality": "Azeemabad",
+    "old": [
+      17.8239,
+      83.3077
+    ],
+    "new": [
+      17.6774041,
+      83.2121164
+    ],
+    "moved_km": 19.18,
+    "matched": "Azeemabad, Gajuwaka, Andhra Pradesh, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 67 - Ganesh Nagar",
+    "locality": "Ganesh Nagar",
+    "old": [
+      17.6653,
+      83.3622
+    ],
+    "new": [
+      17.7411891,
+      83.2365482
+    ],
+    "moved_km": 15.76,
+    "matched": "Ganesh Nagar, NSTL, Visakhapatnam, Andhra Pradesh 530009, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 68 - Akkireddy palem Main road Akkireddy Palem",
+    "locality": "Akkireddy palem Main road Akkireddy Palem",
+    "old": [
+      17.8362,
+      83.2268
+    ],
+    "new": [
+      17.7237581,
+      83.1900371
+    ],
+    "moved_km": 13.09,
+    "matched": "Main Rd, Kotta Narava, Andhra Pradesh 530012, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 69 - Chukkavaani palem",
+    "locality": "Chukkavaani palem",
+    "old": [
+      17.7849,
+      83.2696
+    ],
+    "new": null,
+    "reason": "plus_code",
+    "action": "kept_old"
+  },
+  {
+    "name": "Ward 70 - Chattivanipalem",
+    "locality": "Chattivanipalem",
+    "old": [
+      17.6564,
+      83.2568
+    ],
+    "new": [
+      17.693852,
+      83.2047934
+    ],
+    "moved_km": 6.91,
+    "matched": "Nh16, Chattivanipalem autonagar, Opp. Sub Station, Gajuwaka, Andhra Pradesh 530012, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 71 - Auto Nagar",
+    "locality": "Auto Nagar",
+    "old": [
+      17.8035,
+      83.2197
+    ],
+    "new": [
+      17.6962258,
+      83.1874184
+    ],
+    "moved_km": 12.41,
+    "matched": "Auto Nagar, Gajuwaka, Andhra Pradesh, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 72 - Chinagantyada SC Colony",
+    "locality": "Chinagantyada SC Colony",
+    "old": [
+      17.6908,
+      83.2771
+    ],
+    "new": [
+      17.6807712,
+      83.19236339999999
+    ],
+    "moved_km": 9.05,
+    "matched": "Chinagantyada, Sri Nagar, Gajuwaka, Andhra Pradesh 530026, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 73 - China Nadupuru part",
+    "locality": "China Nadupuru part",
+    "old": [
+      17.689,
+      83.266
+    ],
+    "new": [
+      17.6685742,
+      83.1949839
+    ],
+    "moved_km": 7.86,
+    "matched": "MD, Sri krishna temple, 25-3-133/1, back side second Street, china Nadupuru, Pedagantyada, Gajuwaka, Andhra Pradesh 530044, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 74 - Nehru Nagar",
+    "locality": "Nehru Nagar",
+    "old": [
+      17.7323,
+      83.2274
+    ],
+    "new": [
+      17.7696223,
+      83.31284889999999
+    ],
+    "moved_km": 9.96,
+    "matched": "Nehru Nagar, Durga Nagar, Arilova, Visakhapatnam, Andhra Pradesh 530057, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 75 - Pedagantyada",
+    "locality": "Pedagantyada",
+    "old": [
+      17.7467,
+      83.2305
+    ],
+    "new": [
+      17.6665858,
+      83.20630829999999
+    ],
+    "moved_km": 9.27,
+    "matched": "Pedagantyada, Gajuwaka, Andhra Pradesh, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 76 - Bala Cheruvu Sivalayam Veedhi",
+    "locality": "Bala Cheruvu Sivalayam Veedhi",
+    "old": [
+      17.8484,
+      83.3547
+    ],
+    "new": [
+      17.6673412,
+      83.19880409999999
+    ],
+    "moved_km": 26.04,
+    "matched": "18-35-6, APHB Colony, Pedagantyada, Gajuwaka, Andhra Pradesh 530044, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 77 - Goruduvanipalem",
+    "locality": "Goruduvanipalem",
+    "old": [
+      17.7247,
+      83.2762
+    ],
+    "new": null,
+    "reason": "coarse(locality,political)",
+    "action": "kept_old"
+  },
+  {
+    "name": "Ward 78 - Steel Plant Sector's-3 to 11",
+    "locality": "Steel Plant Sector's-3 to 11",
+    "old": [
+      17.8219,
+      83.1849
+    ],
+    "new": null,
+    "reason": "coarse(locality,political)",
+    "action": "kept_old"
+  },
+  {
+    "name": "Ward 79 - Sivaji Nagar",
+    "locality": "Sivaji Nagar",
+    "old": [
+      17.8172,
+      83.217
+    ],
+    "new": [
+      17.7690128,
+      83.30882609999999
+    ],
+    "moved_km": 11.1,
+    "matched": "Sivaji Nagar, Arilova, Visakhapatnam, Andhra Pradesh 530057, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 80 - Tadi",
+    "locality": "Tadi",
+    "old": [
+      17.7568,
+      83.23
+    ],
+    "new": null,
+    "reason": "coarse(locality,political)",
+    "action": "kept_old"
+  },
+  {
+    "name": "Ward 81 - Parts of GNT Road",
+    "locality": "Parts of GNT Road",
+    "old": [
+      17.8021,
+      83.3196
+    ],
+    "new": [
+      17.6890937,
+      83.2427571
+    ],
+    "moved_km": 14.97,
+    "matched": "GNT Rd, Visakhapatnam, Andhra Pradesh, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 82 - Gandhi Nagar & Anjayya Colony & Income Tax St.",
+    "locality": "Gandhi Nagar & Anjayya Colony & Income Tax St.",
+    "old": [
+      17.6746,
+      83.2511
+    ],
+    "new": null,
+    "reason": "other_jurisdiction",
+    "action": "kept_old"
+  },
+  {
+    "name": "Ward 83 - Mirayala Colony",
+    "locality": "Mirayala Colony",
+    "old": [
+      17.7554,
+      83.1621
+    ],
+    "new": null,
+    "reason": "other_jurisdiction",
+    "action": "kept_old"
+  },
+  {
+    "name": "Ward 84 - Takasi veedhi part",
+    "locality": "Takasi veedhi part",
+    "old": [
+      17.7095,
+      83.187
+    ],
+    "new": null,
+    "reason": "coarse(locality,political)",
+    "action": "kept_old"
+  },
+  {
+    "name": "Ward 85 - Talariavanipalem",
+    "locality": "Talariavanipalem",
+    "old": [
+      17.671,
+      83.2631
+    ],
+    "new": null,
+    "reason": "coarse(locality,political)",
+    "action": "kept_old"
+  },
+  {
+    "name": "Ward 86 - Uppara colony",
+    "locality": "Uppara colony",
+    "old": [
+      17.7074,
+      83.3699
+    ],
+    "new": [
+      17.6901387,
+      83.2395271
+    ],
+    "moved_km": 13.94,
+    "matched": "Annamma Colony Rd, Sriram Nagar, Visakhapatnam, Andhra Pradesh 530011, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 87 - Kurmannapalem Part",
+    "locality": "Kurmannapalem Part",
+    "old": [
+      17.7187,
+      83.2849
+    ],
+    "new": [
+      17.6905906,
+      83.1664418
+    ],
+    "moved_km": 12.93,
+    "matched": "Kurmannapalem, Gajuwaka, Andhra Pradesh, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 88 - Narava",
+    "locality": "Narava",
+    "old": [
+      17.7425,
+      83.3138
+    ],
+    "new": [
+      17.7436092,
+      83.18391369999999
+    ],
+    "moved_km": 13.76,
+    "matched": "Peda Narava, Kotta Narava, Andhra Pradesh 530027, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 89 - Chandra Nagar",
+    "locality": "Chandra Nagar",
+    "old": [
+      17.7209,
+      83.2593
+    ],
+    "new": [
+      17.7441354,
+      83.21707169999999
+    ],
+    "moved_km": 5.17,
+    "matched": "Chandra Nagar, Kothapalem, Visakhapatnam, Andhra Pradesh 530027, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 90 - Vidyuth Nagar",
+    "locality": "Vidyuth Nagar",
+    "old": [
+      17.8397,
+      83.3952
+    ],
+    "new": null,
+    "reason": "coarse(locality,political)",
+    "action": "kept_old"
+  },
+  {
+    "name": "Ward 91 - Nethaji Veedhi",
+    "locality": "Nethaji Veedhi",
+    "old": [
+      17.8456,
+      83.187
+    ],
+    "new": [
+      17.7248925,
+      83.3339524
+    ],
+    "moved_km": 20.55,
+    "matched": "Netaji St, Chinna Waltair, Pedda Waltair, Visakhapatnam, Andhra Pradesh 530017, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 92 - Venkatapuram",
+    "locality": "Venkatapuram",
+    "old": [
+      17.8039,
+      83.2794
+    ],
+    "new": [
+      17.9213945,
+      83.36170419999999
+    ],
+    "moved_km": 15.7,
+    "matched": "Venkatapuram, Andhra Pradesh, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 93 - Sai Durga Nagar",
+    "locality": "Sai Durga Nagar",
+    "old": [
+      17.8002,
+      83.3997
+    ],
+    "new": [
+      17.7662613,
+      83.2196268
+    ],
+    "moved_km": 19.44,
+    "matched": "Sai durganagar, 10-90/1, opposite to shantiniketan school, Prahaladapuram, Naidu Thota, Visakhapatnam, Vepagunta, Andhra Pradesh 530029, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 94 - Gangiredla Colony",
+    "locality": "Gangiredla Colony",
+    "old": [
+      17.8041,
+      83.3196
+    ],
+    "new": null,
+    "reason": "plus_code",
+    "action": "kept_old"
+  },
+  {
+    "name": "Ward 95 - MES Layout",
+    "locality": "MES Layout",
+    "old": [
+      17.7532,
+      83.3478
+    ],
+    "new": [
+      17.7863518,
+      83.2010688
+    ],
+    "moved_km": 15.97,
+    "matched": "MES Layout, Chintalagraharam, Vepagunta, Visakhapatnam, Andhra Pradesh 530047, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 96 - Pendurthi old Village",
+    "locality": "Pendurthi old Village",
+    "old": [
+      17.7949,
+      83.294
+    ],
+    "new": [
+      17.80552,
+      83.20891259999999
+    ],
+    "moved_km": 9.09,
+    "matched": "Pendurthi, Visakhapatnam, Andhra Pradesh, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 97 - Kranthi Nagar",
+    "locality": "Kranthi Nagar",
+    "old": [
+      17.6795,
+      83.3354
+    ],
+    "new": [
+      17.7411896,
+      83.3260387
+    ],
+    "moved_km": 6.93,
+    "matched": "Kranthi Nagar, Isukathota, Maddilapalem, Visakhapatnam, Andhra Pradesh 530022, India",
+    "action": "updated"
+  },
+  {
+    "name": "Ward 98 - Appannapalem",
+    "locality": "Appannapalem",
+    "old": [
+      17.811,
+      83.2949
+    ],
+    "new": [
+      17.7743915,
+      83.2241707
+    ],
+    "moved_km": 8.52,
+    "matched": "27-154, Laxminarasimhanagar, Appannapalem, Vepagunta, Andhra Pradesh 530047, India",
+    "action": "updated"
+  }
+]

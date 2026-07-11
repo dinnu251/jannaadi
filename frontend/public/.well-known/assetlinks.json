@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.prasyn.jannaadi",
+      "sha256_cert_fingerprints": [
+        "9A:41:E3:46:05:4E:EF:5B:74:36:3F:26:81:8D:5B:BC:C1:ED:70:B4:66:12:77:22:96:EA:87:EC:35:F8:09:BD"
+      ]
+    }
+  }
+]

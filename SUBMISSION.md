@@ -4,7 +4,7 @@
 **Team:** d_godaba  
 **Date:** 8 July 2026  
 **Live URL:** https://app.prasyn.com  
-**Repo:** *(GitHub URL)*
+**Repo:** https://github.com/dinnu251/jannaadi
 
 ---
 

@@ -26,7 +26,19 @@ export const translations: Translations = {
     inDevPlan: 'In dev plan',
     categoryLabel: 'Category',
     allWards: 'All Wards',
-    allCategories: 'All Categories'
+    allCategories: 'All Categories',
+    myComplaintsTitle: 'My Complaints',
+    myComplaintsEmpty: 'No complaints yet. Submit your first grievance!',
+    myComplaintsLoading: 'Loading your complaints...',
+    channelsTitle: 'No app? No problem.',
+    channelsWhatsapp: 'WhatsApp your complaint (text, photo, or voice note)',
+    channelsCall: 'Or call and speak after the beep',
+    channelsScan: 'Scan to open WhatsApp',
+    channelsTrack: 'Track anytime: send STATUS on WhatsApp',
+    navLogin: 'Login',
+    navLogout: 'Logout',
+    loginTitle: 'Welcome to JanNaadi',
+    loginSubtitle: 'Citizens: track your complaints. MP staff: ranked priorities, heatmap & audit.'
   },
   te: {
     appTitle: 'జన్ నాడి',
@@ -47,7 +59,19 @@ export const translations: Translations = {
     inDevPlan: 'ప్రణాళికలో ఉంది',
     categoryLabel: 'వర్గం',
     allWards: 'అన్ని వార్డులు',
-    allCategories: 'అన్ని వర్గాలు'
+    allCategories: 'అన్ని వర్గాలు',
+    myComplaintsTitle: 'నా ఫిర్యాదులు',
+    myComplaintsEmpty: 'ఇంకా ఫిర్యాదులు లేవు. మీ మొదటి ఫిర్యాదు చేయండి!',
+    myComplaintsLoading: 'మీ ఫిర్యాదులు లోడ్ అవుతున్నాయి...',
+    channelsTitle: 'యాప్ లేదా? సమస్య లేదు.',
+    channelsWhatsapp: 'మీ ఫిర్యాదును WhatsApp చేయండి (టెక్స్ట్, ఫోటో లేదా వాయిస్ నోట్)',
+    channelsCall: 'లేదా కాల్ చేసి బీప్ తర్వాత మాట్లాడండి',
+    channelsScan: 'WhatsApp తెరవడానికి స్కాన్ చేయండి',
+    channelsTrack: 'ఎప్పుడైనా ట్రాక్ చేయండి: WhatsApp లో STATUS పంపండి',
+    navLogin: 'లాగిన్',
+    navLogout: 'లాగ్ అవుట్',
+    loginTitle: 'జన్ నాడికి స్వాగతం',
+    loginSubtitle: 'పౌరులు: మీ ఫిర్యాదులను ట్రాక్ చేయండి. MP సిబ్బంది: ర్యాంక్ చేసిన ప్రాధాన్యతలు, హీట్‌మ్యాప్.'
   },
   hi: {
     appTitle: 'जन नाड़ी',
@@ -68,6 +92,18 @@ export const translations: Translations = {
     inDevPlan: 'योजना में है',
     categoryLabel: 'श्रेणी',
     allWards: 'सभी वार्ड',
-    allCategories: 'सभी श्रेणियां'
+    allCategories: 'सभी श्रेणियां',
+    myComplaintsTitle: 'मेरी शिकायतें',
+    myComplaintsEmpty: 'अभी तक कोई शिकायत नहीं। अपनी पहली शिकायत दर्ज करें!',
+    myComplaintsLoading: 'आपकी शिकायतें लोड हो रही हैं...',
+    channelsTitle: 'ऐप नहीं? कोई बात नहीं।',
+    channelsWhatsapp: 'अपनी शिकायत WhatsApp करें (टेक्स्ट, फोटो या वॉइस नोट)',
+    channelsCall: 'या कॉल करें और बीप के बाद बोलें',
+    channelsScan: 'WhatsApp खोलने के लिए स्कैन करें',
+    channelsTrack: 'कभी भी ट्रैक करें: WhatsApp पर STATUS भेजें',
+    navLogin: 'लॉगिन',
+    navLogout: 'लॉगआउट',
+    loginTitle: 'जन नाड़ी में आपका स्वागत है',
+    loginSubtitle: 'नागरिक: अपनी शिकायतें ट्रैक करें। सांसद स्टाफ: रैंक की गई प्राथमिकताएं, हीटमैप।'
   }
 };

@@ -1,0 +1,78 @@
+{
+  "source_url": "pppinindia.gov.in",
+  "location_filter": "Visakhapatnam",
+  "projects": [
+    {
+      "project_id": "PPP-AP-VIZ-001",
+      "project_name": "Development of Bhogapuram International Airport",
+      "sector": "Airports",
+      "sub_sector": "Greenfield Airport",
+      "authority": "Andhra Pradesh Airports Development Corporation Ltd (APADCL)",
+      "private_partner": "GMR Visakhapatnam International Airport Ltd (GVIAL)",
+      "project_cost_inr_cr": 2200.00,
+      "ppp_mode": "Design, Build, Finance, Operate and Transfer (DBFOT)",
+      "status": "Under Construction",
+      "concession_period_years": 40,
+      "concession_signing_date": "2020-06-12",
+      "coordinates": {
+        "lat": 18.0058,
+        "lng": 83.5012
+      },
+      "description": "Construction and operation of a new greenfield international airport at Bhogapuram to handle passenger and cargo traffic serving the Visakhapatnam region."
+    },
+    {
+      "project_id": "PPP-AP-VIZ-002",
+      "project_name": "Visakhapatnam Port Trust - Mechanization of EQ-7 Berth",
+      "sector": "Ports",
+      "sub_sector": "Cargo Berths",
+      "authority": "Visakhapatnam Port Authority (VPA)",
+      "private_partner": "Vizag Coal Terminal Pvt Ltd",
+      "project_cost_inr_cr": 217.80,
+      "ppp_mode": "Build, Operate and Transfer (BOT)",
+      "status": "Operational",
+      "concession_period_years": 30,
+      "concession_signing_date": "2013-10-18",
+      "coordinates": {
+        "lat": 17.6942,
+        "lng": 83.2986
+      },
+      "description": "Mechanization of East Quay-7 berth at Visakhapatnam Port for handling steam coal and thermal coal imports."
+    },
+    {
+      "project_id": "PPP-AP-VIZ-003",
+      "project_name": "Visakhapatnam Metro Rail Project - Phase 1",
+      "sector": "Urban Transport",
+      "sub_sector": "Metro Rail",
+      "authority": "Amaravati Metro Rail Corporation (AMRC) / AP Metro Rail Corporation",
+      "private_partner": "TBD (PPP Procurement Stage)",
+      "project_cost_inr_cr": 8300.00,
+      "ppp_mode": "Design, Build, Finance, Operate and Transfer (DBFOT)",
+      "status": "Proposed / Under Procurement",
+      "concession_period_years": 35,
+      "concession_signing_date": null,
+      "coordinates": {
+        "lat": 17.7234,
+        "lng": 83.3012
+      },
+      "description": "Mass Rapid Transit System for Visakhapatnam covering 3 corridors: Steel Plant to Kamalalayam (34 km), Gurudwara to Old Post Office (5 km), and Madhurawada to Nad Junction (20 km)."
+    },
+    {
+      "project_id": "PPP-AP-VIZ-004",
+      "project_name": "Multi-Modal Logistics Park (MMLP) at Visakhapatnam",
+      "sector": "Infrastructure (Commercial)",
+      "sub_sector": "Logistics Park",
+      "authority": "National Highways Logistics Management Limited (NHLML) / CONCOR",
+      "private_partner": "VMLP Private Limited",
+      "project_cost_inr_cr": 372.00,
+      "ppp_mode": "Design, Build, Finance, Operate and Transfer (DBFOT)",
+      "status": "Operational",
+      "concession_period_years": 30,
+      "concession_signing_date": "2015-04-20",
+      "coordinates": {
+        "lat": 17.7122,
+        "lng": 83.1895
+      },
+      "description": "Development of a Multi-Modal Logistics Park over 100 acres in Visakhapatnam to provide warehousing, container storage, and rail-road transfer facilities."
+    }
+  ]
+}
