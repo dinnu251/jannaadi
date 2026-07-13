@@ -130,6 +130,8 @@ GET /api/dashboard  →  ranked cluster list (frequency 40% · severity 25% · r
 | Twilio voice call | `<Record>` TwiML → WAV callback → Cloud STT → Gemini pipeline tested |
 | Privacy | `senderRef()` hash in audit_events — no raw phone numbers in DB |
 | Security | No secrets in tracked files; `.gitignore` covers `.env*`, `gcp-credentials.json`, `*.dump` |
+| **Demo video** | **[JanNaadi-demo-track1.mp4](assets/JanNaadi-demo-track1.mp4)** — 3-min golden path at app.prasyn.com |
+| **F11 perf** | Dashboard verified < 2s load at app.prasyn.com (13 Jul 2026) |
 
 ---
 
@@ -254,6 +256,4 @@ privacy design (non-reversible `senderRef` hash, no raw phone stored) is untouch
 - Twilio WhatsApp WABA approval (production sender — sandbox works for demo)
 - Ward councillor mobile app (push notifications on new clusters)
 - Expand to all 13 ULBs in Visakhapatnam district
-- Open API for third-party integrations (e.g., municipal ERP systems)
-- Frontend UI for the v1.2 features above (currently backend-only — no phone/OTP entry
-  point on the citizen submit form yet, no status-change control on the MP dashboard)
+- Open API for third-party integrations 
