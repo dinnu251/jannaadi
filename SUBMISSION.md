@@ -10,13 +10,15 @@
 
 ## What We Built
 
-JanNaadi ("People's Voice") is an AI-native civic intelligence platform for Greater Visakhapatnam Municipal Corporation (GVMC). Citizens submit complaints via **5 channels** — web text/voice/photo, Twilio SMS/MMS, Twilio WhatsApp (text, photo, voice note), and Twilio phone calls — in Telugu, Hindi, English, or code-mixed Hinglish. Every channel funnels into the same `persistAndProcess` pipeline. Gemini 2.5 Flash extracts structured data, pgvector clusters semantically similar complaints across 98 wards, and a ranked dashboard helps ward officers prioritise by frequency × severity × recency × demographic weight.
+JanNaadi ("People's Voice") is an AI-native constituency development intelligence platform for Greater Visakhapatnam Municipal Corporation (GVMC) — built for **Track 1: AI for Constituency Development Planning**. MPs and ward officers receive development requests from 2.1M citizens across 98 wards through public meetings, social media, WhatsApp, and phone calls — but with no way to consolidate, rank, or match them against the city's own development plans.
+
+JanNaadi solves this. Citizens submit via **5 channels** — web text/voice/photo, Twilio SMS/MMS, Twilio WhatsApp (text, photo, voice note), and Twilio phone calls — in Telugu, Hindi, English, or code-mixed Hinglish. Every channel funnels into the same `persistAndProcess` pipeline. Gemini 2.5 Flash extracts structured data, pgvector clusters semantically similar submissions across 98 wards, and a ranked dashboard surfaces high-priority development works — scored by frequency × severity × recency × demographic weight — that an MP or ward officer can act on. Clusters are matched against GVMC Master Plan 2041 clauses via Discovery Engine RAG, so every ranked item shows whether it aligns with existing plans or represents an unplanned demand gap.
 
 ---
 
 ## Problem
 
-Visakhapatnam's 2.1M citizens have no single channel to report civic issues in their own language. Complaints scatter across WhatsApp, phone calls, and walk-ins — never aggregated, never prioritised, never matched to the city's own Master Plan. Ward officers triage manually. Feature-phone users (calls/SMS) are excluded from digital feedback entirely. City investments lack real-time citizen evidence.
+MPs and ward officers in Visakhapatnam receive development requests through public meetings, letters, WhatsApp, phone calls, and walk-ins — but these never get consolidated, never get prioritised against each other, and never get matched to the city's own Master Plan. There is no objective way to weigh a surge in school-upgrade requests against a proposed vocational centre, or to see which ward's drainage complaints have spiked without manual triage. Feature-phone users (calls/SMS) are excluded from digital feedback entirely. City investments lack real-time citizen demand evidence.
 
 ---
 
